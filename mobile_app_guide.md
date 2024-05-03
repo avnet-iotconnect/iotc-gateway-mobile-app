@@ -40,7 +40,8 @@ The Device List screen will display any supported devices which are in Bluetooth
 * If after a short time no devices are displayed, press the green "hamburger" menu button in the lower-right corner and select "**Scan Device**".
 * Identify the device to connect to (e.g. "STbox...") and click on it.
 
-Clicking on the device will automatically perform the following steps:
+> Note:
+> Clicking on the device will automatically perform the following steps:  
 1. Obtain the corresponding device template  
 2. Create the device template in the IoTConnect platform  
 3. Create a device in the IoTConnect platform using the identified device template
@@ -54,12 +55,14 @@ Clicking on the device will automatically perform the following steps:
 Using your credentials, login to IoTConnect in a browser:  
 * IoTConnect on AWS - [https://console.iotconnect.io](https://console.iotconnect.io)  
 
-Once logged in, select the Devices icon from the left-hand menu and click "Device" 
-[screenshot]  
+Once logged in, select the Devices icon from the left-hand menu and click "Device"  
+<img width="207" alt="select_device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/0e9f2f60-b023-4abf-a88c-324c65cb2614">
 
-* The automatically created device will be visible.  
+
+The automatically created device will be visible.  
 * Click on the **Unique ID** of the device to display the Device Info  
-* Click on the **Live Data** to view the data from the Mobile App
+* Click on the **Live Data** to view the data from the Mobile App  
+<img width="207" alt="live_data" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/66835231-02c5-4b7c-bb97-5c9ffdfacd73">
 
 ## 6. Visualize the Data  
 Dashboards are used to easily visualize data.  
