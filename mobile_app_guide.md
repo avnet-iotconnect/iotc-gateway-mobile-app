@@ -3,20 +3,12 @@
 ## 1. Download the Application  
 
 ### iOS
-View the application in the [Apple Store]() or just the QR Code below.  
-```
-:
-: QR Code
-:
-```
+Scan the QR Code below to download the iOS app.  
+![avnet me_IoTC-bridge-ios - WHITE](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/c7c29253-04a8-4387-a836-54c5e593cfcf)
 
 ### Android
-View the application in the [Play Store]() or just the QR Code below.  
-```
-:
-: QR Code
-:
-```
+Scan the QR Code below to download the Android app.  
+![avnet me_IoTC-bridge-android - WHITE](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/71b4dc44-9647-4266-af91-df44a99f7a3e)
 
 Launch the "IoTConnect" application and proceed to the next section.  
 
