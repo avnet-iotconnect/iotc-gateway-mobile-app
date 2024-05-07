@@ -59,7 +59,7 @@ The automatically created device will be visible.
 ## 6. Visualize the Data  
 Dashboards are used to easily visualize data.  
 Some pre-made dashboards are available for the supported edge devices.  
-Download the dashboard template which corresponds to your device:
-* Dashboard 1
+Download the dashboard template which corresponds to your device:  
+* [ST SensorTile.box PRO](dashboards/SensorTileBoxPRO_dashboard_export.json)
 
 Import the template...
