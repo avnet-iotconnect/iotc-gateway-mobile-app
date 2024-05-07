@@ -27,6 +27,12 @@ If you need to create a 2-month free trial account folow these steps:
 Connect power to one of the supported edge devices (e.g. "ST SensorTile.box PRO") using an appropriate USB cable.  
 An updated list is maintained in the [README](README.md).
 
+```
+Firmware Update Section Placeholder
+ST App?  CubeProgrammer?
+Version? FP-SNS-xxx_BLESensorsPnPL v1.60?
+```
+
 ## 4. Connect Device and Push Data 
 The Device List screen will display any supported devices which are in Bluetooth range of your phone/tablet.  
 * If after a short time no devices are displayed, press the green menu button in the lower-right corner and select "**Scan Device**".
