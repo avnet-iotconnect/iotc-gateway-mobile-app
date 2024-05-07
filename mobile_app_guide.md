@@ -29,7 +29,7 @@ An updated list is maintained in the [README](README.md).
 
 ## 4. Connect Device and Push Data 
 The Device List screen will display any supported devices which are in Bluetooth range of your phone/tablet.  
-* If after a short time no devices are displayed, press the green "hamburger" menu button in the lower-right corner and select "**Scan Device**".
+* If after a short time no devices are displayed, press the green menu button in the lower-right corner and select "**Scan Device**".
 * Identify the device to connect to (e.g. "STbox...") and click on it.
 
 > Note:
