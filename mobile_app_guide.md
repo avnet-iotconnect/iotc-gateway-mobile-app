@@ -1,5 +1,6 @@
 # Mobile App Guide
-This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a gateway.  This will allow Bluetooth sensory data from a variety of devices to be transported and displayed in the cloud.
+This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a gateway.
+Acting as a ghateway, the IoTConnect app will capture Bluetooth telemetry data and transport and transport it to the cloud.
 
 
 ## 1. Download the IoTConnect Application  
@@ -31,8 +32,8 @@ An updated list is maintained in the [README](README.md).
 
 ```
 Firmware Update Section Placeholder
-ST App?  CubeProgrammer?
-Version? FP-SNS-xxx_BLESensorsPnPL v1.60?
+Refer to seperate document for updating firmware to version:
+- FP-SNS-xxx_BLESensorsPnPL v1.60
 ```
 
 ## 4. Connect Device and Push Data 
