@@ -62,4 +62,15 @@ Some pre-made dashboards are available for the supported edge devices.
 Download the dashboard template which corresponds to your device:  
 * [ST SensorTile.box PRO](dashboards/SensorTileBoxPRO_dashboard_export.json)
 
-Import the template...
+* Once downloaded, select "Create Dashboard" from the top of the IoTConnect portal and then choose the "Import Dashboard" option.
+<img width="461" alt="create_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a852f939-340a-4f71-931b-f0ce70c63f34">
+
+* Enter a name for the dashboard (e.g. "My SensorTile Dashboard")  
+* Click "Browse" and select the dashboard template (.json) file downloaded previously which will cause two new fields to appear.  
+* Select "AvnetSTaws" from the **Template** drop-down  
+* Select the unique device name from the **Device** drop-down  
+* Click **Save**  
+<img width="454" alt="save_device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026">  
+
+* Feel free to edit the dashboard or just click the blue **Save** button in the top right.
+<img width="257" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/37062068-6472-4c02-9016-3d606584893a">
