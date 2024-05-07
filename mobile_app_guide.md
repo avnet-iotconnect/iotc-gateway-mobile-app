@@ -1,6 +1,8 @@
 # Mobile App Guide
+This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a gateway.  This will allow Bluetooth sensory data from a variety of devices to be transported and displayed in the cloud.
 
-## 1. Download the Application  
+
+## 1. Download the IoTConnect Application  
 
 ### iOS
 Scan the QR Code below to download the iOS app.  
