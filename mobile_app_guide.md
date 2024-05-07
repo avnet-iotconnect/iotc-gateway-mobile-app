@@ -61,7 +61,5 @@ Dashboards are used to easily visualize data.
 Some pre-made dashboards are available for the supported edge devices.  
 Download the dashboard template which corresponds to your device:
 * Dashboard 1
-* Dashboard 2
-* Dashboard 3
 
 Import the template...
