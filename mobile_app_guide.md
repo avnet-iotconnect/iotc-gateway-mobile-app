@@ -1,6 +1,7 @@
 # IoTConnect Mobile App with ST SensorTile.box PRO
 This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a Bluetooth gateway.  
 Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data and transport it to the IoTConnect cloud to visualize.
+<img src="images/sensortilebox_pro.png" alt="drawing" width="200"/>  
 
 ## Prerequisites
 In addition to the ST SensorTile.box PRO device, you will need the following:  
