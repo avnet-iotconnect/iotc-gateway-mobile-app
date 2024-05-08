@@ -79,7 +79,7 @@ A firmware version that exposes the sensor data via Bluetooth is required to be 
 
 ## 5. Connect Device and Push Data 
 With the IoTConnect mobile app open and the SensorTile device powered, it will be displayed in the device list.  
-* If after a short time no devices are displayed, press the green menu button in the lower-right corner and select "**Scan Device**".
+* If after a short time, if no devices are displayed, press the green menu button in the lower-right corner and select "**Scan Device**".
 <img width="48" alt="menu_button" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/d85cb0b6-42bc-4894-9352-b11e891d9a8c">  
 
 * Identify the device to connect to (e.g. "STbox...") and click on it.
