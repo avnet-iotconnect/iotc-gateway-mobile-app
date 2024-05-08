@@ -18,17 +18,39 @@ Scan the QR Code below to download the Android app.
 Launch the "IoTConnect" application and proceed to the next section.  
 
 ## 2. Create an IoTConnect Account  
-Upon opening the application, you will be prompted to enter your IoTConnect account credentials.  
-If you need to create a 2-month free trial account folow these steps:
-1. Press the **Sign Up** button at the bottom
-2. Complete the registration form
-3. Create a Password
-4. Finish. You now have an IoTConnect account on the AWS cloud.
+> **Note:**  
+> If you've already created an account, you may skip to the next section.  
 
-* If prompted, return to the login screen.  
+If you need to create an account, follow one of the methods below:  
+
+<details>
+  <summary>Method 1: Use the App [Recommended]</summary>
+
+1. Press the **Sign Up** button at the bottom<br>
+<img width="254" alt="login" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/641162e4-e4c3-410f-b1a4-48bc62dafe9b"><br>
+
+2. Ensure "AWS" is selected as the Service Provider and click **Subscribe Now** for the "Test Drive"<br>
+<img width="263" alt="subscribe" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/1a43f6ca-d13d-4a33-83f9-fb91ba0fda6e"><br>
+
+3. Complete the registration form.<br>
+
+4. Finish. Expect two emails from IoTConnect, one of which contains a temporary password.<br>
+</details>
+
+<details>
+  <summary>Method 2: Use a Browser</summary>
+  1. Navigate to the [IoTConnect Subscription](https://subscription.iotconnect.io/subscribe?cloud=aws) page<br>
+  2. Ensure "AWS" is selected as the Service Provider and click **Subscribe Now** for the "Test Drive"<br>
+  <img width="263" alt="subscribe" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/1a43f6ca-d13d-4a33-83f9-fb91ba0fda6e"><br>
+  3. Complete the registration form.<br>
+  4. Finish. Expect two emails from IoTConnect, one of which contains a temporary password.<br>
+</details>
+
+## 3. Enter Credentials and Choose Environment  
+* Return the mobile app home screen and enter your credentials.
 * Ensure that `console.iotconnect.io (AWS)` is selected as the environment to use and press **Login**.
 
-## 3. Power On Edge Device  
+## 4. Power On Edge Device  
 Connect power to one of the supported edge devices (e.g. "ST SensorTile.box PRO") using an appropriate USB cable.  
 An updated list is maintained in the [README](README.md).
 
