@@ -6,13 +6,11 @@ Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data an
 In addition to the ST SensorTile.box PRO device, you will need the following:  
 1. A free [MyST](https://my.st.com/cas/login) account  
 2. A free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
-3. ST SensorTile.box PRO firmware `FP-SNS-xxx_BLESensorsPnPL` from [here](https://www.st.com/en/embedded-software/fp-sns-stbox1.html) (select v1.60 from the drop-down)  
-The binary will be in the following location, once extracted:
-`\en.fp-sns-stbox1\STM32CubeFunctionPack_FP-SNS-STBOX1_V1.6.0\Projects\STM32U585AI-SensorTile.boxPro\Applications\BLESensorsPnPL\Binary\BLESensorsPnPL.bin`
-5. An Android or iOS device
-6. A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
-7. A USB-A to USB-C cable
-8. Desire to learn!
+3. ST SensorTile.box PRO firmware [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin)  
+4. An Android or iOS device
+5. A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
+6. A USB-A to USB-C cable
+7. Desire to learn!
 
 ## 1. Download the IoTConnect Application  
 
@@ -72,8 +70,7 @@ A firmware version that exposes the sensor data via Bluetooth is required to be 
 1. Connect power to the device (e.g. "ST SensorTile.box PRO") using a USB cable.  
 2. Open the STM32CubeProgrammer  
 3. Select **USB** for the connect type and select **Connect**  
-4. Click the "Erasing & Programming" icon and browse to the previously downloaded file:  
-`FP-SNS-xxx_BLESensorsPnPL` v1.60  
+4. Click the "Erasing & Programming" icon and browse to the previously saved file:  `BLESensorsPnPL.bin`  
 5. Click **Start Programming**
 6. Once completed successfully, close the application and power cycle the device.
 
@@ -126,4 +123,5 @@ Dashboards are used to easily visualize data.
 
 * The dashboard will be imported and displayed in "Edit Mode"  
 * Feel free to edit or just click the blue **Save** button in the top right to save the layout and exit the edit mode.  
-<img width="257" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/37062068-6472-4c02-9016-3d606584893a">
+<img width="364" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/01b17e53-ddab-47d6-b520-ba1dc0240163">
+
