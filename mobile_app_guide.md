@@ -1,6 +1,8 @@
-# Mobile App Guide
+# IoTConnect Mobile App Guide
 This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a gateway.
 Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data and transport and transport it to the cloud.
+
+## Prerequisites
 
 
 ## 1. Download the IoTConnect Application  
