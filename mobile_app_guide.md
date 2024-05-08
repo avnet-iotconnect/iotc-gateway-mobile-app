@@ -7,10 +7,12 @@ In addition to the ST SensorTile.box PRO device, you will need the following:
 1. A free [MyST](https://my.st.com/cas/login) account  
 2. A free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
 3. ST SensorTile.box PRO firmware `FP-SNS-xxx_BLESensorsPnPL` from [here](https://www.st.com/en/embedded-software/fp-sns-stbox1.html) (select v1.60 from the drop-down)  
-4. An Android or iOS device
-5. A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
-6. A USB-A to USB-C cable
-7. Desire to learn!
+The binary will be in the following location, once extracted:
+`\en.fp-sns-stbox1\STM32CubeFunctionPack_FP-SNS-STBOX1_V1.6.0\Projects\STM32U585AI-SensorTile.boxPro\Applications\BLESensorsPnPL\Binary\BLESensorsPnPL.bin`
+5. An Android or iOS device
+6. A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
+7. A USB-A to USB-C cable
+8. Desire to learn!
 
 ## 1. Download the IoTConnect Application  
 
@@ -108,9 +110,9 @@ The automatically created device will be visible.
 
 ## 7. Visualize the Data  
 Dashboards are used to easily visualize data.  
-Some pre-made dashboards are available for the supported edge devices.  
-Download the dashboard template which corresponds to your device:  
-* [ST SensorTile.box PRO](dashboards/SensorTileBoxPRO_dashboard_export.json)
+* Download the [ST SensorTile.box PRO Dashboard Template](dashboards/SensorTileBoxPRO_dashboard_export.json) (Right-click and open in new window)  
+* Click the **Download** icon to save the file and take note of the location  
+<img width="171" alt="Screenshot 2024-05-08 114733" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/940d6355-d61a-46ca-acdb-4c7608d17136">  
 
 * Once downloaded, select "Create Dashboard" from the top of the IoTConnect portal and then choose the "Import Dashboard" option.
 <img width="461" alt="create_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a852f939-340a-4f71-931b-f0ce70c63f34">
@@ -118,9 +120,10 @@ Download the dashboard template which corresponds to your device:
 * Enter a name for the dashboard (e.g. "My SensorTile Dashboard")  
 * Click "Browse" and select the dashboard template (.json) file downloaded previously which will cause two new fields to appear.  
 * Select "AvnetSTaws" from the **Template** drop-down  
-* Select the unique device name from the **Device** drop-down  
+* Select the unique device name from the **Device** drop-down (It will start with "STbox...")
 * Click **Save**  
 <img width="454" alt="save_device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026">  
 
-* Feel free to edit the dashboard or just click the blue **Save** button in the top right.
+* The dashboard will be imported and displayed in "Edit Mode"  
+* Feel free to edit or just click the blue **Save** button in the top right to save the layout and exit the edit mode.  
 <img width="257" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/37062068-6472-4c02-9016-3d606584893a">
