@@ -6,7 +6,7 @@ Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data an
 In addition to the ST SensorTile.box PRO device, you will need the following:  
 1. A free [MyST](https://my.st.com/cas/login) account  
 2. An free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
-3. ST SensorTile.box PRO firmware `FP-SNS-xxx_BLESensorsPnPL` version 1.60
+3. ST SensorTile.box PRO firmware `FP-SNS-xxx_BLESensorsPnPL` from [here](https://www.st.com/en/embedded-software/fp-sns-stbox1.html) (select v1.60 from the drop-down)  
 4. An Android or iOS device
 5. A PC with the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
 6. A USB-A to USB-C cable
