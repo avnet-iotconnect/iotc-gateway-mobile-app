@@ -13,14 +13,12 @@ In addition to the ST SensorTile.box PRO device, you will need the following:
 7. Desire to learn!
 
 ## 1. Download the IoTConnect Application  
+Use the QR codes below to download the latest IoTConnect "IoT Bridge" application.  
+### iOS App  
+<img src="apps/avnet.me_IoTC-bridge-ios-WHITE.png" alt="drawing" width="200"/>  
 
-### iOS
-Scan the QR Code below to download the iOS app.  
-![avnet me_IoTC-bridge-ios - WHITE](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/c7c29253-04a8-4387-a836-54c5e593cfcf)
-
-### Android
-Scan the QR Code below to download the Android app.  
-![avnet me_IoTC-bridge-android - WHITE](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/71b4dc44-9647-4266-af91-df44a99f7a3e)
+### Android App  
+<img src="apps/avnet.me_IoTC-bridge-android-WHITE.png" alt="drawing" width="200"/>
 
 Launch the "IoT Bridge" application and proceed to the next section.  
 
