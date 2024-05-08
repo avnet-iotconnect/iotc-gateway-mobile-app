@@ -73,7 +73,7 @@ A firmware version that exposes the sensor data via Bluetooth is required to be 
 4. Click the "Erasing & Programming" icon and browse to the previously downloaded file:  
 `FP-SNS-xxx_BLESensorsPnPL` v1.60  
 5. Click **Start Programming**
-6. Once completed sucessfully, close the application and power cycle the device.
+6. Once completed successfully, close the application and power cycle the device.
 
 > For additional information and troubleshooting, please refer to Chapter 2.2 of the [ST SensorTile.box PRO Getting Started Guide](https://www.st.com/resource/en/user_manual/um3133-getting-started-with-sensortilebox-pro-multisensors-and-wireless-connectivity-development-kit-for-any-intelligent-iot-node-stmicroelectronics.pdf)  
 
