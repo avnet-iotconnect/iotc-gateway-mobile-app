@@ -1,14 +1,14 @@
 # IoTConnect Mobile App with ST SensorTile.box PRO
 This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a Bluetooth gateway.  
-Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data and transport and transport it to the IoTConnect cloud to visualization.
+Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data and transport it to the IoTConnect cloud to visualize.
 
 ## Prerequisites
 In addition to the ST SensorTile.box PRO device, you will need the following:  
 1. A free [MyST](https://my.st.com/cas/login) account  
-2. An free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
+2. A free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
 3. ST SensorTile.box PRO firmware `FP-SNS-xxx_BLESensorsPnPL` from [here](https://www.st.com/en/embedded-software/fp-sns-stbox1.html) (select v1.60 from the drop-down)  
 4. An Android or iOS device
-5. A PC with the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
+5. A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
 6. A USB-A to USB-C cable
 7. Desire to learn!
 
@@ -61,7 +61,7 @@ If you need to create an account, follow one of the methods below:
 > Check your email SPAM folder if you don't receive the emails after a couple minutes.
 
 ## 3. Enter Credentials and Choose Environment  
-* Return the mobile app home screen and enter your credentials.  
+* Return to the mobile app home screen and enter your credentials.  
 * Ensure that `console.iotconnect.io (AWS)` is selected as the environment to use and press **Login**.  
 
 ## 4. Update Firmware  
