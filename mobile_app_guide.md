@@ -24,7 +24,7 @@ Use the QR codes below to download the latest IoTConnect "IoT Bridge" applicatio
 Launch the "IoT Bridge" application and proceed to the next section.  
 
 ## 2. Create an IoTConnect Account  
-> **Note:**  
+> **NOTE**  
 > If you've already created an account, you may skip to the next section.  
 
 If you need to create an account, follow one of the methods below:  
@@ -56,7 +56,7 @@ If you need to create an account, follow one of the methods below:
   4. Expect two emails from IoTConnect, one of which contains a temporary password.<br>
 </details>
 
-> **TIP:**
+> **NOTE**  
 > Check your email SPAM folder if you don't receive the emails after a couple minutes.
 
 ## 3. Enter Credentials and Choose Environment  
@@ -65,7 +65,8 @@ If you need to create an account, follow one of the methods below:
 
 ## 4. Update Firmware  
 A firmware version that exposes the sensor data via Bluetooth is required to be loaded on the device.  
-
+> **IMPORTANT**  
+> Ensure your device is in DFU mode.  Refer to Chapter 2.2 of the [SensorTile Getting Started Guide](https://www.st.com/resource/en/user_manual/um3133-getting-started-with-sensortilebox-pro-multisensors-and-wireless-connectivity-development-kit-for-any-intelligent-iot-node-stmicroelectronics.pdf) for instructions.  
 1. Connect power to the device (e.g. "ST SensorTile.box PRO") using a USB cable.  
 2. Open the STM32CubeProgrammer  
 3. Select **USB** for the connect type and select **Connect**  
@@ -80,7 +81,7 @@ With the IoTConnect mobile app open and the SensorTile device powered, it will b
 * If after a short time, if no devices are displayed, press the green menu button in the lower-right corner and select "**Scan Device**".
 <img width="48" alt="menu_button" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/d85cb0b6-42bc-4894-9352-b11e891d9a8c">  
 
-* Identify the device to connect to (e.g. "STbox...") and click on it.
+* Identify the device to connect to (e.g. "BLEPnP" or "STbox...") and click on it.  (Names may vary by firmware type/version)
 
 Clicking on the device will automatically perform the following steps:  
 1. Create the device template in the IoTConnect platform  
@@ -116,7 +117,7 @@ Dashboards are used to easily visualize data.
 * Enter a name for the dashboard (e.g. "My SensorTile Dashboard")  
 * Click "Browse" and select the dashboard template (.json) file downloaded previously which will cause two new fields to appear.  
 * Select "AvnetSTaws" from the **Template** drop-down  
-* Select the unique device name from the **Device** drop-down (It will start with "STbox...")
+* Select the unique device name from the **Device** drop-down
 * Click **Save**  
 <img width="454" alt="save_device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026">  
 
