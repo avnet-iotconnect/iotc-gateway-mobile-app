@@ -70,7 +70,7 @@ A firmware version that exposes the sensor data via Bluetooth is required to be 
 1. Connect power to the device (e.g. "ST SensorTile.box PRO") using a USB cable.  
 2. Open the STM32CubeProgrammer  
 3. Select **USB** for the connect type and select **Connect**  
-4. Click the "Erasing & Programming" icon and browse to the previously saved file:  `BLESensorsPnPL.bin`  
+4. Click the "Erasing & Programming" icon and browse to the previously saved file:  [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin) 
 5. Click **Start Programming**
 6. Once completed successfully, close the application and power cycle the device.
 
