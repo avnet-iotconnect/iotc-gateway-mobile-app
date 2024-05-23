@@ -1,0 +1,2950 @@
+{
+    "ddType": 2,
+    "items": [
+        {
+            "widgetGuid": "F66A9747-6C71-40E5-8639-9F53233494D2",
+            "widgetProperties": {
+                "i": "Label",
+                "background": "#5a7fc3",
+                "fontColor": "#ffffff",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "24",
+                "title": "ST SensorTile.box PRO",
+                "titleAlign": "",
+                "contents": ""
+            },
+            "properties": {
+                "x": "0",
+                "y": "0",
+                "w": "19",
+                "h": "2",
+                "i": "Label",
+                "minW": "6",
+                "minH": "2",
+                "maxH": "2",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "8BF5A2DF-51FA-479B-B5D8-8413DC425CFF",
+            "widgetProperties": {
+                "i": "LiveLineChart",
+                "background": "#fff",
+                "fontColor": "#343434",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Accelerometer",
+                "titleAlign": "",
+                "contents": {
+                    "liveChart": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "BB2DCA8A-8981-4FAD-979D-0482AC9D2097",
+                                    "attributeName": "rms_speed_z_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "30B3E191-45E4-45D5-ACE5-0EBD1B219BD7",
+                                    "attributeName": "accel_y_mGs",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0090000",
+                                    "attributeColor": "#d0021b",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0090000",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "EFEDC9EE-EB7A-4E93-9FC1-2BCCE4D0D615",
+                                    "attributeName": "battery_percentage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "99",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "99"
+                                },
+                                {
+                                    "attributeGuid": "6E674C03-6325-40FD-98D3-3548961DC335",
+                                    "attributeName": "acceleration_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D2E510EB-9C5A-4338-860A-3FB9A53F9822",
+                                    "attributeName": "freq_max_amp_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E0160EF0-B179-4C1A-961E-40BA2C256051",
+                                    "attributeName": "rms_speed_x_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7BE163E1-E1C6-4E31-9716-44FA54C5D4F0",
+                                    "attributeName": "gyro_z_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                },
+                                {
+                                    "attributeGuid": "C5C27C5F-A888-433A-A0AD-4FD474EF9252",
+                                    "attributeName": "compass",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D47C8CCD-0246-43C2-B7C0-58190771B49D",
+                                    "attributeName": "acceleration_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "06CDA436-16F1-4CDD-AF8F-5C1A835948C6",
+                                    "attributeName": "gyroscope_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D38500E7-608E-40D5-904C-6337EF3E55AC",
+                                    "attributeName": "rms_speed_y_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E9DAC9E0-7B16-456D-8710-6A92AFAC1332",
+                                    "attributeName": "magnetometer_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "B4A10A73-0F75-4D7E-9D6F-726142F69BAD",
+                                    "attributeName": "accel_peak_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "071DC531-F71E-4633-8826-75E53C418800",
+                                    "attributeName": "battery_current",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "11",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "11"
+                                },
+                                {
+                                    "attributeGuid": "669078E2-5574-441F-B248-87F0953CB223",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "27.5",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "27.5"
+                                },
+                                {
+                                    "attributeGuid": "5B9C4D44-F28F-4A53-9CD0-8BEF5CA8A55E",
+                                    "attributeName": "gyroscope_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "AAAA6FBC-2D76-4C2A-980D-924CCF35A482",
+                                    "attributeName": "freq_x_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D622D5F3-50B1-4463-B59E-A02AAE2C2A3A",
+                                    "attributeName": "freq_max_amp_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "CA4A2D37-0F0B-41F3-9D80-A2E558452BC6",
+                                    "attributeName": "freq_z_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "78702A43-79F9-4B50-AC62-A6AAE7D590E7",
+                                    "attributeName": "battery_temperature",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2D6EA36C-2C48-4168-9A62-A96370CCBF6F",
+                                    "attributeName": "gyroscope_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "91DA4152-4308-4E95-AE79-AAB5276D9F35",
+                                    "attributeName": "gyro_x_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.1",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.1"
+                                },
+                                {
+                                    "attributeGuid": "34D5BA86-8D5D-4EFE-9837-AE2019A0E697",
+                                    "attributeName": "accel_peak_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "932AAAF4-CB4C-4120-9B24-B04038B83606",
+                                    "attributeName": "magnetometer_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DBA731D7-7B9F-448B-99B5-B0DC570D8689",
+                                    "attributeName": "magnetometer_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4A05D7AA-2956-4798-9002-CB5BED035401",
+                                    "attributeName": "freq_y_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4F063178-3B74-4788-9B58-D44802AF43DE",
+                                    "attributeName": "accel_z_mGs",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "1.0110000",
+                                    "attributeColor": "#3817dc",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "1.0110000",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "806BFFEB-89B2-4032-8382-DA5D50C640DD",
+                                    "attributeName": "accel_peak_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "6542433C-C676-46AE-ACBD-EB35A33FAE1B",
+                                    "attributeName": "gyro_y_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                },
+                                {
+                                    "attributeGuid": "33F16B1F-A518-412B-AE83-EB9AE0E8111E",
+                                    "attributeName": "acceleration_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F95D300D-D2FD-4D3A-B7EB-EC72EE0AE69E",
+                                    "attributeName": "accel_x_mGs",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0",
+                                    "attributeColor": "#417505",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "5180B87C-77FC-4A33-9A26-F05474D76F26",
+                                    "attributeName": "freq_max_amp_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4BDEDDA1-74F3-44F7-BCFB-F2E416932342",
+                                    "attributeName": "battery_voltage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "4.1869998",
+                                    "deviceUpdatedDate": "2024-05-07T17:52:44.143Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "4.1869998"
+                                }
+                            ]
+                        },
+                        "key": "liveChart",
+                        "recentEndPoints": "10"
+                    }
+                }
+            },
+            "properties": {
+                "x": "19",
+                "y": "0",
+                "w": "15",
+                "h": "17",
+                "i": "LiveLineChart",
+                "minW": "15",
+                "minH": "15",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "A8CB394D-15B1-42C9-94FC-AD7BDC599E2A",
+            "widgetProperties": {
+                "i": "Image",
+                "background": "#FFFFFF",
+                "fontColor": "#343434",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "",
+                "titleAlign": "",
+                "contents": {
+                    "option": {
+                        "imageUpload": "false",
+                        "imageUrl": "true",
+                        "imageDevice": "false",
+                        "imageTelemetry": "false",
+                        "key": "option",
+                        "position": "center"
+                    },
+                    "upload": {
+                        "imageurl": "",
+                        "key": "upload"
+                    },
+                    "url": {
+                        "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYAvWuUnoN1HVOSl-bmP92QzvjpXl6UZp5far8iXa4EA&s",
+                        "key": "url"
+                    },
+                    "device": {
+                        "deviceGuid": "",
+                        "deviceName": "",
+                        "imageurl": "",
+                        "key": "device"
+                    },
+                    "telemetry": {
+                        "deviceGuid": "",
+                        "deviceName": "",
+                        "imageurl": "",
+                        "key": "telemetry"
+                    }
+                }
+            },
+            "properties": {
+                "x": "34",
+                "y": "0",
+                "w": "8",
+                "h": "6",
+                "i": "Image",
+                "minW": "5",
+                "minH": "5",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "8BF5A2DF-51FA-479B-B5D8-8413DC425CFF",
+            "widgetProperties": {
+                "i": "LiveLineChart",
+                "background": "#fff",
+                "fontColor": "#343434",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Gyroscope",
+                "titleAlign": "",
+                "contents": {
+                    "liveChart": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "BB2DCA8A-8981-4FAD-979D-0482AC9D2097",
+                                    "attributeName": "rms_speed_z_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "30B3E191-45E4-45D5-ACE5-0EBD1B219BD7",
+                                    "attributeName": "accel_y_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.0060000",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.0060000"
+                                },
+                                {
+                                    "attributeGuid": "EFEDC9EE-EB7A-4E93-9FC1-2BCCE4D0D615",
+                                    "attributeName": "battery_percentage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "95",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "95"
+                                },
+                                {
+                                    "attributeGuid": "6E674C03-6325-40FD-98D3-3548961DC335",
+                                    "attributeName": "acceleration_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D2E510EB-9C5A-4338-860A-3FB9A53F9822",
+                                    "attributeName": "freq_max_amp_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E0160EF0-B179-4C1A-961E-40BA2C256051",
+                                    "attributeName": "rms_speed_x_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7BE163E1-E1C6-4E31-9716-44FA54C5D4F0",
+                                    "attributeName": "gyro_z_dps",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0",
+                                    "attributeColor": "#000000",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "C5C27C5F-A888-433A-A0AD-4FD474EF9252",
+                                    "attributeName": "compass",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D47C8CCD-0246-43C2-B7C0-58190771B49D",
+                                    "attributeName": "acceleration_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "06CDA436-16F1-4CDD-AF8F-5C1A835948C6",
+                                    "attributeName": "gyroscope_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D38500E7-608E-40D5-904C-6337EF3E55AC",
+                                    "attributeName": "rms_speed_y_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E9DAC9E0-7B16-456D-8710-6A92AFAC1332",
+                                    "attributeName": "magnetometer_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "B4A10A73-0F75-4D7E-9D6F-726142F69BAD",
+                                    "attributeName": "accel_peak_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "071DC531-F71E-4633-8826-75E53C418800",
+                                    "attributeName": "battery_current",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                },
+                                {
+                                    "attributeGuid": "669078E2-5574-441F-B248-87F0953CB223",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "25.1",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "25.1"
+                                },
+                                {
+                                    "attributeGuid": "5B9C4D44-F28F-4A53-9CD0-8BEF5CA8A55E",
+                                    "attributeName": "gyroscope_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "AAAA6FBC-2D76-4C2A-980D-924CCF35A482",
+                                    "attributeName": "freq_x_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D622D5F3-50B1-4463-B59E-A02AAE2C2A3A",
+                                    "attributeName": "freq_max_amp_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "CA4A2D37-0F0B-41F3-9D80-A2E558452BC6",
+                                    "attributeName": "freq_z_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "78702A43-79F9-4B50-AC62-A6AAE7D590E7",
+                                    "attributeName": "battery_temperature",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2D6EA36C-2C48-4168-9A62-A96370CCBF6F",
+                                    "attributeName": "gyroscope_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "91DA4152-4308-4E95-AE79-AAB5276D9F35",
+                                    "attributeName": "gyro_x_dps",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0",
+                                    "attributeColor": "#bd10e0",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "34D5BA86-8D5D-4EFE-9837-AE2019A0E697",
+                                    "attributeName": "accel_peak_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "932AAAF4-CB4C-4120-9B24-B04038B83606",
+                                    "attributeName": "magnetometer_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DBA731D7-7B9F-448B-99B5-B0DC570D8689",
+                                    "attributeName": "magnetometer_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4A05D7AA-2956-4798-9002-CB5BED035401",
+                                    "attributeName": "freq_y_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4F063178-3B74-4788-9B58-D44802AF43DE",
+                                    "attributeName": "accel_z_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "1.0089999",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "1.0089999"
+                                },
+                                {
+                                    "attributeGuid": "806BFFEB-89B2-4032-8382-DA5D50C640DD",
+                                    "attributeName": "accel_peak_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "6542433C-C676-46AE-ACBD-EB35A33FAE1B",
+                                    "attributeName": "gyro_y_dps",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.1",
+                                    "attributeColor": "#f5a623",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.1",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "33F16B1F-A518-412B-AE83-EB9AE0E8111E",
+                                    "attributeName": "acceleration_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F95D300D-D2FD-4D3A-B7EB-EC72EE0AE69E",
+                                    "attributeName": "accel_x_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.0090000",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.0090000"
+                                },
+                                {
+                                    "attributeGuid": "5180B87C-77FC-4A33-9A26-F05474D76F26",
+                                    "attributeName": "freq_max_amp_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-03T17:25:24.327Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4BDEDDA1-74F3-44F7-BCFB-F2E416932342",
+                                    "attributeName": "battery_voltage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "4.1380000",
+                                    "deviceUpdatedDate": "2024-05-08T21:25:16.880Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "4.1380000"
+                                }
+                            ]
+                        },
+                        "key": "liveChart",
+                        "recentEndPoints": "10"
+                    }
+                }
+            },
+            "properties": {
+                "x": "42",
+                "y": "0",
+                "w": "15",
+                "h": "17",
+                "i": "LiveLineChart",
+                "minW": "15",
+                "minH": "15",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "E1C837D5-D575-44AB-8D1D-EEFBB3DF5940",
+            "widgetProperties": {
+                "i": "Embedded",
+                "background": "#000000",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "10",
+                "title": "Embedded",
+                "titleAlign": "center",
+                "contents": {
+                    "embedded": {
+                        "link": "https://www.youtube.com/embed/Q9pq4MPW9zI?playlist=Q9pq4MPW9zI&loop=1",
+                        "refresh": "",
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": "",
+                        "key": "embedded"
+                    }
+                }
+            },
+            "properties": {
+                "x": "0",
+                "y": "2",
+                "w": "19",
+                "h": "15",
+                "i": "Embedded",
+                "minW": "15",
+                "minH": "12",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "6FEFF6B7-15C4-4095-A156-87A1B38D2FF5",
+            "widgetProperties": {
+                "i": "Transformation",
+                "background": "#ffffff",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Z-Axis Position",
+                "titleAlign": "",
+                "contents": {
+                    "Transformation": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "B5B01AEE-8FA4-46CE-97B1-0A2364F8EEBB",
+                                    "attributeName": "battery_temperature",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4B355109-09E4-4B72-918C-0A430C7234F2",
+                                    "attributeName": "accel_peak_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "72CBDC2A-779B-49BD-8C88-0C9E53DEAAFA",
+                                    "attributeName": "gyroscope_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "95275001-C1C2-440E-8258-10A6F60D0D78",
+                                    "attributeName": "freq_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E076BAC7-8119-4117-B232-2F93F97E7EF6",
+                                    "attributeName": "rms_speed_x_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DEAA3B7D-4092-462C-B9DE-3698E471B6F9",
+                                    "attributeName": "gyroscope_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "CA1D7DBB-C3AE-4E83-9214-3FB9B47D0DF1",
+                                    "attributeName": "accel_x_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.46",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.46"
+                                },
+                                {
+                                    "attributeGuid": "191BDE71-7D83-49B2-85AC-434169ACE7B8",
+                                    "attributeName": "freq_y_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7DB608E4-68B7-4134-A4E9-474B9819753A",
+                                    "attributeName": "rms_speed_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "411425C6-95C6-4E59-BCC8-4B2FEC88D848",
+                                    "attributeName": "accel_peak_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "71E2D0D2-380D-4983-83AB-500318A71D51",
+                                    "attributeName": "freq_x_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7F0507EE-80C7-4661-8AD8-52859D3107EA",
+                                    "attributeName": "acceleration_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2ACBA45B-0AB6-4533-AF03-564A71922677",
+                                    "attributeName": "battery_current",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "AA5D6D92-A523-4611-818D-564B04B342DF",
+                                    "attributeName": "accel_z_mGs",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.96",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.96"
+                                },
+                                {
+                                    "attributeGuid": "4FD275C4-D5A4-4778-801C-5A06E4D89CCB",
+                                    "attributeName": "rms_speed_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "45FB3F71-DFF1-433B-9FFA-6286C5CE4995",
+                                    "attributeName": "accel_peak_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F9D8542C-2FD7-45D7-9EA2-6BE560EBAA16",
+                                    "attributeName": "acceleration_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D9D9F515-8B20-49EA-ACD8-76446F29BF5E",
+                                    "attributeName": "acceleration_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "5AA883AD-349C-4293-B537-77F5D8CC08B8",
+                                    "attributeName": "freq_max_amp_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "37410991-9CAE-4036-9FF1-7F8F2B683242",
+                                    "attributeName": "accel_peak_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "1CDE66DA-745F-42C6-9D28-811826B423C8",
+                                    "attributeName": "magnetometer_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "606EC262-8B5C-48BB-BDE4-890F6BBCBFD0",
+                                    "attributeName": "accel_peak_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DC33CF3D-249D-45AA-ADAA-9526D911BCB5",
+                                    "attributeName": "freq_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F04CD9F6-C160-46FA-A978-9CB178820F1C",
+                                    "attributeName": "accel_y_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.04",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.04"
+                                },
+                                {
+                                    "attributeGuid": "2FFDD15B-9C3F-4B4F-84F1-A2F477A8CFBF",
+                                    "attributeName": "freq_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EF308FAD-CCC0-4486-B153-A2FCD09C7FB3",
+                                    "attributeName": "freq_max_amp_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "97DDB50E-B23D-4308-8F5A-A3C0524895D2",
+                                    "attributeName": "battery_voltage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "4.107",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "4.107"
+                                },
+                                {
+                                    "attributeGuid": "B1FDA537-3985-4290-9EDE-A8CA34F2E747",
+                                    "attributeName": "battery_status",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "Discharging",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "Discharging"
+                                },
+                                {
+                                    "attributeGuid": "6AB76B6D-BB84-4E5C-B948-AD62CBB3901A",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3A2C2EE1-1D25-4F43-9D3A-AFF594991C9E",
+                                    "attributeName": "gyroscope_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "417802E2-2BEC-43E6-AC17-B13BCDBEB792",
+                                    "attributeName": "magnetometer_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E523E97C-D3A3-44E4-95DE-B4CF9613045C",
+                                    "attributeName": "gyro_x_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-1.15",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-1.15"
+                                },
+                                {
+                                    "attributeGuid": "2EDD3E75-D583-421E-A5DE-C4B8F1E06EA5",
+                                    "attributeName": "accel_peak_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2473020E-DBF6-4472-A2C9-C7F9073ED3F5",
+                                    "attributeName": "compass",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "B6EF38E1-E301-4809-9A54-C89B149EBC72",
+                                    "attributeName": "freq_max_amp_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "8BD86B88-B7F2-4E84-AEF4-CB45C211E5D0",
+                                    "attributeName": "rms_speed_z_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "FE28521A-5122-4879-B58A-D15CA04EEF0C",
+                                    "attributeName": "freq_z_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "683D77B6-ABBC-4A21-8EE3-E12E7AE22AA6",
+                                    "attributeName": "magnetometer_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "39CB02F9-0FC9-4F10-9A32-EDE6D7F97049",
+                                    "attributeName": "rms_speed_y_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3017E697-9CD8-494C-8422-F0267E22A22A",
+                                    "attributeName": "gyro_z_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-2.01",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-2.01"
+                                },
+                                {
+                                    "attributeGuid": "D08E7D8C-DEEC-471D-857F-F6AA62F7667D",
+                                    "attributeName": "rms_speed_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EEF15F35-DA02-43F0-8FD0-FE6DE6114D44",
+                                    "attributeName": "gyro_y_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-8.76",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-8.76"
+                                },
+                                {
+                                    "attributeGuid": "B0EFB3AA-EA20-4845-9841-FE7A0020908E",
+                                    "attributeName": "battery_percentage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "96.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "96.0"
+                                }
+                            ]
+                        },
+                        "key": "Transformation",
+                        "transformations": [
+                            {
+                                "condition": "gt",
+                                "conditionValue": "0.6",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/top.png"
+                            },
+                            {
+                                "condition": "ge",
+                                "conditionValue": "-0.6",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/Side.png"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "-0.6",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/back.png"
+                            }
+                        ],
+                        "position": "center"
+                    }
+                }
+            },
+            "properties": {
+                "x": "34",
+                "y": "6",
+                "w": "8",
+                "h": "7",
+                "i": "Transformation",
+                "minW": "7",
+                "minH": "4",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "F7979C1B-8637-4667-90A2-6961052C6E21",
+            "widgetProperties": {
+                "i": "Live",
+                "background": "#ffffff",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Level (x-axis)",
+                "titleAlign": "",
+                "contents": {
+                    "attributeValue": {
+                        "attributeName": "accel_x_mGs",
+                        "key": "attributeValue"
+                    },
+                    "attributeTime": {
+                        "attributeName": "accel_x_mGs",
+                        "key": "attributeTime"
+                    },
+                    "live": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "B5B01AEE-8FA4-46CE-97B1-0A2364F8EEBB",
+                                    "attributeName": "battery_temperature",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4B355109-09E4-4B72-918C-0A430C7234F2",
+                                    "attributeName": "accel_peak_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "72CBDC2A-779B-49BD-8C88-0C9E53DEAAFA",
+                                    "attributeName": "gyroscope_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "95275001-C1C2-440E-8258-10A6F60D0D78",
+                                    "attributeName": "freq_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E076BAC7-8119-4117-B232-2F93F97E7EF6",
+                                    "attributeName": "rms_speed_x_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DEAA3B7D-4092-462C-B9DE-3698E471B6F9",
+                                    "attributeName": "gyroscope_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "CA1D7DBB-C3AE-4E83-9214-3FB9B47D0DF1",
+                                    "attributeName": "accel_x_mGs",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.46",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.46"
+                                },
+                                {
+                                    "attributeGuid": "191BDE71-7D83-49B2-85AC-434169ACE7B8",
+                                    "attributeName": "freq_y_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7DB608E4-68B7-4134-A4E9-474B9819753A",
+                                    "attributeName": "rms_speed_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "411425C6-95C6-4E59-BCC8-4B2FEC88D848",
+                                    "attributeName": "accel_peak_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "71E2D0D2-380D-4983-83AB-500318A71D51",
+                                    "attributeName": "freq_x_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7F0507EE-80C7-4661-8AD8-52859D3107EA",
+                                    "attributeName": "acceleration_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2ACBA45B-0AB6-4533-AF03-564A71922677",
+                                    "attributeName": "battery_current",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "AA5D6D92-A523-4611-818D-564B04B342DF",
+                                    "attributeName": "accel_z_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.96",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.96"
+                                },
+                                {
+                                    "attributeGuid": "4FD275C4-D5A4-4778-801C-5A06E4D89CCB",
+                                    "attributeName": "rms_speed_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "45FB3F71-DFF1-433B-9FFA-6286C5CE4995",
+                                    "attributeName": "accel_peak_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F9D8542C-2FD7-45D7-9EA2-6BE560EBAA16",
+                                    "attributeName": "acceleration_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D9D9F515-8B20-49EA-ACD8-76446F29BF5E",
+                                    "attributeName": "acceleration_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "5AA883AD-349C-4293-B537-77F5D8CC08B8",
+                                    "attributeName": "freq_max_amp_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "37410991-9CAE-4036-9FF1-7F8F2B683242",
+                                    "attributeName": "accel_peak_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "1CDE66DA-745F-42C6-9D28-811826B423C8",
+                                    "attributeName": "magnetometer_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "606EC262-8B5C-48BB-BDE4-890F6BBCBFD0",
+                                    "attributeName": "accel_peak_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DC33CF3D-249D-45AA-ADAA-9526D911BCB5",
+                                    "attributeName": "freq_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F04CD9F6-C160-46FA-A978-9CB178820F1C",
+                                    "attributeName": "accel_y_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.04",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.04"
+                                },
+                                {
+                                    "attributeGuid": "2FFDD15B-9C3F-4B4F-84F1-A2F477A8CFBF",
+                                    "attributeName": "freq_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EF308FAD-CCC0-4486-B153-A2FCD09C7FB3",
+                                    "attributeName": "freq_max_amp_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "97DDB50E-B23D-4308-8F5A-A3C0524895D2",
+                                    "attributeName": "battery_voltage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "4.107",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "4.107"
+                                },
+                                {
+                                    "attributeGuid": "B1FDA537-3985-4290-9EDE-A8CA34F2E747",
+                                    "attributeName": "battery_status",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "Discharging",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "Discharging"
+                                },
+                                {
+                                    "attributeGuid": "6AB76B6D-BB84-4E5C-B948-AD62CBB3901A",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3A2C2EE1-1D25-4F43-9D3A-AFF594991C9E",
+                                    "attributeName": "gyroscope_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "417802E2-2BEC-43E6-AC17-B13BCDBEB792",
+                                    "attributeName": "magnetometer_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E523E97C-D3A3-44E4-95DE-B4CF9613045C",
+                                    "attributeName": "gyro_x_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-1.15",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-1.15"
+                                },
+                                {
+                                    "attributeGuid": "2EDD3E75-D583-421E-A5DE-C4B8F1E06EA5",
+                                    "attributeName": "accel_peak_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2473020E-DBF6-4472-A2C9-C7F9073ED3F5",
+                                    "attributeName": "compass",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "B6EF38E1-E301-4809-9A54-C89B149EBC72",
+                                    "attributeName": "freq_max_amp_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "8BD86B88-B7F2-4E84-AEF4-CB45C211E5D0",
+                                    "attributeName": "rms_speed_z_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "FE28521A-5122-4879-B58A-D15CA04EEF0C",
+                                    "attributeName": "freq_z_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "683D77B6-ABBC-4A21-8EE3-E12E7AE22AA6",
+                                    "attributeName": "magnetometer_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "39CB02F9-0FC9-4F10-9A32-EDE6D7F97049",
+                                    "attributeName": "rms_speed_y_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3017E697-9CD8-494C-8422-F0267E22A22A",
+                                    "attributeName": "gyro_z_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-2.01",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-2.01"
+                                },
+                                {
+                                    "attributeGuid": "D08E7D8C-DEEC-471D-857F-F6AA62F7667D",
+                                    "attributeName": "rms_speed_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EEF15F35-DA02-43F0-8FD0-FE6DE6114D44",
+                                    "attributeName": "gyro_y_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-8.76",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-8.76"
+                                },
+                                {
+                                    "attributeGuid": "B0EFB3AA-EA20-4845-9841-FE7A0020908E",
+                                    "attributeName": "battery_percentage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "96.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:57:44.683Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "96.0"
+                                }
+                            ]
+                        },
+                        "rules": {
+                            "rule": {
+                                "minValue": "-0.1",
+                                "maxValue": "0.1",
+                                "fontColor": "#0cf23a",
+                                "isShowLiveFontColor": "false",
+                                "errors": ""
+                            }
+                        },
+                        "key": "live",
+                        "isRuleAdded": "true"
+                    }
+                }
+            },
+            "properties": {
+                "x": "34",
+                "y": "13",
+                "w": "8",
+                "h": "4",
+                "i": "Live",
+                "minW": "7",
+                "minH": "4",
+                "maxH": "4",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "6A7BB4C8-1763-41EB-A490-0764F72A527F",
+            "widgetProperties": {
+                "i": "DeviceLatestValue",
+                "background": "#fff",
+                "fontColor": "#343434",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Battery Voltaage and Temp",
+                "titleAlign": "",
+                "contents": {
+                    "devicelatestvalue": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "boxtypes": "1",
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "battery_voltage",
+                                    "attributeName": "battery_voltage"
+                                },
+                                {
+                                    "attributeGuid": "temperature_deg_C",
+                                    "attributeName": "temperature_deg_C"
+                                }
+                            ]
+                        },
+                        "key": "devicelatestvalue"
+                    }
+                }
+            },
+            "properties": {
+                "x": "0",
+                "y": "17",
+                "w": "15",
+                "h": "8",
+                "i": "DeviceLatestValue",
+                "minW": "15",
+                "minH": "8",
+                "maxH": "8",
+                "maxW": "15",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "6FEFF6B7-15C4-4095-A156-87A1B38D2FF5",
+            "widgetProperties": {
+                "i": "Transformation",
+                "background": "#000000",
+                "fontColor": "#ffffff",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Battery Status",
+                "titleAlign": "",
+                "contents": {
+                    "Transformation": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "B5B01AEE-8FA4-46CE-97B1-0A2364F8EEBB",
+                                    "attributeName": "battery_temperature",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4B355109-09E4-4B72-918C-0A430C7234F2",
+                                    "attributeName": "accel_peak_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "72CBDC2A-779B-49BD-8C88-0C9E53DEAAFA",
+                                    "attributeName": "gyroscope_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "95275001-C1C2-440E-8258-10A6F60D0D78",
+                                    "attributeName": "freq_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E076BAC7-8119-4117-B232-2F93F97E7EF6",
+                                    "attributeName": "rms_speed_x_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DEAA3B7D-4092-462C-B9DE-3698E471B6F9",
+                                    "attributeName": "gyroscope_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "CA1D7DBB-C3AE-4E83-9214-3FB9B47D0DF1",
+                                    "attributeName": "accel_x_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.02",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.02"
+                                },
+                                {
+                                    "attributeGuid": "191BDE71-7D83-49B2-85AC-434169ACE7B8",
+                                    "attributeName": "freq_y_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7DB608E4-68B7-4134-A4E9-474B9819753A",
+                                    "attributeName": "rms_speed_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "411425C6-95C6-4E59-BCC8-4B2FEC88D848",
+                                    "attributeName": "accel_peak_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "71E2D0D2-380D-4983-83AB-500318A71D51",
+                                    "attributeName": "freq_x_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7F0507EE-80C7-4661-8AD8-52859D3107EA",
+                                    "attributeName": "acceleration_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2ACBA45B-0AB6-4533-AF03-564A71922677",
+                                    "attributeName": "battery_current",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "AA5D6D92-A523-4611-818D-564B04B342DF",
+                                    "attributeName": "accel_z_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "1.01",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "1.01"
+                                },
+                                {
+                                    "attributeGuid": "4FD275C4-D5A4-4778-801C-5A06E4D89CCB",
+                                    "attributeName": "rms_speed_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "45FB3F71-DFF1-433B-9FFA-6286C5CE4995",
+                                    "attributeName": "accel_peak_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F9D8542C-2FD7-45D7-9EA2-6BE560EBAA16",
+                                    "attributeName": "acceleration_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D9D9F515-8B20-49EA-ACD8-76446F29BF5E",
+                                    "attributeName": "acceleration_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "5AA883AD-349C-4293-B537-77F5D8CC08B8",
+                                    "attributeName": "freq_max_amp_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "37410991-9CAE-4036-9FF1-7F8F2B683242",
+                                    "attributeName": "accel_peak_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "1CDE66DA-745F-42C6-9D28-811826B423C8",
+                                    "attributeName": "magnetometer_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "606EC262-8B5C-48BB-BDE4-890F6BBCBFD0",
+                                    "attributeName": "accel_peak_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DC33CF3D-249D-45AA-ADAA-9526D911BCB5",
+                                    "attributeName": "freq_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F04CD9F6-C160-46FA-A978-9CB178820F1C",
+                                    "attributeName": "accel_y_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "2FFDD15B-9C3F-4B4F-84F1-A2F477A8CFBF",
+                                    "attributeName": "freq_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EF308FAD-CCC0-4486-B153-A2FCD09C7FB3",
+                                    "attributeName": "freq_max_amp_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "97DDB50E-B23D-4308-8F5A-A3C0524895D2",
+                                    "attributeName": "battery_voltage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "4.099",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "4.099"
+                                },
+                                {
+                                    "attributeGuid": "B1FDA537-3985-4290-9EDE-A8CA34F2E747",
+                                    "attributeName": "battery_status",
+                                    "checked": "true",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "Discharging",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "Discharging"
+                                },
+                                {
+                                    "attributeGuid": "6AB76B6D-BB84-4E5C-B948-AD62CBB3901A",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3A2C2EE1-1D25-4F43-9D3A-AFF594991C9E",
+                                    "attributeName": "gyroscope_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "417802E2-2BEC-43E6-AC17-B13BCDBEB792",
+                                    "attributeName": "magnetometer_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E523E97C-D3A3-44E4-95DE-B4CF9613045C",
+                                    "attributeName": "gyro_x_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.02",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.02"
+                                },
+                                {
+                                    "attributeGuid": "2EDD3E75-D583-421E-A5DE-C4B8F1E06EA5",
+                                    "attributeName": "accel_peak_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2473020E-DBF6-4472-A2C9-C7F9073ED3F5",
+                                    "attributeName": "compass",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "B6EF38E1-E301-4809-9A54-C89B149EBC72",
+                                    "attributeName": "freq_max_amp_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "8BD86B88-B7F2-4E84-AEF4-CB45C211E5D0",
+                                    "attributeName": "rms_speed_z_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "FE28521A-5122-4879-B58A-D15CA04EEF0C",
+                                    "attributeName": "freq_z_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "683D77B6-ABBC-4A21-8EE3-E12E7AE22AA6",
+                                    "attributeName": "magnetometer_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "39CB02F9-0FC9-4F10-9A32-EDE6D7F97049",
+                                    "attributeName": "rms_speed_y_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3017E697-9CD8-494C-8422-F0267E22A22A",
+                                    "attributeName": "gyro_z_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "D08E7D8C-DEEC-471D-857F-F6AA62F7667D",
+                                    "attributeName": "rms_speed_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EEF15F35-DA02-43F0-8FD0-FE6DE6114D44",
+                                    "attributeName": "gyro_y_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.04",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.04"
+                                },
+                                {
+                                    "attributeGuid": "B0EFB3AA-EA20-4845-9841-FE7A0020908E",
+                                    "attributeName": "battery_percentage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "93.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "93.0"
+                                }
+                            ]
+                        },
+                        "key": "Transformation",
+                        "transformations": [
+                            {
+                                "condition": "eq",
+                                "conditionValue": "Discharging",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/discharging.gif"
+                            },
+                            {
+                                "condition": "eq",
+                                "conditionValue": "Charging",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/charging.gif"
+                            }
+                        ],
+                        "position": "center"
+                    }
+                }
+            },
+            "properties": {
+                "x": "17",
+                "y": "17",
+                "w": "9",
+                "h": "8",
+                "i": "Transformation",
+                "minW": "7",
+                "minH": "4",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "6FEFF6B7-15C4-4095-A156-87A1B38D2FF5",
+            "widgetProperties": {
+                "i": "Transformation",
+                "background": "#000000",
+                "fontColor": "#ffffff",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Battery Level",
+                "titleAlign": "",
+                "contents": {
+                    "Transformation": {
+                        "device": {
+                            "deviceGuid": "3F19DBB3-10F5-4BB8-8ADB-0B743E367718",
+                            "deviceUniqueId": "STBPRO-D3F34AA9DEC3"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "B5B01AEE-8FA4-46CE-97B1-0A2364F8EEBB",
+                                    "attributeName": "battery_temperature",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "4B355109-09E4-4B72-918C-0A430C7234F2",
+                                    "attributeName": "accel_peak_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "72CBDC2A-779B-49BD-8C88-0C9E53DEAAFA",
+                                    "attributeName": "gyroscope_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "95275001-C1C2-440E-8258-10A6F60D0D78",
+                                    "attributeName": "freq_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E076BAC7-8119-4117-B232-2F93F97E7EF6",
+                                    "attributeName": "rms_speed_x_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DEAA3B7D-4092-462C-B9DE-3698E471B6F9",
+                                    "attributeName": "gyroscope_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "CA1D7DBB-C3AE-4E83-9214-3FB9B47D0DF1",
+                                    "attributeName": "accel_x_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.02",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.02"
+                                },
+                                {
+                                    "attributeGuid": "191BDE71-7D83-49B2-85AC-434169ACE7B8",
+                                    "attributeName": "freq_y_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7DB608E4-68B7-4134-A4E9-474B9819753A",
+                                    "attributeName": "rms_speed_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "411425C6-95C6-4E59-BCC8-4B2FEC88D848",
+                                    "attributeName": "accel_peak_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "71E2D0D2-380D-4983-83AB-500318A71D51",
+                                    "attributeName": "freq_x_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "7F0507EE-80C7-4661-8AD8-52859D3107EA",
+                                    "attributeName": "acceleration_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2ACBA45B-0AB6-4533-AF03-564A71922677",
+                                    "attributeName": "battery_current",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "AA5D6D92-A523-4611-818D-564B04B342DF",
+                                    "attributeName": "accel_z_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "1.01",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "1.01"
+                                },
+                                {
+                                    "attributeGuid": "4FD275C4-D5A4-4778-801C-5A06E4D89CCB",
+                                    "attributeName": "rms_speed_status_x",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "45FB3F71-DFF1-433B-9FFA-6286C5CE4995",
+                                    "attributeName": "accel_peak_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F9D8542C-2FD7-45D7-9EA2-6BE560EBAA16",
+                                    "attributeName": "acceleration_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "D9D9F515-8B20-49EA-ACD8-76446F29BF5E",
+                                    "attributeName": "acceleration_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "5AA883AD-349C-4293-B537-77F5D8CC08B8",
+                                    "attributeName": "freq_max_amp_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "37410991-9CAE-4036-9FF1-7F8F2B683242",
+                                    "attributeName": "accel_peak_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "1CDE66DA-745F-42C6-9D28-811826B423C8",
+                                    "attributeName": "magnetometer_z",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "606EC262-8B5C-48BB-BDE4-890F6BBCBFD0",
+                                    "attributeName": "accel_peak_y_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "DC33CF3D-249D-45AA-ADAA-9526D911BCB5",
+                                    "attributeName": "freq_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "F04CD9F6-C160-46FA-A978-9CB178820F1C",
+                                    "attributeName": "accel_y_mGs",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "2FFDD15B-9C3F-4B4F-84F1-A2F477A8CFBF",
+                                    "attributeName": "freq_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EF308FAD-CCC0-4486-B153-A2FCD09C7FB3",
+                                    "attributeName": "freq_max_amp_z_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "97DDB50E-B23D-4308-8F5A-A3C0524895D2",
+                                    "attributeName": "battery_voltage",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "4.099",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "4.099"
+                                },
+                                {
+                                    "attributeGuid": "B1FDA537-3985-4290-9EDE-A8CA34F2E747",
+                                    "attributeName": "battery_status",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "Discharging",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "Discharging"
+                                },
+                                {
+                                    "attributeGuid": "6AB76B6D-BB84-4E5C-B948-AD62CBB3901A",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3A2C2EE1-1D25-4F43-9D3A-AFF594991C9E",
+                                    "attributeName": "gyroscope_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "417802E2-2BEC-43E6-AC17-B13BCDBEB792",
+                                    "attributeName": "magnetometer_y",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "E523E97C-D3A3-44E4-95DE-B4CF9613045C",
+                                    "attributeName": "gyro_x_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.02",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.02"
+                                },
+                                {
+                                    "attributeGuid": "2EDD3E75-D583-421E-A5DE-C4B8F1E06EA5",
+                                    "attributeName": "accel_peak_status_z",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "2473020E-DBF6-4472-A2C9-C7F9073ED3F5",
+                                    "attributeName": "compass",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "B6EF38E1-E301-4809-9A54-C89B149EBC72",
+                                    "attributeName": "freq_max_amp_x_ms2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "8BD86B88-B7F2-4E84-AEF4-CB45C211E5D0",
+                                    "attributeName": "rms_speed_z_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "FE28521A-5122-4879-B58A-D15CA04EEF0C",
+                                    "attributeName": "freq_z_hz",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "683D77B6-ABBC-4A21-8EE3-E12E7AE22AA6",
+                                    "attributeName": "magnetometer_x",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "39CB02F9-0FC9-4F10-9A32-EDE6D7F97049",
+                                    "attributeName": "rms_speed_y_mmps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "3017E697-9CD8-494C-8422-F0267E22A22A",
+                                    "attributeName": "gyro_z_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.0"
+                                },
+                                {
+                                    "attributeGuid": "D08E7D8C-DEEC-471D-857F-F6AA62F7667D",
+                                    "attributeName": "rms_speed_status_y",
+                                    "checked": "false",
+                                    "dataType": "STRING",
+                                    "attributeLatestValue": "",
+                                    "deviceUpdatedDate": "2024-05-23T16:24:55.650Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "NA"
+                                },
+                                {
+                                    "attributeGuid": "EEF15F35-DA02-43F0-8FD0-FE6DE6114D44",
+                                    "attributeName": "gyro_y_dps",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "-0.04",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "-0.04"
+                                },
+                                {
+                                    "attributeGuid": "B0EFB3AA-EA20-4845-9841-FE7A0020908E",
+                                    "attributeName": "battery_percentage",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "93.0",
+                                    "deviceUpdatedDate": "2024-05-23T17:00:21.480Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "93.0"
+                                }
+                            ]
+                        },
+                        "key": "Transformation",
+                        "transformations": [
+                            {
+                                "condition": "ge",
+                                "conditionValue": "95",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/batt100.png"
+                            },
+                            {
+                                "condition": "ge",
+                                "conditionValue": "75",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/batt75.png"
+                            },
+                            {
+                                "condition": "ge",
+                                "conditionValue": "50",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/batt50.png"
+                            },
+                            {
+                                "condition": "ge",
+                                "conditionValue": "25",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/batt25.png"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "5",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/media/stmicro/sensortile/batt0.png"
+                            }
+                        ],
+                        "position": "center"
+                    }
+                }
+            },
+            "properties": {
+                "x": "28",
+                "y": "17",
+                "w": "9",
+                "h": "8",
+                "i": "Transformation",
+                "minW": "7",
+                "minH": "4",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "57E7E7D3-DE04-4CE3-84C3-63D9CC473F75",
+            "widgetProperties": {
+                "i": "HyperLink",
+                "background": "#000000",
+                "fontColor": "#6dd200",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "IoTConnect Product Site",
+                "titleAlign": "center",
+                "contents": {
+                    "hyperlink": {
+                        "link": "https://www.iotconnect.io/",
+                        "key": "hyperlink"
+                    }
+                }
+            },
+            "properties": {
+                "x": "37",
+                "y": "17",
+                "w": "20",
+                "h": "2",
+                "i": "HyperLink",
+                "minW": "5",
+                "minH": "2",
+                "maxH": "2",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "57E7E7D3-DE04-4CE3-84C3-63D9CC473F75",
+            "widgetProperties": {
+                "i": "HyperLink",
+                "background": "#000000",
+                "fontColor": "#6dd200",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Documentation",
+                "titleAlign": "center",
+                "contents": {
+                    "hyperlink": {
+                        "link": "https://docs.iotconnect.io/iotconnect/",
+                        "key": "hyperlink"
+                    }
+                }
+            },
+            "properties": {
+                "x": "37",
+                "y": "19",
+                "w": "20",
+                "h": "2",
+                "i": "HyperLink",
+                "minW": "5",
+                "minH": "2",
+                "maxH": "2",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "57E7E7D3-DE04-4CE3-84C3-63D9CC473F75",
+            "widgetProperties": {
+                "i": "HyperLink",
+                "background": "#000000",
+                "fontColor": "#63b306",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "18",
+                "title": "Github",
+                "titleAlign": "center",
+                "contents": {
+                    "hyperlink": {
+                        "link": "https://github.com/avnet-iotconnect",
+                        "key": "hyperlink"
+                    }
+                }
+            },
+            "properties": {
+                "x": "37",
+                "y": "21",
+                "w": "20",
+                "h": "2",
+                "i": "HyperLink",
+                "minW": "5",
+                "minH": "2",
+                "maxH": "2",
+                "isStatic": "false"
+            }
+        }
+    ]
+}
