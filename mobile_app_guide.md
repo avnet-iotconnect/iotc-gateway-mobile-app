@@ -8,8 +8,8 @@ In addition to the ST SensorTile.box PRO device, you will need the following:
 - A free [MyST](https://my.st.com/cas/login) account  
 - A free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
 - An Android or iOS device (*acts as the BLE to WAN bridge)*
-- iOS Users[^1], ST SensorTile firmware: [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin)
-- Android Users[^2], ST SensorTile firmware:  [STSW-MKBOXPRO_1_1_1.bin](https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_1_1.bin)
+- iOS Users[^1], download this version of the SensorTile firmware: [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin)
+- Android Users[^2], download this version of the SensorTile firmware:  [STSW-MKBOXPRO_1_1_1.bin](https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_1_1.bin)
 - A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
 - A USB-A to USB-C cable
 - Desire to learn!
