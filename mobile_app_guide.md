@@ -128,3 +128,6 @@ Dashboards are used to easily visualize data.
 * Feel free to edit or just click the blue **Save** button in the top right to save the layout and exit the edit mode.  
 <img width="364" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/01b17e53-ddab-47d6-b520-ba1dc0240163">
 
+## Optional
+* An additional dashboard has been provided to demostrate a slightly enhanced dashboard experience.  Download the [dashboard template](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/blob/main/dashboards/SensorTileBoxPRO_dashboard_export_V2.json), and then create a new dashboard using the same process followed in step 7.
+
