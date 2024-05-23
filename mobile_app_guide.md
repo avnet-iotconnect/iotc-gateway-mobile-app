@@ -5,13 +5,16 @@ Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data an
 
 ## Prerequisites
 In addition to the ST SensorTile.box PRO device, you will need the following:  
-1. A free [MyST](https://my.st.com/cas/login) account  
-2. A free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
-3. ST SensorTile.box PRO firmware [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin)  
-4. An Android or iOS device
-5. A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
-6. A USB-A to USB-C cable
-7. Desire to learn!
+- A free [MyST](https://my.st.com/cas/login) account  
+- A free "Test Drive" [IoTConnect on AWS](https://subscription.iotconnect.io/subscribe?cloud=aws) account  
+- An Android or iOS device (*acts as the BLE to WAN bridge)*
+- iOS Users[^1], ST SensorTile firmware: [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin)
+- Android Users[^2], ST SensorTile firmware:  [STSW-MKBOXPRO_1_1_1.bin](https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_1_1.bin)
+- A PC with the latest [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) installed
+- A USB-A to USB-C cable
+- Desire to learn!
+[^1]: The "BLESensorsPnPL.bin" example was chosen because it provides the most variety of usable telemetry data to be utilized by IoTConnect, including temperature, battery information, acceleration, and gyroscope data.
+[^2]: A compatibility issue was discovered between the “BLESensorsPnPL.bin” firmware and the Android application using the [BlueSTSDK_Android](https://github.com/STMicroelectronics/BlueSTSDK_Android) library, resulting in mismatched acceleration data not being uploaded to the cloud. Please use the alternative “STSW-MKBOXPRO_1_1_1.bin” firmware, which does not include temperature data.
 
 ## 1. Download the IoTConnect Application  
 Use the QR codes below to download the latest IoTConnect "IoT Bridge" application.  
@@ -70,7 +73,7 @@ A firmware version that exposes the sensor data via Bluetooth is required to be 
 1. Connect power to the device (e.g. "ST SensorTile.box PRO") using a USB cable.  
 2. Open the STM32CubeProgrammer  
 3. Select **USB** for the connect type and select **Connect**  
-4. Click the "Erasing & Programming" icon and browse to the previously saved file:  [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin) 
+4. Click the "Erasing & Programming" icon and browse to the previously saved file:  [BLESensorsPnPL.bin](https://saleshosted.z13.web.core.windows.net/demo/st/ble/STBoxPro/BLESensorsPnPL.bin)(iOS) or [STSW-MKBOXPRO_1_1_1.bin](https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_1_1.bin)(Android) 
 5. Click **Start Programming**
 6. Once completed successfully, close the application and power cycle the device.
 
