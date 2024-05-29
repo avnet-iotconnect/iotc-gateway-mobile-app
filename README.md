@@ -10,7 +10,7 @@ Both IOS and Android versions are available and may be downloaded using the QR c
 ## Supported Edge Devices  
 The IoTConnect Mobile App currently supports ST devices compatible with the [BlueST-SDK](https://www.st.com/en/embedded-software/bluest-sdk.html)  
 Some examples include:
-* ST [STEVAL-PROTEUS1](https://www.st.com/en/evaluation-tools/steval-proteus1.html)
+* ST PROTEUS [STEVAL-PROTEUS1](https://www.st.com/en/evaluation-tools/steval-proteus1.html)
 * ST SensorTile.box PRO [STEVAL-MKBOXPRO](https://www.st.com/en/evaluation-tools/steval-mkboxpro.html)
 
 ## Walkthroughs / Guides  
