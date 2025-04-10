@@ -26,45 +26,28 @@ Use the QR codes below to download the latest IoTConnect "IoT Bridge" applicatio
 
 Launch the "IoT Bridge" application and proceed to the next section.  
 
-## 2. Create an IoTConnect Account  
-> **NOTE**  
-> If you've already created an account, you may skip to the next section.  
+---
 
-If you need to create an account, follow one of the methods below:  
+### 2. Cloud Account Setup
 
-<details>
-  <summary>Method 1: Use the App [Recommended]</summary>
+An /IOTCONNECT account with AWS backend is required. If you need to create an account, a free trial subscription is available.  
+The free subscription may be obtained directly from iotconnect.io or through the AWS Marketplace.
 
-1. Press the **Sign Up** button at the bottom<br>
-<img width="254" alt="login" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/641162e4-e4c3-410f-b1a4-48bc62dafe9b"><br>
+- **Option #1:** [/IOTCONNECT via AWS Marketplace](https://github.com/avnet-iotconnect/avnet-iotconnect.github.io/blob/main/documentation/iotconnect/subscription/iotconnect_aws_marketplace.md) **(Recommended)** - 60-day trial; AWS account creation required
+- **Option #2:** [/IOTCONNECT via iotconnect.io](https://subscription.iotconnect.io/subscribe?cloud=aws) - 30-day trial; no credit card required
 
-2. Ensure "AWS" is selected as the Service Provider and click **Subscribe Now** for the "Test Drive"<br>
-<img width="263" alt="subscribe" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/1a43f6ca-d13d-4a33-83f9-fb91ba0fda6e"><br>
+> **NOTE:**  
+> Be sure to check your SPAM folder for the temporary password after registering.
 
-3. Complete the registration form.<br>
+See the [/IOTCONNECT Subscription Information](https://github.com/avnet-iotconnect/avnet-iotconnect.github.io/blob/main/documentation/iotconnect/subscription/subscription.md) for more details.
 
-4. Expect two emails from IoTConnect, one of which contains a temporary password.<br>
-</details>
-
-<details>
-  <summary>Method 2: Use a Browser</summary>
-  
-  1. Navigate to the [IoTConnect Subscription](https://subscription.iotconnect.io/subscribe?cloud=aws) page<br>
-  
-  2. Ensure "AWS" is selected as the Service Provider and click **Subscribe Now** for the "Test Drive"<br>
-  <img width="263" alt="subscribe" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/1a43f6ca-d13d-4a33-83f9-fb91ba0fda6e"><br>
-  
-  3. Complete the registration form.<br>
-  
-  4. Expect two emails from IoTConnect, one of which contains a temporary password.<br>
-</details>
-
-> **NOTE**  
-> Check your email SPAM folder if you don't receive the emails after a couple minutes.
+---
 
 ## 3. Enter Credentials and Choose Environment  
 * Return to the mobile app home screen and enter your credentials.  
 * Ensure that `console.iotconnect.io (AWS)` is selected as the environment to use and press **Login**.  
+
+---
 
 ## 4. Update Firmware  
 A firmware version that exposes the sensor data via Bluetooth is required to be loaded on the device.  
@@ -78,6 +61,8 @@ A firmware version that exposes the sensor data via Bluetooth is required to be 
 6. Once completed successfully, close the application and power cycle the device.
 
 > For additional information and troubleshooting, please refer to Chapter 2.2 of the [ST SensorTile.box PRO Getting Started Guide](https://www.st.com/resource/en/user_manual/um3133-getting-started-with-sensortilebox-pro-multisensors-and-wireless-connectivity-development-kit-for-any-intelligent-iot-node-stmicroelectronics.pdf)  
+
+---
 
 ## 5. Connect Device and Push Data 
 With the IoTConnect mobile app open and the SensorTile device powered, it will be displayed in the device list.  
@@ -95,6 +80,8 @@ Clicking on the device will automatically perform the following steps:
 
 * After a few seconds, the sensor values will be updated in the mobile app and subsequently sent to IoTConnect.  
 
+---
+
 ## 6. View Live Data on IoTConnect  
 Using your credentials, login to IoTConnect in a browser:  
 * IoTConnect on AWS - [https://console.iotconnect.io](https://console.iotconnect.io)  
@@ -108,9 +95,11 @@ The automatically created device will be visible.
 * Click on the **Live Data** to view the data from the Mobile App  
 <img width="207" alt="live_data" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/66835231-02c5-4b7c-bb97-5c9ffdfacd73">
 
+---
+
 ## 7. Visualize the Data  
 Dashboards are used to easily visualize data.  
-* Download the [ST SensorTile.box PRO Dashboard Template](dashboards/SensorTileBoxPRO_dashboard_export.json) (Right-click and open in new window)  
+* Download the [ST SensorTile.box PRO Dashboard Template](../../dashboards/SensorTileBoxPRO_dashboard_export.json) (Right-click and open in new window)  
 * Click the **Download** icon to save the file and take note of the location  
 <img width="171" alt="Screenshot 2024-05-08 114733" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/940d6355-d61a-46ca-acdb-4c7608d17136">  
 
@@ -127,6 +116,8 @@ Dashboards are used to easily visualize data.
 * The dashboard will be imported and displayed in "Edit Mode"  
 * Feel free to edit or just click the blue **Save** button in the top right to save the layout and exit the edit mode.  
 <img width="364" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/01b17e53-ddab-47d6-b520-ba1dc0240163">
+
+---
 
 ## Optional
 * An additional dashboard has been provided to demonstrate a slightly enhanced dashboard experience.  Download the [dashboard template](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/blob/main/dashboards/SensorTileBoxPRO_dashboard_export_V2.json), and then create a new dashboard using the same process followed in step 7.
