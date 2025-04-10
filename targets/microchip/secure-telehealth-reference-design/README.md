@@ -26,9 +26,9 @@ Ensure you have:
 - USB-C cable  
 - PC (Windows, macOS, Linux)
 
-![PICkit 5 and Adapter](https://www.microchip.com/content/dam/mchp/images/products/programming-debugging/emulators-programmers-debuggers/PG164150-pickit-5-programmer-with-cable.jpg)
+![PICkit 5 and Adapter](https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/p/i/pickit-5-2.jpg)
 
-![AC102015 Adapter](https://ww1.microchip.com/downloads/aemDocuments/images/AC102015-product-main.png)
+![AC102015 Adapter](https://akizukidenshi.com/img/goods/L/114442.jpg)
 
 ---
 
@@ -38,9 +38,9 @@ Ensure you have:
 
 Use QR codes below:
 
-| iOS App | Android App |
-|---------|-------------|
-| ![iOS App](apps/avnet.me_IoTC-bridge-ios-WHITE.png) | ![Android App](apps/avnet.me_IoTC-bridge-android-WHITE.png) |
+| iOS App                                                      | Android App                                                          |
+|--------------------------------------------------------------|----------------------------------------------------------------------|
+| ![iOS App](../../../apps/avnet.me_IoTC-bridge-ios-WHITE.png) | ![Android App](../../../apps/avnet.me_IoTC-bridge-android-WHITE.png) |
 
 Launch the app once installed.
 
@@ -80,14 +80,14 @@ Choose **one** programming method:
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB® X IDE, select your device and PICkit 5, load project, then **Make and Program Device**.
 
-![MPLAB X IDE](https://www.microchip.com/content/dam/mchp/mrt-dam/media-block-images/development-tools/IDE/MPLABX_IDE_v6.0_Main.jpg)
+![MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide/_jcr_content/root/responsivegrid/container/container/isolatedimage_copy/image.coreimg.png/1651140970636/mplab-xide-transparent-background.png)
 
 #### Option B: MPLAB IPE *(HEX file only)*
 
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB IPE, select your device, PICkit 5, load HEX file, and press **Program**.
 
-![MPLAB IPE](https://www.microchip.com/content/dam/mchp/mrt-dam/media-block-images/tools-resources/programming-and-debugging/MPLAB%20IPE%20v6.0.png)
+![MPLAB IPE](https://img.informer.com/icons_mac/png/128/681/681285.png)
 
 ---
 

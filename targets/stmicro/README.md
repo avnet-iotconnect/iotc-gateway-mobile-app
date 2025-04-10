@@ -1,7 +1,7 @@
 # IoTConnect Mobile App with ST SensorTile.box PRO
 This guide will walk through setting up the Avnet IoTConnect mobile app to be leveraged as a Bluetooth gateway.  
 Acting as a gateway, the IoTConnect app will capture Bluetooth telemetry data and transport it to the IoTConnect cloud to visualize.
-<img src="images/sensortilebox_pro.png" alt="drawing" width="200"/>  
+<img src="../../images/sensortilebox_pro.png" alt="drawing" width="200"/>  
 
 ## Prerequisites
 In addition to the ST SensorTile.box PRO device, you will need the following:  
@@ -19,10 +19,10 @@ In addition to the ST SensorTile.box PRO device, you will need the following:
 ## 1. Download the IoTConnect Application  
 Use the QR codes below to download the latest IoTConnect "IoT Bridge" application.  
 ### iOS App  
-<img src="apps/avnet.me_IoTC-bridge-ios-WHITE.png" alt="drawing" width="200"/>  
+<img src="../../apps/avnet.me_IoTC-bridge-ios-WHITE.png" alt="drawing" width="200"/>  
 
 ### Android App  
-<img src="apps/avnet.me_IoTC-bridge-android-WHITE.png" alt="drawing" width="200"/>
+<img src="../../apps/avnet.me_IoTC-bridge-android-WHITE.png" alt="drawing" width="200"/>
 
 Launch the "IoT Bridge" application and proceed to the next section.  
 
@@ -114,7 +114,8 @@ Dashboards are used to easily visualize data.
 <img width="454" alt="save_device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026">  
 
 * The dashboard will be imported and displayed in "Edit Mode"  
-* Feel free to edit or just click the blue **Save** button in the top right to save the layout and exit the edit mode.  
+<img width="800" alt="dashboard" src="../../images/dashboard.png">  
+* *Feel free to edit or just click the blue **Save** button in the top right to save the layout and exit the edit mode.  
 <img width="364" alt="save_dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/01b17e53-ddab-47d6-b520-ba1dc0240163">
 
 ---
