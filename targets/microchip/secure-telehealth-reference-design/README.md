@@ -19,16 +19,14 @@ Ensure you have:
 - An [/IOTCONNECT](https://iotconnect.io) account (see [Cloud Account Setup](#7-cloud-account-setup))
 - Android or iOS smartphone (*Bluetooth Gateway*)
 - [Microchip Secure Telehealth Reference Design](https://www.microchip.com/en-us/tools-resources/reference-designs/secure-telehealth-reference-design)  
-- Firmware HEX file from [Microchip website](https://www.microchip.com/en-us/tools-resources/reference-designs/secure-telehealth-reference-design)
+- Firmware HEX file from [Microchip website](https://www.microchip.com/en-us/tools-resources/reference-designs/secu`re-telehealth-reference-design)
 - [MPLAB® X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) or [MPLAB IPE](https://www.microchip.com/en-us/tools-resources/production/mplab-integrated-programming-environment)  
 - [PICkit™ 5 Programmer](https://www.microchip.com/en-us/development-tool/pg164150)  
+  - <img width="200" alt="PICkit" src="https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/p/i/pickit-5-2.jpg">
 - [AC102015 Adapter Board](https://www.microchip.com/en-us/development-tool/AC102015)  
+  - <img width="200" alt="Adapter" src="https://akizukidenshi.com/img/goods/L/114442.jpg">
 - USB-C cable  
 - PC (Windows, macOS, Linux)
-
-![PICkit 5 and Adapter](https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/p/i/pickit-5-2.jpg)
-
-![AC102015 Adapter](https://akizukidenshi.com/img/goods/L/114442.jpg)
 
 ---
 
@@ -38,9 +36,9 @@ Ensure you have:
 
 Use QR codes below:
 
-| iOS App                                                      | Android App                                                          |
-|--------------------------------------------------------------|----------------------------------------------------------------------|
-| ![iOS App](../../../apps/avnet.me_IoTC-bridge-ios-WHITE.png) | ![Android App](../../../apps/avnet.me_IoTC-bridge-android-WHITE.png) |
+| iOS App                                                                                 | Android App                                                                                |
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| <img width="50" alt="ios" src="../../../apps/avnet.me_IoTC-bridge-ios-WHITE.png">       | <img width="50" alt="android" src="../../../apps/avnet.me_IoTC-bridge-android-WHITE.png" > |
 
 Launch the app once installed.
 
@@ -80,14 +78,14 @@ Choose **one** programming method:
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB® X IDE, select your device and PICkit 5, load project, then **Make and Program Device**.
 
-![MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide/_jcr_content/root/responsivegrid/container/container/isolatedimage_copy/image.coreimg.png/1651140970636/mplab-xide-transparent-background.png)
+  <img width="204" alt="mplabxide" src="https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide/_jcr_content/root/responsivegrid/container/container/isolatedimage_copy/image.coreimg.png/1651140970636/mplab-xide-transparent-background.png">
 
 #### Option B: MPLAB IPE *(HEX file only)*
 
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB IPE, select your device, PICkit 5, load HEX file, and press **Program**.
 
-![MPLAB IPE](https://img.informer.com/icons_mac/png/128/681/681285.png)
+  <img width="180" alt="mplabipe" src="https://img.informer.com/icons_mac/png/128/681/681285.png">
 
 ---
 
