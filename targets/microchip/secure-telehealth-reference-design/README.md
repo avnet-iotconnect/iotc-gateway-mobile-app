@@ -2,7 +2,7 @@
 
 This guide explains how to configure the Avnet IoTConnect Mobile App as a Bluetooth gateway for the Microchip Secure Telehealth Reference Design. The app captures telemetry data via Bluetooth and securely uploads it to IoTConnect for cloud visualization.
 
-![Microchip Telehealth Reference Design](../../../images/mcp-telehealth.png)
+  <img width="350" alt="secure telehealth" src="../../../images/mcp-telehealth.png">
 
 ### Telemetry Supported:
 - **Quality of Measurement**
@@ -65,7 +65,7 @@ See the [/IOTCONNECT Subscription Information](https://github.com/avnet-iotconne
 - Select environment: `console.iotconnect.io (AWS)`  
 - Tap **Login**
 
-![Login](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/641162e4-e4c3-410f-b1a4-48bc62dafe9b)
+  <img width="250" alt="mplabipe" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/641162e4-e4c3-410f-b1a4-48bc62dafe9b">
 
 ---
 
@@ -78,14 +78,14 @@ Choose **one** programming method:
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB® X IDE, select your device and PICkit 5, load project, then **Make and Program Device**.
 
-  <img width="180" alt="mplabxide" src="https://cc.sj-cdn.net/instructor/kt1ejklh2ngf-microchip-technology/courses/13vwh8sh89nwy/promo-image.1610634123.png">
+<img width="180" alt="mplabxide" src="https://cc.sj-cdn.net/instructor/kt1ejklh2ngf-microchip-technology/courses/13vwh8sh89nwy/promo-image.1610634123.png">
 
 #### Option B: MPLAB IPE *(HEX file only)*
 
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB IPE, select your device, PICkit 5, load HEX file, and press **Program**.
 
-  <img width="120" alt="mplabipe" src="https://img.informer.com/icons_mac/png/128/681/681285.png">
+  <img width="90" alt="mplabipe" src="https://img.informer.com/icons_mac/png/128/681/681285.png">
 
 ---
 
@@ -95,7 +95,7 @@ Choose **one** programming method:
 - Open IoTConnect Mobile App:
   - Tap the green menu button, select **Scan Device** if needed.
   
-  ![Scan Device](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/d85cb0b6-42bc-4894-9352-b11e891d9a8c)
+    <img width="80" alt="scan device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/d85cb0b6-42bc-4894-9352-b11e891d9a8c">
 
 - Select your device from the list (e.g., "Microchip Telehealth").
 
@@ -113,21 +113,22 @@ The app automatically:
 - Navigate to **Devices → Device**.
 - Click your device’s **Unique ID**, then **Live Data**.
 
-![IoTConnect Live Data](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/66835231-02c5-4b7c-bb97-5c9ffdfacd73)
+    <img width="250" alt="IoTConnect Live Data" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/66835231-02c5-4b7c-bb97-5c9ffdfacd73">
 
 ---
 
 ### 7. Visualize Data with Dashboards  
 
-- Download the dashboard template (link TBD).
+- Download the [dashboard template](/dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
 - In IoTConnect, select **Create Dashboard → Import Dashboard**.
 - Name dashboard, upload `.json` file, select your device, and **Save**.
-
-![Import Dashboard](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026)
+  
+    <img width="350" alt="Import Dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026">
 
 Your telemetry data is now visualized on a custom dashboard.
-![Telehealth Dashboard](../../../images/telehealth_dashboard.png)
 
+  <img width="600" alt="Telehealth Dashboard" src="../../../images/telehealth_dashboard.png">
+    
 ---
 
 ### Optional Next Steps  
