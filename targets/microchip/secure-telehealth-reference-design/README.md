@@ -36,9 +36,9 @@ Ensure you have:
 
 Use QR codes below:
 
-| iOS App                                                                           | Android App                                                                                |
-|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| <img width="75" alt="ios" src="../../../apps/avnet.me_IoTC-bridge-ios-WHITE.png"> | <img width="75" alt="android" src="../../../apps/avnet.me_IoTC-bridge-android-WHITE.png" > |
+| iOS App                                                                            | Android App                                                                                 |
+|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| <img width="100" alt="ios" src="../../../apps/avnet.me_IoTC-bridge-ios-WHITE.png"> | <img width="100" alt="android" src="../../../apps/avnet.me_IoTC-bridge-android-WHITE.png" > |
 
 Launch the app once installed.
 
@@ -85,7 +85,7 @@ Choose **one** programming method:
 - Connect PICkit 5 and Adapter to your Telehealth device and PC.
 - Open MPLAB IPE, select your device, PICkit 5, load HEX file, and press **Program**.
 
-  <img width="180" alt="mplabipe" src="https://img.informer.com/icons_mac/png/128/681/681285.png">
+  <img width="120" alt="mplabipe" src="https://img.informer.com/icons_mac/png/128/681/681285.png">
 
 ---
 
