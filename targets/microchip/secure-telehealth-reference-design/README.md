@@ -126,6 +126,7 @@ The app automatically:
 ![Import Dashboard](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026)
 
 Your telemetry data is now visualized on a custom dashboard.
+![Telehealth Dashboard](../../../images/telehealth_dashboard.png)
 
 ---
 
