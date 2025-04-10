@@ -2,7 +2,7 @@
 
 This guide explains how to configure the Avnet IoTConnect Mobile App as a Bluetooth gateway for the Microchip Secure Telehealth Reference Design. The app captures telemetry data via Bluetooth and securely uploads it to IoTConnect for cloud visualization.
 
-![Microchip Telehealth Reference Design](https://ww1.microchip.com/downloads/aemDocuments/images/MCHP-Secure-Telehealth-Main_1120x840.jpg)
+![Microchip Telehealth Reference Design](../../../images/mcp-telehealth.png)
 
 ### Telemetry Supported:
 - **Quality of Measurement**
