@@ -119,7 +119,7 @@ The app automatically:
 
 ### 7. Visualize Data with Dashboards  
 
-- Download the [dashboard template](/dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
+- Download the [dashboard template](dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
 - In IoTConnect, select **Create Dashboard → Import Dashboard**.
 - Name dashboard, upload `.json` file, select your device, and **Save**.
   
