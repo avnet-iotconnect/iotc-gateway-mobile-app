@@ -121,9 +121,13 @@ The app automatically:
 
 - Download the [dashboard template](dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
 - In IoTConnect, select **Create Dashboard → Import Dashboard**.
-- Name dashboard, upload `.json` file, select your device, and **Save**.
-  
-    <img width="350" alt="Import Dashboard" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/a3a2ceef-0d8d-46c5-8db3-971a119d0026">
+- Complete the Import Dashboard form
+    - Upload `.json` file
+    - Select the device template, "TeleMCHPaws"
+    - Select your active device
+    - Provide a background color, suggest "black"
+    - Finally, **Save**  
+    <img width="350" alt="Import Dashboard" src="../../../images/import_telehealth_dashboard.png">
 
 Your telemetry data is now visualized on a custom dashboard.
 
