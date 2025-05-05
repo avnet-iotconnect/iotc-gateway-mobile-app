@@ -119,7 +119,7 @@ The app automatically:
 
 ### 7. Visualize Data with Dashboards  
 
-- Download the [dashboard template](dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
+- Download the [dashboard template](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
 - In IoTConnect, select **Create Dashboard → Import Dashboard**.
 - Complete the Import Dashboard form
     - Upload `.json` file
