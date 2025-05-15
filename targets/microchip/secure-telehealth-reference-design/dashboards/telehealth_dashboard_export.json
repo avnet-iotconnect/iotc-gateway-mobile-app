@@ -145,7 +145,7 @@
                             },
                             {
                                 "condition": "lt",
-                                "conditionValue": "96",
+                                "conditionValue": "95",
                                 "type": "Url",
                                 "errors": "",
                                 "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/t-caut-a.png"
@@ -423,14 +423,14 @@
                             },
                             {
                                 "condition": "lt",
-                                "conditionValue": "95",
+                                "conditionValue": "93",
                                 "type": "Url",
                                 "errors": "",
                                 "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/s-caut-b.gif"
                             },
                             {
                                 "condition": "ge",
-                                "conditionValue": "95",
+                                "conditionValue": "93",
                                 "type": "Url",
                                 "errors": "",
                                 "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/s-norm-a.gif"
@@ -535,21 +535,14 @@
                         "transformations": [
                             {
                                 "condition": "ge",
-                                "conditionValue": "70",
-                                "type": "Url",
-                                "errors": "",
-                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/complete.gif"
-                            },
-                            {
-                                "condition": "gt",
                                 "conditionValue": "6",
                                 "type": "Url",
                                 "errors": "",
                                 "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/scanning.gif"
                             },
                             {
-                                "condition": "eq",
-                                "conditionValue": "0",
+                                "condition": "lt",
+                                "conditionValue": "6",
                                 "type": "Url",
                                 "errors": "",
                                 "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/standby.png"
@@ -653,12 +646,6 @@
                             {
                                 "zoneName": "measuring",
                                 "zoneColor": "#f8e71c",
-                                "upToValue": "70",
-                                "showColorPicker": "false"
-                            },
-                            {
-                                "zoneName": "complete",
-                                "zoneColor": "#7ed321",
                                 "upToValue": "100",
                                 "showColorPicker": "false"
                             }
@@ -757,7 +744,7 @@
                             {
                                 "zoneName": "low-caution",
                                 "zoneColor": "#f8e71c",
-                                "upToValue": "95.0",
+                                "upToValue": "94.0",
                                 "showColorPicker": "false"
                             },
                             {
