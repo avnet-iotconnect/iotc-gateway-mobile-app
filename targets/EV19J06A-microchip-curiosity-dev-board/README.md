@@ -24,9 +24,9 @@ Before starting, ensure you have:
 - USB-C cable
 - PC (Windows, macOS, Linux)
 
-![PICkit 5 Programmer](https://www.microchip.com/content/dam/mchp/images/products/programming-debugging/emulators-programmers-debuggers/PG164150-pickit-5-programmer-with-cable.jpg)
+![PICkit 5 Programmer](../../pick5.PNG)
 
-![AC102015 Adapter Board](https://ww1.microchip.com/downloads/aemDocuments/images/AC102015-product-main.png)
+![AC102015 Adapter Board](../../AC102015-Adapter-Board.PNG)
 
 ---
 
