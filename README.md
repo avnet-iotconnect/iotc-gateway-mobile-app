@@ -29,7 +29,7 @@ For subscription details, see the [IoTConnect Subscription Information](https://
 
 ### Microchip Reference Designs
 - [Secure Telehealth Reference Design](targets/microchip/secure-telehealth-reference-design/README.md)
-- [EV96B94A (WBZ451 Curiosity Development Board)](targets/microchip/wbz451-curiosity-dev-board/README.md)
+- [EV19J06A (PIC32CX-BZ3 and WBZ35x Curiosity Development Board)](targets/microchip/EV19J06A-curiosity-dev-board/README.md)
 
 ### STMicroelectronics Reference Designs
 - [ST PROTEUS (STEVAL-PROTEUS1)](https://www.st.com/en/evaluation-tools/steval-proteus1.html)
