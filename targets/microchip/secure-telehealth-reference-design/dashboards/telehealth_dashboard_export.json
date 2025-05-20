@@ -988,7 +988,7 @@
                             {
                                 "zoneName": "critical",
                                 "zoneColor": "#f8e71c",
-                                "upToValue": "95.0",
+                                "upToValue": "93.0",
                                 "showColorPicker": "false"
                             },
                             {
