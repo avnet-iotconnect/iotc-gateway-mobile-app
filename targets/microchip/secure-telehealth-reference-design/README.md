@@ -1,4 +1,4 @@
-# IoTConnect Mobile App with Microchip Secure Telehealth Reference Design  
+# /IOTCONNECT Mobile App with Microchip Secure Telehealth Reference Design  
 
 This guide explains how to configure the Avnet IoTConnect Mobile App as a Bluetooth gateway for the Microchip Secure Telehealth Reference Design. The app captures telemetry data via Bluetooth and securely uploads it to IoTConnect for cloud visualization.
 
@@ -19,7 +19,7 @@ Ensure you have:
 - An [/IOTCONNECT](https://iotconnect.io) account (see [Cloud Account Setup](#7-cloud-account-setup))
 - Android or iOS smartphone (*Bluetooth Gateway*)
 - [Microchip Secure Telehealth Reference Design](https://www.microchip.com/en-us/tools-resources/reference-designs/secure-telehealth-reference-design)  
-- Firmware HEX file from [Microchip website](https://www.microchip.com/en-us/tools-resources/reference-designs/secu`re-telehealth-reference-design)
+- Request the Firmware HEX file from the [Microchip website](https://www.microchip.com/en-us/tools-resources/reference-designs/secure-telehealth-reference-design)
 - [MPLAB® X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) or [MPLAB IPE](https://www.microchip.com/en-us/tools-resources/production/mplab-integrated-programming-environment)  
 - [PICkit™ 5 Programmer](https://www.microchip.com/en-us/development-tool/pg164150)  
   <img width="200" alt="PICkit" src="https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/p/i/pickit-5-2.jpg">
