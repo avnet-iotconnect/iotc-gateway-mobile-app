@@ -1,6 +1,6 @@
 # /IOTCONNECT Mobile App with Microchip Secure Telehealth Reference Design  
 
-This guide explains how to configure the Avnet IoTConnect Mobile App as a Bluetooth gateway for the Microchip Secure Telehealth Reference Design. The app captures telemetry data via Bluetooth and securely uploads it to IoTConnect for cloud visualization.
+This guide explains how to configure the Avnet /IOTCONNECT Mobile App as a Bluetooth gateway for the Microchip Secure Telehealth Reference Design. The app captures telemetry data via Bluetooth and securely uploads it to IoTConnect for cloud visualization.
 
   <img width="350" alt="secure telehealth" src="../../../images/mcp-telehealth.png">
 
@@ -32,7 +32,7 @@ Ensure you have:
 
 ## Step-by-Step Guide
 
-### 1. Download IoTConnect Mobile App  
+### 1. Download /IOTCONNECT Mobile App  
 
 Use QR codes below:
 
@@ -59,7 +59,7 @@ See the [/IOTCONNECT Subscription Information](https://github.com/avnet-iotconne
 
 ---
 
-### 3. Log into IoTConnect Mobile App  
+### 3. Log into /IOTCONNECT Mobile App  
 
 - Enter your credentials  
 - Select environment: `console.iotconnect.io (AWS)`  
@@ -92,7 +92,7 @@ Choose **one** programming method:
 ### 5. Connect Device & Publish Data  
 
 - Power the device.
-- Open IoTConnect Mobile App:
+- Open /IOTCONNECT Mobile App:
   - Tap the green menu button, select **Scan Device** if needed.
   
     <img width="80" alt="scan device" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/d85cb0b6-42bc-4894-9352-b11e891d9a8c">
@@ -101,26 +101,26 @@ Choose **one** programming method:
 
 The app automatically:
 
-- Creates IoTConnect template and registers your device.
+- Creates /IOTCONNECT template and registers your device.
 - Lists available sensors (Quality, Temperature, Heart Rate, SPO₂).
 - Choose **Select All** → **Push Data**.
 
 ---
 
-### 6. View Live Data in IoTConnect Cloud  
+### 6. View Live Data in /IOTCONNECT Cloud  
 
-- Log into [IoTConnect Console](https://console.iotconnect.io).
+- Log into [/IOTCONNECT Console](https://console.iotconnect.io).
 - Navigate to **Devices → Device**.
 - Click your device’s **Unique ID**, then **Live Data**.
 
-    <img width="250" alt="IoTConnect Live Data" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/66835231-02c5-4b7c-bb97-5c9ffdfacd73">
+    <img width="250" alt="/IOTCONNECT Live Data" src="https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/assets/40640041/66835231-02c5-4b7c-bb97-5c9ffdfacd73">
 
 ---
 
 ### 7. Visualize Data with Dashboards  
 
 - Download the [dashboard template](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
-- In IoTConnect, select **Create Dashboard → Import Dashboard**.
+- In /IOTCONNECT, select **Create Dashboard → Import Dashboard**.
 - Complete the Import Dashboard form
     - Upload `.json` file
     - Select the device template, "TeleMCHPaws"
@@ -137,7 +137,7 @@ Your telemetry data is now visualized on a custom dashboard.
 
 ### Optional Next Steps  
 
-- Configure IoTConnect alerts for critical thresholds.
+- Configure /IOTCONNECT alerts for critical thresholds.
 - Expand system capabilities via additional sensors or modules.
 
 ---
@@ -148,4 +148,4 @@ Your telemetry data is now visualized on a custom dashboard.
 - [PICkit 5 Programmer](https://www.microchip.com/en-us/development-tool/pg164150)
 - [AC102015 Adapter Board](https://www.microchip.com/en-us/development-tool/AC102015)
 
-Your Microchip Secure Telehealth Reference Design is now successfully integrated with IoTConnect!
+Your Microchip Secure Telehealth Reference Design is now successfully integrated with /IOTCONNECT!
