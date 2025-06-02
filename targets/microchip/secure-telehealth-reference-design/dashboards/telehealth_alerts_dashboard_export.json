@@ -1,0 +1,865 @@
+{
+    "ddType": 2,
+    "items": [
+        {
+            "widgetGuid": "A8CB394D-15B1-42C9-94FC-AD7BDC599E2A",
+            "widgetProperties": {
+                "i": "Image",
+                "background": "#000000",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "10",
+                "title": "",
+                "titleAlign": "",
+                "contents": {
+                    "option": {
+                        "imageUpload": "false",
+                        "imageUrl": "true",
+                        "imageDevice": "false",
+                        "imageTelemetry": "false",
+                        "key": "option",
+                        "position": "center"
+                    },
+                    "upload": {
+                        "imageurl": "",
+                        "key": "upload"
+                    },
+                    "url": {
+                        "imageurl": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/mchp-telehealth-title2.png",
+                        "key": "url"
+                    },
+                    "device": {
+                        "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                        "deviceName": "",
+                        "imageurl": "",
+                        "key": "device",
+                        "deviceUniqueId": "TeleHealth-2DD9"
+                    },
+                    "telemetry": {
+                        "deviceGuid": "",
+                        "deviceName": "",
+                        "imageurl": "",
+                        "key": "telemetry"
+                    }
+                }
+            },
+            "properties": {
+                "x": "0",
+                "y": "0",
+                "w": "10",
+                "h": "24",
+                "i": "Image",
+                "minW": "5",
+                "minH": "5",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "6FEFF6B7-15C4-4095-A156-87A1B38D2FF5",
+            "widgetProperties": {
+                "i": "Transformation",
+                "background": "#000000",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "10",
+                "title": "Pulse-Transformation",
+                "titleAlign": "",
+                "contents": {
+                    "Transformation": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "7A36715D-91CA-4944-805A-961B70173DBF",
+                                    "attributeName": "led_status",
+                                    "checked": "false",
+                                    "dataType": "BOOLEAN",
+                                    "attributeLatestValue": "False",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "False"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "false",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                }
+                            ]
+                        },
+                        "key": "Transformation",
+                        "transformations": [
+                            {
+                                "condition": "lt",
+                                "conditionValue": "1",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/h-waiting.png"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "50",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/h-crit-s.gif"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "60",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/h-caut-s.gif"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "100",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/h-norm-n.gif"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "120",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/h-caut-s.gif"
+                            },
+                            {
+                                "condition": "ge",
+                                "conditionValue": "120",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/h-crit-s.gif"
+                            }
+                        ],
+                        "position": "center"
+                    }
+                }
+            },
+            "properties": {
+                "x": "10",
+                "y": "0",
+                "w": "10",
+                "h": "6",
+                "i": "Transformation",
+                "isStatic": null
+            }
+        },
+        {
+            "widgetGuid": "6FEFF6B7-15C4-4095-A156-87A1B38D2FF5",
+            "widgetProperties": {
+                "i": "Transformation",
+                "background": "#000000",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "10",
+                "title": "Oxygen-transformation",
+                "titleAlign": "",
+                "contents": {
+                    "Transformation": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "7A36715D-91CA-4944-805A-961B70173DBF",
+                                    "attributeName": "led_status",
+                                    "checked": "false",
+                                    "dataType": "BOOLEAN",
+                                    "attributeLatestValue": "False",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "False"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "false",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                }
+                            ]
+                        },
+                        "key": "Transformation",
+                        "transformations": [
+                            {
+                                "condition": "lt",
+                                "conditionValue": "1",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/s-wait.png"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "90",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/sp-crit-a.gif"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "93",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/s-caut-b.gif"
+                            },
+                            {
+                                "condition": "ge",
+                                "conditionValue": "93",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/s-norm-a.gif"
+                            }
+                        ],
+                        "position": "center"
+                    }
+                }
+            },
+            "properties": {
+                "x": "20",
+                "y": "0",
+                "w": "10",
+                "h": "6",
+                "i": "Transformation",
+                "minW": "7",
+                "minH": "4",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "8BF5A2DF-51FA-479B-B5D8-8413DC425CFF",
+            "widgetProperties": {
+                "i": "LiveLineChart",
+                "background": "#000000",
+                "fontColor": "#ffffff",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "30",
+                "title": "Historical",
+                "titleAlign": "",
+                "contents": {
+                    "liveChart": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "33.1",
+                                    "attributeColor": "#55e6e8",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "33.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "99.6",
+                                    "attributeColor": "#50d5e3",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "99.6",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "90.2",
+                                    "attributeColor": "#f8e71c",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "90.2",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "81.4",
+                                    "attributeColor": "#7ed321",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "81.4",
+                                    "showColorPicker": "false"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "true",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "98",
+                                    "attributeColor": "#bd10e0",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "98",
+                                    "showColorPicker": "false"
+                                }
+                            ]
+                        },
+                        "key": "liveChart",
+                        "recentEndPoints": "10"
+                    }
+                }
+            },
+            "properties": {
+                "x": "30",
+                "y": "0",
+                "w": "22",
+                "h": "24",
+                "i": "LiveLineChart",
+                "minW": "15",
+                "minH": "15",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "21A18C90-2DBC-4283-89D2-B01E1B70E363",
+            "widgetProperties": {
+                "i": "gauge",
+                "background": "#000000",
+                "fontColor": "#b8e986",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "30",
+                "title": "Pulse Rate (bpm)",
+                "titleAlign": "",
+                "contents": {
+                    "gauge": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "33.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "33.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "99.6",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "99.6"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "90.2",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "90.2"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "81.4",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "81.4"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "false",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "98",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "98"
+                                }
+                            ]
+                        },
+                        "minValue": "40.0",
+                        "maxValue": "130.0",
+                        "version": "2.0",
+                        "zones": [
+                            {
+                                "zoneColor": "#d0021b",
+                                "zoneName": "low-critical",
+                                "upToValue": "50.0",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "low-caution",
+                                "zoneColor": "#f8e71c",
+                                "upToValue": "57.0",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "normal",
+                                "zoneColor": "#7ed321",
+                                "upToValue": "100.0",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "high caution",
+                                "zoneColor": "#f8e71c",
+                                "upToValue": "120.0",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "high-critical",
+                                "zoneColor": "#d0021b",
+                                "upToValue": "130.0",
+                                "showColorPicker": "false"
+                            }
+                        ],
+                        "key": "gauge"
+                    }
+                }
+            },
+            "properties": {
+                "x": "10",
+                "y": "6",
+                "w": "10",
+                "h": "9",
+                "i": "gauge",
+                "minW": "10",
+                "minH": "9",
+                "maxH": "15",
+                "maxW": "16",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "21A18C90-2DBC-4283-89D2-B01E1B70E363",
+            "widgetProperties": {
+                "i": "gauge",
+                "background": "#000000",
+                "fontColor": "#ffff00",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "30",
+                "title": "SpO₂ (%)",
+                "titleAlign": "",
+                "contents": {
+                    "gauge": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "33.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "33.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "99.6",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "99.6"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "true",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "90.2",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "90.2"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "81.4",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "81.4"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "false",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "98",
+                                    "deviceUpdatedDate": "2025-05-01T21:32:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "98"
+                                }
+                            ]
+                        },
+                        "minValue": "85.0",
+                        "maxValue": "100.0",
+                        "version": "2.0",
+                        "zones": [
+                            {
+                                "zoneColor": "#d0021b",
+                                "zoneName": "low-c",
+                                "upToValue": "90.0",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "critical",
+                                "zoneColor": "#f8e71c",
+                                "upToValue": "93.0",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "norm",
+                                "zoneColor": "#7ed321",
+                                "upToValue": "100.0",
+                                "showColorPicker": "false"
+                            }
+                        ],
+                        "key": "gauge"
+                    }
+                }
+            },
+            "properties": {
+                "x": "20",
+                "y": "6",
+                "w": "10",
+                "h": "9",
+                "i": "gauge",
+                "minW": "10",
+                "minH": "9",
+                "maxH": "15",
+                "maxW": "16",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "6FEFF6B7-15C4-4095-A156-87A1B38D2FF5",
+            "widgetProperties": {
+                "i": "Transformation",
+                "background": "#000000",
+                "fontColor": "#000000",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "10",
+                "title": "Transformation",
+                "titleAlign": "",
+                "contents": {
+                    "Transformation": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "7A36715D-91CA-4944-805A-961B70173DBF",
+                                    "attributeName": "led_status",
+                                    "checked": "false",
+                                    "dataType": "BOOLEAN",
+                                    "attributeLatestValue": "False",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "False"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "true",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                }
+                            ]
+                        },
+                        "key": "Transformation",
+                        "transformations": [
+                            {
+                                "condition": "ge",
+                                "conditionValue": "6",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/scanning.gif"
+                            },
+                            {
+                                "condition": "lt",
+                                "conditionValue": "6",
+                                "type": "Url",
+                                "errors": "",
+                                "typeValue": "https://saleshosted.z13.web.core.windows.net/demo/mcp/telehealth/march8/standby.png"
+                            }
+                        ],
+                        "position": "stretch"
+                    }
+                }
+            },
+            "properties": {
+                "x": "10",
+                "y": "15",
+                "w": "10",
+                "h": "9",
+                "i": "Transformation",
+                "minW": "7",
+                "minH": "4",
+                "isStatic": "false"
+            }
+        },
+        {
+            "widgetGuid": "21A18C90-2DBC-4283-89D2-B01E1B70E363",
+            "widgetProperties": {
+                "i": "gauge",
+                "background": "#000000",
+                "fontColor": "#ffffff",
+                "fontFamily": "Proxima Nova",
+                "fontSize": "24",
+                "title": "QoM",
+                "titleAlign": "",
+                "contents": {
+                    "gauge": {
+                        "device": {
+                            "deviceGuid": "CD913330-BC9E-48CB-906A-519676C7B355",
+                            "deviceUniqueId": "TeleHealth-2DD9"
+                        },
+                        "attributes": {
+                            "attribute": [
+                                {
+                                    "attributeGuid": "780373ED-E4F1-4857-BDD1-7A36B0ADB73C",
+                                    "attributeName": "temperature_deg_C",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "43814DAC-4AAA-4221-89D1-6C24B6ADA388",
+                                    "attributeName": "temperature_deg_F",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "B1096327-F0A9-4EE5-BCEF-AB9E7DA5EB87",
+                                    "attributeName": "spo2",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "2FE44E15-F6CC-491D-A7BD-1A48C2B0F94B",
+                                    "attributeName": "heart_rate",
+                                    "checked": "false",
+                                    "dataType": "DECIMAL",
+                                    "attributeLatestValue": "0.1",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0.1"
+                                },
+                                {
+                                    "attributeGuid": "F3788930-CB3B-4ABA-9801-9AFF34CEE7BB",
+                                    "attributeName": "quality",
+                                    "checked": "true",
+                                    "dataType": "INTEGER",
+                                    "attributeLatestValue": "0",
+                                    "deviceUpdatedDate": "2025-05-01T21:37:33.147Z",
+                                    "gatewayUpdatedDate": "NA",
+                                    "attributeValue": "0"
+                                }
+                            ]
+                        },
+                        "minValue": "0",
+                        "maxValue": "100",
+                        "version": "2.0",
+                        "zones": [
+                            {
+                                "zoneColor": "#9b9b9b",
+                                "zoneName": "waiting",
+                                "upToValue": "5",
+                                "showColorPicker": "false"
+                            },
+                            {
+                                "zoneName": "measuring",
+                                "zoneColor": "#f8e71c",
+                                "upToValue": "100",
+                                "showColorPicker": "false"
+                            }
+                        ],
+                        "key": "gauge"
+                    }
+                }
+            },
+            "properties": {
+                "x": "20",
+                "y": "15",
+                "w": "10",
+                "h": "9",
+                "i": "gauge",
+                "minW": "10",
+                "minH": "9",
+                "maxH": "15",
+                "maxW": "16",
+                "isStatic": "false"
+            }
+        }
+    ]
+}
