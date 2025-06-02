@@ -119,7 +119,20 @@ The app automatically:
 
 ### 7. Visualize Data with Dashboards  
 
-- Download the [dashboard template](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_dashboard_export.json) (**must** Right-Click, "Save link as ...").
+- Download the one of the example dashboards to view live telemetry (**must** Right-Click, "Save link as ...").
+  
+     [**Example Telehealth User Dashboard without Alerts**](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_noAlerts_dashboard_export.json)
+  
+  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash.PNG">
+
+    [**Example Telehealth User Dashboard without Temperature**](http://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_no_temp_dashboard_export.json  )
+  
+  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash-noTemp.PNG">
+    
+    [**Example Telehealth User Dashboard with Alerts**](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_alerts_dashboard_export.json)
+  
+  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash-Alerts.PNG">
+     
 - In /IOTCONNECT, select **Create Dashboard → Import Dashboard**.
 - Complete the Import Dashboard form
     - Upload `.json` file
@@ -129,16 +142,7 @@ The app automatically:
     - Finally, **Save**  
     <img width="350" alt="Import Dashboard" src="../../../images/import_telehealth_dashboard.png">
 
-Your telemetry data is now visualized on a configurable dashboard.
-
-  **Example Telehealth User Dashboard**
-  
-  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash.PNG">
-    
-  **Example Telehealth User Dashboard with Alerts**
-  
-  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash-Alerts.PNG">
-    
+Your telemetry data is now visualized on a configurable dashboard.    
 ---
 
 ### Optional Next Steps  
