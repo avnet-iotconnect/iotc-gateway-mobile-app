@@ -129,9 +129,15 @@ The app automatically:
     - Finally, **Save**  
     <img width="350" alt="Import Dashboard" src="../../../images/import_telehealth_dashboard.png">
 
-Your telemetry data is now visualized on a custom dashboard.
+Your telemetry data is now visualized on a configurable dashboard.
 
-  <img width="600" alt="Telehealth Dashboard" src="../../../images/telehealth_dashboard.png">
+  **Example Telehealth User Dashboard**
+  
+  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash.PNG">
+    
+  **Example Telehealth User Dashboard with Alerts**
+  
+  <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash-Alerts.PNG">
     
 ---
 
