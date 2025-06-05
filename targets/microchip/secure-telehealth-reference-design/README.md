@@ -125,7 +125,7 @@ The app automatically:
   
   <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash.PNG">
 
-    [**Example Telehealth User Dashboard without Temperature**](http://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_no_temp_dashboard_exportr2.json  )
+    [**Example Telehealth User Dashboard without Temperature**](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/telehealth_noAlerts_dashboard_export-r2.json)
   
   <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash-noTemp.PNG">
     
