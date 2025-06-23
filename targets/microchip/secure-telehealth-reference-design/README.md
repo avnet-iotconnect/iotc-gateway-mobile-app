@@ -121,7 +121,7 @@ The app automatically:
 
 - Download the example dashboards to view live telemetry
   
-    [**Example Telehealth User Dashboard**](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/blob/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/mchp-telehealth_no-temp_dashboard.json)  (**must** Right-Click, "Save link as ...")
+    [**Example Telehealth User Dashboard**](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/blob/mcp-telehealth-docs/targets/microchip/secure-telehealth-reference-design/dashboards/mchp-telehealth_public_dashboard.json)  (**must** Right-Click, "Save link as ...")
   
   <img width="500" alt="Telehealth Dashboard" src="../../../images/MCP-Telehealth-Dash-noTemp.PNG">
      
