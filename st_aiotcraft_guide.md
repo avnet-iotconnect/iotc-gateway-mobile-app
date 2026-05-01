@@ -73,17 +73,17 @@ This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained mo
 
 1. Open the side menu and navigate to **Settings → Configurations**.
    
-<img src="images/st_aiotcraft/08_settings_staiot.png" alt="Settings → Configurations → STAIOT" width="600"/>
+   <img src="images/st_aiotcraft/08_settings_staiot.png" alt="Settings → Configurations → STAIOT" width="600"/>
 
 3. In the **General** section, click **STAIOT**.
 
-<img src="images/st_aiotcraft/09_create_association.png" alt="Create Association" width="600"/>
+   <img src="images/st_aiotcraft/09_create_association.png" alt="Create Association" width="600"/>
 
 4. On the right-hand panel, click **+ Create Association**.
 
 5. A Cognito sign-in dialog opens. Choose **avnet-iotc-stage**.
 
-<img src="images/st_aiotcraft/10_cognito_stage.png" alt="Choose avnet-iotc-stage" width="500"/>
+   <img src="images/st_aiotcraft/10_cognito_stage.png" alt="Choose avnet-iotc-stage" width="500"/>
 
 > **NOTE — Known issue**
 > Occasionally an AIoT Craft training job will fail. The /IOTCONNECT and ST teams are actively addressing this. If it happens, retry the same flow with a fresh dataset.
@@ -142,7 +142,7 @@ Tapping the device will automatically:
 2. Register a new device in /IOTCONNECT keyed to your box's identifier.
 3. Show the **/IOTCONNECT Details** sheet confirming the connection.
 
-<img src="images/st_aiotcraft/15_iotc_details.png" alt="/IOTCONNECT Details" width="240"/>
+   <img src="images/st_aiotcraft/15_iotc_details.png" alt="/IOTCONNECT Details" width="240"/>
 
 ## 8. Verify the Device in /IOTCONNECT
 
@@ -150,15 +150,15 @@ Switch back to the browser and confirm the device showed up.
 
 * From the left menu open **Devices → Device**.
 
-<img src="images/st_aiotcraft/16_devices_menu.jpeg" alt="Devices menu" width="500"/>
+  <img src="images/st_aiotcraft/16_devices_menu.jpeg" alt="Devices menu" width="500"/>
 
 * Sort by **Last Connection** (click the column header twice for descending) to bring your newly paired device to the top — its Provisioning Status should be **CONNECTED**.
 
-<img src="images/st_aiotcraft/17_devices_table.jpeg" alt="Devices list" width="700"/>
+  <img src="images/st_aiotcraft/17_devices_table.jpeg" alt="Devices list" width="700"/>
 
 * Click the **Unique ID** of your device to open the Device Info page.
 
-<img src="images/st_aiotcraft/18_device_info.jpeg" alt="Device Info" width="700"/>
+  <img src="images/st_aiotcraft/18_device_info.jpeg" alt="Device Info" width="700"/>
 
 ## 9. Verify the Template
 
@@ -168,11 +168,11 @@ The Bridge App also auto-creates the **AvnetSTaws** template if it isn't already
 
 * Click into **AvnetSTaws** to see its **Properties** (note **Enable File Support** is on)…
 
-<img src="images/st_aiotcraft/19_template_properties.png" alt="Template properties" width="700"/>
+  <img src="images/st_aiotcraft/19_template_properties.png" alt="Template properties" width="700"/>
 
 * …and its **Attributes** (47 sensor attributes — accel, gyro, RMS speed, MLC features, etc.).
 
-<img src="images/st_aiotcraft/20_template_attributes.png" alt="Template attributes" width="700"/>
+  <img src="images/st_aiotcraft/20_template_attributes.png" alt="Template attributes" width="700"/>
 
 ## 10. Push a Starter AI Model
 
@@ -200,7 +200,7 @@ To deploy one:
 4. Choose **All devices of selected entity** or **Selected devices** → pick your device.
 5. Click **Push Module**.
 
-<img src="images/st_aiotcraft/24_push_module.png" alt="Push Module" width="700"/>
+   <img src="images/st_aiotcraft/24_push_module.png" alt="Push Module" width="700"/>
 
 The Bridge App receives the OTA over BLE and writes the module to the SensorTile.box PRO's Machine Learning Core.
 
@@ -212,11 +212,11 @@ After pairing, the Bridge App lands on the **AI Model List** screen with the mod
 
 * Tap a model card (e.g. **Smart Asset Tracking**). The app downloads the module if it isn't already cached.
 
-<img src="images/st_aiotcraft/26_downloading_model.png" alt="Downloading model" width="240"/>
+  <img src="images/st_aiotcraft/26_downloading_model.png" alt="Downloading model" width="240"/>
 
 * Tap **Show Inference Data** at the bottom. The app pushes the device into inference mode and starts streaming MLC results.
 
-<img src="images/st_aiotcraft/27_applying_model.png" alt="Applying model configuration" width="240"/>
+  <img src="images/st_aiotcraft/27_applying_model.png" alt="Applying model configuration" width="240"/>
 
 For *Smart Asset Tracking*, the four classes light up in real time as you pose the box:
 
@@ -234,11 +234,11 @@ Dynamic Dashboards visualize live telemetry, inference history, and any other at
 * Download the [ST AIoT Craft dashboard template](https://iotcimage.s3.us-east-1.amazonaws.com/dashboards/STMicro/aiotcraft/ST_AIoT_CraftDashboard.json) (right-click and **Save As…**).
 * In /IOTCONNECT, click **Create Dashboard** at the top right and choose **Import Dashboard**.
 
-<img src="images/st_aiotcraft/32_dashboard_top.png" alt="Create Dashboard" width="500"/>
+  <img src="images/st_aiotcraft/32_dashboard_top.png" alt="Create Dashboard" width="500"/>
 
 * In the dialog, browse to the saved `.json` file, then fill in:
 
-<img src="images/st_aiotcraft/33_import_dashboard.png" alt="Import Dashboard" width="500"/>
+  <img src="images/st_aiotcraft/33_import_dashboard.png" alt="Import Dashboard" width="500"/>
 
   1. **Template** = `AvnetSTaws`
   2. **Device** = your unique device
@@ -247,15 +247,15 @@ Dynamic Dashboards visualize live telemetry, inference history, and any other at
   5. Pick a **Background Color** (e.g. `EEEEEE`)
   6. Click **Save**
 
-<img src="images/st_aiotcraft/34_create_dashboard_form.png" alt="Dashboard creation form" width="500"/>
+  <img src="images/st_aiotcraft/34_create_dashboard_form.png" alt="Dashboard creation form" width="500"/>
 
 * The dashboard opens in **Edit Mode** with the imported widgets and a widget palette. Drop in additional widgets if you like, or click the blue **Save** in the top-right to exit edit mode.
 
-<img src="images/st_aiotcraft/37_dashboard_edit.png" alt="Dashboard edit mode" width="700"/>
+  <img src="images/st_aiotcraft/37_dashboard_edit.png" alt="Dashboard edit mode" width="700"/>
 
 * Find your dashboard later under **Dashboards** in the top menu.
 
-<img src="images/st_aiotcraft/35_dashboard_dropdown.png" alt="Dashboard dropdown" width="500"/>
+  <img src="images/st_aiotcraft/35_dashboard_dropdown.png" alt="Dashboard dropdown" width="500"/>
 
 The finished view shows live inference (`Smart Asset Monitoring` widget), telemetry, device log, and notifications — all bound to the device you just paired.
 
@@ -273,15 +273,15 @@ This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps th
 * From the Bridge App's **AI Model List**, tap **Select Sensor For Data Logging**.
 * Choose the sensor(s) you want to record (e.g. **Accelerometer**, **Gyroscope**) and tap **Start**.
 
-<img src="images/st_aiotcraft/39_select_sensor.png" alt="Select Sensor" width="240"/>
+  <img src="images/st_aiotcraft/39_select_sensor.png" alt="Select Sensor" width="240"/>
 
 * On the next screen, pick the **labels** you want to associate with this session. The app shows a live chart of the sensor stream so you can confirm signal before recording.
 
-<img src="images/st_aiotcraft/40_select_tags.png" alt="Select tags" width="240"/>
+  <img src="images/st_aiotcraft/40_select_tags.png" alt="Select tags" width="240"/>
 
 * Press **Start** and perform each motion/activity for the duration you want it labeled. When done, press **Stop**.
 
-<img src="images/st_aiotcraft/41_logging_active.png" alt="Active logging" width="240"/>
+  <img src="images/st_aiotcraft/41_logging_active.png" alt="Active logging" width="240"/>
 
 > **Labeling — 4 Simple Rules**
 > 1. **Pick at least 2 labels.** Single-label training fails with "job failed" — this is the #1 cause.
