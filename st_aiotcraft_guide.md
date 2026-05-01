@@ -11,7 +11,6 @@ This guide walks through the end-to-end Edge AI lifecycle using the Avnet **/IOT
 
 In addition to the ST SensorTile.box PRO, you will need:
 
-- A free [MyST](https://my.st.com/cas/login) account (used by ST AIoT Craft)
 - A **/IOTCONNECT POC** account — you will create this in Step 1
 - An Android or iOS device (acts as the BLE-to-WAN bridge)
 - A SensorTile.box PRO running **FP-SNS-DATALOG2_Datalog2 v3.1.0** firmware (this is the version AIoT Craft expects; the kits handed out for the lab ship pre-flashed)
@@ -35,7 +34,7 @@ Complete the registration form:
 <img src="images/st_aiotcraft/02_subscription_form.png" alt="Subscription form" width="400"/>
 
 > **IMPORTANT**
-> The email you submit here becomes the **account owner** with full admin permissions, and the company name you enter becomes your account's unique identifier (CPID). For the lab, use your real company name **plus something unique** (e.g., your initials) — the field rejects duplicates across the whole shared instance.
+> The email you submit here becomes the **account owner** with full admin permissions, and the company name you enter becomes your account's unique identifier (CPID). For the lab, use your real company name **plus something unique** (e.g., your initials) — the form will reject duplicate emails and company names across the instance.
 
 ## 2. Receive Account Information Emails
 
@@ -73,15 +72,16 @@ After authentication you land on the **Company Account Dashboard**.
 This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained models can flow back from AIoT Craft into your AI Module Library.
 
 1. Open the side menu and navigate to **Settings → Configurations**.
-2. In the **General** section, click **STAIOT**.
-
+   
 <img src="images/st_aiotcraft/08_settings_staiot.png" alt="Settings → Configurations → STAIOT" width="600"/>
 
-3. On the right-hand panel, click **+ Create Association**.
+3. In the **General** section, click **STAIOT**.
 
 <img src="images/st_aiotcraft/09_create_association.png" alt="Create Association" width="600"/>
 
-4. A Cognito sign-in dialog opens. Choose **avnet-iotc-stage**.
+4. On the right-hand panel, click **+ Create Association**.
+
+5. A Cognito sign-in dialog opens. Choose **avnet-iotc-stage**.
 
 <img src="images/st_aiotcraft/10_cognito_stage.png" alt="Choose avnet-iotc-stage" width="500"/>
 
@@ -349,7 +349,6 @@ Putting the whole loop on one page:
 | **2. Deploy a model** | ~10 min | OTA push a starter module · live inference on device | Steps 9–11 |
 | **3. Capture data** | ~10 min | Switch into logging mode · record labeled sessions · view in AIoT Craft | Steps 12–14 |
 | **4. Train & redeploy** | ~15 min | AIoT Craft trains a model · OTA back · see your model run | Step 15 |
-| **5. Customize** | ~10 min | Edit a dashboard widget · script a deployment with one REST call | Optional |
 
 ## Optional — Build Your Own Custom Experiences
 
