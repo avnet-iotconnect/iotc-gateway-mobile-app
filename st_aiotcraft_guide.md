@@ -23,7 +23,7 @@ In addition to the ST SensorTile.box PRO, you will need:
 ## 1. Subscribe to /IOTCONNECT
 
 Open the /IOTCONNECT POC subscription page:
-[http://avnet.me/IOTC-4-ST](http://avnet.me/IOTC-4-ST) (resolves to <https://pocsubscription.iotconnect.io/subscribe>).
+[http://avnet.me/IOTC-4-ST](http://avnet.me/IOTC-4-ST) (resolves to <https://pocsubscription.iotconnect.io/registration>).
 
 <img src="images/st_aiotcraft/01_subscription_plans.png" alt="Subscription plans" width="500"/>
 
