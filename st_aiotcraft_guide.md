@@ -31,7 +31,7 @@ Open the /IOTCONNECT POC subscription page:
 
 Complete the registration form:
 
-<img src="images/st_aiotcraft/iotconnect_registration_new.png" alt="Subscription form" width="900"/>
+<img src="images/st_aiotcraft/iotconnect_registration_new.png" alt="Subscription form" width="1200"/>
 
 > **IMPORTANT**
 > The email you submit here becomes the **account owner** with full admin permissions, and the company name you enter becomes your account's unique identifier (CPID). For the lab, use your real company name **plus something unique** (e.g., your initials) — the form will reject duplicate emails and company names across the instance.
