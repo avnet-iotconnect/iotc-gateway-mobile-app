@@ -1,4 +1,4 @@
-# /IOTCONNECT Bridge App with ST SensorTile.box PRO — Powered by ST AIoT Craft
+# /IOTCONNECT Bridge App with ST SensorTile.box PRO  <br> Powered by ST AIoT Craft
 
 This guide walks through the end-to-end Edge AI lifecycle using the Avnet **/IOTCONNECT Bridge** mobile app, the **ST SensorTile.box PRO**, and **ST AIoT Craft**. You will subscribe to /IOTCONNECT, connect the Bridge App to the cloud, push a starter AI model down to the device, view live inference, build a dashboard, then capture and label your own sensor data so AIoT Craft can train a new MLC model — all without ever picking up a USB cable after the device is in your hand.
 
