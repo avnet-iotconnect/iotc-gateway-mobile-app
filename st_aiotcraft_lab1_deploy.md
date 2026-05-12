@@ -1,6 +1,6 @@
-# /IOTCONNECT Bridge App with ST SensorTile.box PRO  <br> Powered by ST AIoT Craft
+# Lab 1 — Deploy a Starter MLC Model <br> /IOTCONNECT Bridge App + ST SensorTile.box PRO + ST AIoT Craft
 
-This guide walks through the end-to-end Edge AI lifecycle using the Avnet **/IOTCONNECT Bridge** mobile app, the **ST SensorTile.box PRO**, and **ST AIoT Craft**. You will subscribe to /IOTCONNECT, connect the Bridge App to the cloud, push a starter AI model down to the device, view live inference, build a dashboard, then capture and label your own sensor data so AIoT Craft can train a new MLC model — all without ever picking up a USB cable after the device is in your hand.
+This is the first of two labs. **Lab 1 takes you from zero to a pre-built AI model running on the SensorTile.box PRO**, with live inference streaming to the Bridge App on your phone, a /IOTCONNECT dashboard visualizing both the inference results and the raw sensor telemetry. **[Lab 2](./st_aiotcraft_lab2_train.md)** picks up from there: capture your own labeled data, train a custom MLC model with ST AIoT Craft, and OTA it back to the device.
 
 <img src="images/sensortilebox_pro.png" alt="SensorTile.box PRO" width="200"/>
 
@@ -69,7 +69,7 @@ After authentication you land on the **Company Account Dashboard**.
 
 ## 4. Connect /IOTCONNECT to ST AIoT Craft
 
-This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained models can flow back from AIoT Craft into your AI Module Library.
+This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained models can flow back from AIoT Craft into your AI Module Library. You will not see the payoff of this association until **Lab 2**, but it has to be in place before you start uploading training data.
 
 1. Open the side menu and navigate to **Settings → Configurations**.
 
@@ -176,7 +176,7 @@ The Bridge App also auto-creates the **AvnetSTaws** template if it isn't already
 
 ## 10. Push the Smart Asset Tracking Model
 
-/IOTCONNECT ships with four ready-to-run starter modules under **Modules → Module**. These are the same model format AIoT Craft produces, so once you've walked the loop with one of them you've already seen the deployment story end-to-end. **For this walkthrough, push the Smart Asset Tracking module** — it's the one Step 11 and the dashboard in Step 12 are wired up for.
+/IOTCONNECT ships with four ready-to-run starter modules under **Modules → Module**. These are the same model format AIoT Craft produces, so once you've walked the loop with one of them you've already seen the deployment story end-to-end. **For this lab, push the Smart Asset Tracking module** — it's the one Step 11 and the dashboard in Step 12 are wired up for.
 
 | Starter module | What it detects |
 |---|---|
@@ -207,7 +207,7 @@ To deploy **Smart Asset Tracking** to your box:
 The Bridge App receives the OTA over BLE and writes the module to the SensorTile.box PRO's Machine Learning Core.
 
 > **TIP — Try the other modules later**
-> Once you've finished this walkthrough with **Smart Asset Tracking**, come back to this step and push one of the other starter modules (*Gesture Recognition*, *Head Gesture Recognition*, *Human Activity Recognition*) to see a different set of classifications stream into the same Bridge App and dashboard. Each module targets the same `AvnetSTaws` template, so no rewiring needed — just **Push Module** again and tap the new card in the AI Model List.
+> Once you've finished Lab 1 with **Smart Asset Tracking**, come back to this step and push one of the other starter modules (*Gesture Recognition*, *Head Gesture Recognition*, *Human Activity Recognition*) to see a different set of classifications stream into the same Bridge App and dashboard. Each module targets the same `AvnetSTaws` template, so no rewiring needed — just **Push Module** again and tap the new card in the AI Model List.
 
 ## 11. View Live Inference on the Phone
 
@@ -227,15 +227,15 @@ The app then downloads the model bundle (if not already cached) and applies the 
 For *Smart Asset Tracking*, the four classes light up in real time as you pose the box:
 
 | | | | |
-|---|---|---|---|
+|---|---|-----|---|
 | <img src="images/st_aiotcraft/28_inf_stationary_upright.jpeg" alt="Stationary Upright" width="180"/> | <img src="images/st_aiotcraft/29_inf_stationary_not_upright.jpeg" alt="Stationary Not Upright" width="180"/> | <img src="images/st_aiotcraft/30_inf_motion.jpeg" alt="Motion" width="180"/> | <img src="images/st_aiotcraft/31_inf_shaken.jpeg" alt="Shaken" width="180"/> |
 | Stationary Upright | Stationary Not Upright | Motion | Shaken |
 
-Inference results — together with raw sensor telemetry — are streamed to /IOTCONNECT, ready for dashboards in the next step.
+Inference results — together with raw sensor telemetry — are streamed to /IOTCONNECT, ready for the dashboard you'll build next.
 
 ## 12. Create a Dashboard
 
-Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template.
+Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template. The inference results and raw sensor values now flowing in from Step 11 are already in /IOTCONNECT — this step gives them a UI.
 
 * Download the [ST AIoT Craft dashboard template](https://iotcimage.s3.us-east-1.amazonaws.com/dashboards/STMicro/aiotcraft/ST_AIoT_CraftDashboard.json) (right-click and **Save As…**).
 * In /IOTCONNECT, click **Create Dashboard** at the top right and choose **Import Dashboard**.
@@ -268,159 +268,55 @@ The finished view shows live inference (`Smart Asset Monitoring` widget), teleme
 <img src="images/st_aiotcraft/36_dashboard_view.png" alt="ST AIoT Craft dashboard" width="700"/>
 
 > **TIP**
-> The dashboard supports five management actions from the top bar: **Refresh Data**, **Edit Mode**, **Delete**, **Share Link** (no login required), and **Export to JSON** (handy when onboarding another device). You can also confirm raw data flow by clicking **Live Data** on the device's Device Info page.
+> The dashboard supports five management actions from the top bar: **Refresh Data**, **Edit Mode**, **Delete**, **Share Link** (no login required), and **Export to JSON** (handy when onboarding another device).
+
+## 13. Exercise the Inference and Sensor Telemetry
+
+With the device in inference mode (Step 11) and the dashboard open (Step 12), close the loop end-to-end: pose the box, watch the classifications flow into the dashboard, and confirm raw sensor telemetry is streaming alongside.
+
+**Pose the box and watch the classifications**
+
+Keep the dashboard visible while you put the box through each class the *Smart Asset Tracking* model recognizes. Hold each pose for several seconds so the class clearly registers in the **Smart Asset Monitoring** widget and in any class-history widget on the dashboard.
+
+| | | | |
+|---|---|---|---|
+| Set the box flat | Tip it on its side | Move it around | Shake it briefly |
+| → **Stationary Upright** | → **Stationary Not Upright** | → **Motion** | → **Shaken** |
+
+The widget should change classes within a second or two of each pose. If a class never lights up, re-check the device is still in **Show Inference Data** mode in the Bridge App and that the Bridge App still shows **CONNECTED** in the **/IOTCONNECT Details** sheet.
+
+**Verify raw sensor telemetry is streaming**
+
+The Bridge App streams more than just MLC classifications — the accelerometer, gyroscope, and derived features defined on the **AvnetSTaws** template (Step 9) flow up as telemetry too. Two ways to verify:
+
+* On the **dashboard** you built in Step 12, watch the telemetry chart widgets — the accel / gyro traces should sweep in real time as you move the box.
+* On the **device's Device Info page** (Step 8), click the **Live Data** tab. You'll see the JSON payload arriving from the Bridge App, including both the MLC class labels and the raw sensor fields.
+
+  <img src="images/st_aiotcraft/38_live_data.png" alt="Live Data view" width="700"/>
+
+If Live Data is empty but the Bridge App's inference screen is still showing classes, give it a few seconds — the cloud side updates a beat behind the BLE link.
+
+> **CHECKPOINT**
+> Before moving on, confirm three things are true at the same time:
+> 1. The Bridge App is in **Show Inference Data** mode and class labels are changing as you pose the box.
+> 2. The dashboard's **Smart Asset Monitoring** widget is tracking those class changes within a second or two.
+> 3. **Device Info → Live Data** shows fresh JSON payloads arriving with both MLC class fields and raw accel / gyro values.
 >
-> <img src="images/st_aiotcraft/38_live_data.png" alt="Live Data view" width="700"/>
+> If all three are true, the full device → BLE → Bridge App → /IOTCONNECT → dashboard chain is healthy and you are ready for Lab 2.
 
-## 13. Capture Labeled Sensor Data for Training
-
-This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps the device out of inference and streams raw sensor samples into a session that gets zipped and uploaded to /IOTCONNECT.
-
-* From the Bridge App's **AI Model List**, tap **Select Sensor For Data Logging**.
-* Choose the sensor(s) you want to record (e.g. **Accelerometer**, **Gyroscope**) and tap **Start**.
-
-  <img src="images/st_aiotcraft/39_select_sensor.png" alt="Select Sensor" width="240"/>
-
-* On the next screen, pick the **labels** you want to associate with this session. The app shows a live chart of the sensor stream so you can confirm signal before recording.
-
-  <img src="images/st_aiotcraft/40_select_tags.png" alt="Select tags" width="240"/>
-
-* Press **Start** and perform each motion/activity for the duration you want it labeled. When done, press **Stop**.
-
-  <img src="images/st_aiotcraft/41_logging_active.png" alt="Active logging" width="240"/>
-
-> **Labeling — 4 Simple Rules**
-> 1. **Pick at least 2 labels.** Single-label training fails with "job failed" — this is the #1 cause.
-> 2. **At least 5 seconds per label.** Less than 5s → no association → upload may parse but training will reject it.
-> 3. **Multiple labels can overlap.** If you press *Shaken* and then press *Motion* without releasing *Shaken*, both get entries in `acquisition_info.json`. The first label is **not** auto-released — overlap is intentional.
-> 4. **Re-pressing a label that already logged is ignored.** If you select *Shaken*, log it, deselect, then re-select *Shaken*, the second selection adds nothing — the cloud already has *Shaken* data for this session.
-
-Stopping the session leaves the labeled data on the SensorTile.box PRO's microSD card — it does **not** auto-upload. **Step 14** walks through pushing it to /IOTCONNECT so AIoT Craft can train on it.
-
-## 14. Push Samples to /IOTCONNECT
-
-To kick off training, the session files have to move from the device's microSD card up to /IOTCONNECT. The Bridge App's **SD Card** screen walks you through it.
-
-1. **Stop training.** Confirm you're back at the *Accelerometer* screen with logging stopped and your tags still selected.
-
-   <img src="images/st_aiotcraft/41_logging_active.png" alt="Stop logging" width="240"/>
-
-2. **Find the log folder.** Open the **SD Card** section in the Bridge App. You'll see a "Follow these steps" help screen explaining the dongle workflow.
-
-   <img src="images/st_aiotcraft/44_sd_help.png" alt="SD Card help" width="240"/>
-
-3. **Plug in the SD card.** Power down the box, pop the microSD out, slot it into a USB-C / Lightning microSD dongle, and connect the dongle to your phone. Tap **Connect and Select Root**, grant access, and browse to the `STM32` folder — each logging session is a date-named folder (e.g. `20260429_21_30_06`).
-
-   <img src="images/st_aiotcraft/42_sd_sessions.png" alt="SD card folder list" width="240"/>
-
-4. **Select / push the files.** Open the most recent session folder, tick all three files (`acquisition_info.json`, `device_config.json`, and `lsm6dsv16x_acc.dat` / `_gyro.dat`), and push.
-
-   <img src="images/st_aiotcraft/45_select_files.png" alt="Select files" width="240"/>
-
-5. **Upload Success.** When the bundle has been zipped and accepted by /IOTCONNECT, the app shows an **Upload Success** confirmation. The session is now queued for AIoT Craft to consume.
-
-   <img src="images/st_aiotcraft/46_upload_success.png" alt="Upload Success" width="240"/>
-
-> **NOTE**
-> The upload is the trigger for AIoT Craft to start training. If a session never makes it into /IOTCONNECT, no `.ucf` model will come back — make sure each labeled session ends with the **Upload Success** popup.
-
-## 15. Inspect a Logged Session
-
-Each session is a folder on the device's SD card (and a zip in /IOTCONNECT) containing three artifacts:
-
-| | |
-|---|---|
-| <img src="images/st_aiotcraft/42_sd_sessions.png" alt="SD card sessions" width="240"/> | <img src="images/st_aiotcraft/43_session_files.png" alt="Session files" width="240"/> |
-
-* **`acquisition_info.json`** — every label you pressed, with start/stop timestamps. The cloud uses this to slice the raw `.dat` files into labeled chunks.
-* **`device_config.json`** — sensor configuration (ODR, full-scale, enabled axes) at recording time. The cloud needs this to interpret the binary correctly.
-* **`lsm6dsv16x_acc.dat` / `lsm6dsv16x_gyro.dat`** — raw binary samples, parsed and chunked into CSV by AIoT Craft.
-
-To find the upload in /IOTCONNECT, open your device's Device Info page and click the **Telemetry Files** tab. Each row is one logging session with timestamp, size, and a download link.
-
-> **NOTE**
-> If a freshly stopped session doesn't appear immediately, give it a minute — the upload happens after the session closes, not during recording.
-
-## 16. The MLC Retraining Loop
-
-Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you set up in **Step 4** forwards the binary HSD data to ST AIoT Craft, which runs AutoML / AFS to produce a `.ucf` MLC model. AIoT Craft pushes that model **back** into your account's AI Module Library, and a single **Push Module** click delivers it to the device:
-
-```
-[Device]            [BLE]      [Bridge App]   [/IOTCONNECT]   [Connector]   [ST AIoT Craft]
-   │                  │             │              │              │              │
-   │ MLC inference ──►│ ───────────►│ Telemetry    │              │              │
-   │                  │             │ ───────────► │ Stored as    │              │
-   │                  │             │              │ template     │              │
-   │ Switch→logging ◄─┤ ◄───────────┤ Cmd from     │              │              │
-   │ datalog2 firmware│             │ cloud        │              │              │
-   │                  │             │              │              │              │
-   │ Raw .dat + JSON ►│ ───────────►│ Zip + upload │              │              │
-   │                  │             │ ───────────► │ Forward via  │              │
-   │                  │             │              │ connector ──►│ Blob ingest  │
-   │                  │             │              │              │ (binary-hsd) │
-   │                  │             │              │              │ ───────────► │ Chunks (CSV)
-   │                  │             │              │              │              │ AutoML / AFS
-   │                  │             │              │              │              │ trains MLC
-   │                  │             │              │              │ ◄────────────┤ .ucf model
-   │                  │             │              │ Module ◄─────┤              │
-   │                  │             │              │ registered   │              │
-   │                  │             │              │ in library   │              │
-   │ load_model PnPL ◄┤ ◄───────────┤ Push module  │              │              │
-   │ command          │             │ (OTA)        │              │              │
-   │                  │             │              │              │              │
-   │ MLC reprogrammed,│             │              │              │              │
-   │ inference resume►│ ───────────►│ ───────────► │ Live again   │              │
-```
-
-To verify a freshly trained model:
-
-1. /IOTCONNECT → **Modules → Push Modules** → select your new module → **Push**.
-2. In the Bridge App, return to **AI Model List** (if connected the new module appears) and tap **Show Inference Data** to switch the box back into inference mode.
-3. Watch the dashboard — your model is now running on real hardware.
-
-> **Capture → Upload → Train → Deploy → Inference → (capture more) → Retrain**
-
-## 17. Find Your Trained Model in /IOTCONNECT
-
-When AIoT Craft finishes training (typically ~30 seconds after the upload is accepted), a new entry appears in your AI Model library — distinct from the read-only **Module Library** used in **Step 10**, this is the **My Model** list of modules trained on your own data.
-
-1. From the left menu open **AI Models → AI Model**.
-
-   <img src="images/st_aiotcraft/47_my_model_menu.png" alt="AI Models → AI Model" width="700"/>
-
-2. Your trained module shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push.
-
-   <img src="images/st_aiotcraft/49_my_model.png" alt="My Model list" width="700"/>
-
-3. Click the version number to see every training run AIoT Craft has produced for this model — useful when you've captured multiple datasets and want to compare or roll back.
-
-   <img src="images/st_aiotcraft/48_version_list.png" alt="Version List" width="700"/>
-
-> **NOTE**
-> If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Step 4** is still active and that the upload completed (Step 14 ended in **Upload Success**). The single-label-fails / under-5-second rules from **Step 13** also surface here as a *job failed* status.
-
-From this point, deploying the model is the same one-click **Push Module** flow you used in **Step 10** — except the module is now the one trained on your own data.
-
-## 18. The 5 Stages — End-to-End
-
-Putting the whole loop on one page:
+## Lab 1 Recap
 
 | Stage | Time | What you did | Section |
 |---|---|---|---|
-| **1. Connect** | ~10 min | Account · device register · BLE pair | Steps 1–8 |
-| **2. Deploy a model** | ~10 min | OTA push a starter module · live inference on device | Steps 9–11 |
-| **3. Capture data** | ~15 min | Switch into logging mode · record labeled sessions · push samples via dongle | Steps 12–15 |
-| **4. Train & redeploy** | ~15 min | AIoT Craft trains a model · find it under My Model · OTA back · see your model run | Steps 16–17 |
+| **1. Connect** | ~10 min | Account · STAIOT association · BLE pair · template/device verified | Steps 1–9 |
+| **2. Deploy a model** | ~10 min | OTA push a starter module · live inference on device | Steps 10–11 |
+| **3. Visualize & verify** | ~10 min | Import dashboard · pose the box · confirm classifications + raw telemetry end-to-end | Steps 12–13 |
 
-## Optional — Build Your Own Custom Experiences
+Leave the device paired, the Bridge App open on **AI Model List**, your browser logged into /IOTCONNECT, and your dashboard up — **[Lab 2](./st_aiotcraft_lab2_train.md)** starts here.
 
-/IOTCONNECT exposes everything used in this guide via REST and AWS-native connectors:
+## Next
 
-* REST API docs: <https://docs.iotconnect.io/iotconnect/rest-api/>
-* Swagger (POC): <https://awspocmaster.iotconnect.io/api/v2.1/swagger-json>
-* AWS connectors: S3, DynamoDB, SNS, SageMaker, Kinesis, Lambda, Greengrass, EventBridge, Grafana
-
-Webhooks for inbound events, OAuth 2.0 across the API, and CI/CD-friendly OTA triggers mean every step in this guide can be scripted.
+**[Lab 2 — Train Your Own MLC Model with ST AIoT Craft](./st_aiotcraft_lab2_train.md)** — capture labeled sensor data, train a custom MLC model in the cloud, and push it back to the device. The dashboard you just built will be your live view of the new model once it's deployed.
 
 ## See Also
 
