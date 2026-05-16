@@ -2,7 +2,7 @@
 
 This is the first of two labs. **Lab 1 takes you from zero to a pre-built AI model running on the SensorTile.box PRO**, with live inference streaming to the Bridge App on your phone, a /IOTCONNECT dashboard visualizing both the inference results and the raw sensor telemetry. **[Lab 2](./st_aiotcraft_lab2_train.md)** picks up from there: capture your own labeled data, train a custom MLC model with ST AIoT Craft, and OTA it back to the device.
 
-<img src="images/sensortilebox_pro.png" alt="SensorTile.box PRO" width="200"/>
+<img src="images/sensortilebox_pro.png" alt="SensorTile.box PRO" width="150"/>
 
 > **NOTE**
 > This guide tracks the **AWS POC** instance of /IOTCONNECT (the environment used for the ST AIoT Craft preview). Production release is planned for June; release notes are tracked at <https://docs.iotconnect.io/iotconnect/platform/product-updates/>. Where the [main mobile app guide](./mobile_app_guide.md) covers the production AWS environment, **use the URLs in this guide** for the AIoT Craft flow.
@@ -23,7 +23,7 @@ In addition to the ST SensorTile.box PRO, you will need:
 ## 1. Subscribe to /IOTCONNECT
 
 Open the /IOTCONNECT POC subscription page:
-[http://avnet.me/IOTC-4-ST](http://avnet.me/IOTC-4-ST) (resolves to <https://pocsubscription.iotconnect.io/registration>).
+[https://avnet.me/IOTC-4-ST](https://avnet.me/IOTC-4-ST) (resolves to <https://pocsubscription.iotconnect.io/registration>).
 
 <img src="images/st_aiotcraft/01_subscription_plans.png" alt="Subscription plans" width="500"/>
 
@@ -88,12 +88,12 @@ Use the QR codes below to install the Bridge App. (This is the beta build distri
 ### iOS App
 URL: <http://avnet.me/iotc-ios-bridge>
 
-<img src="images/st_aiotcraft/11_qr_ios.png" alt="iOS QR code" width="200"/>
+<img src="images/st_aiotcraft/11_qr_ios.png" alt="iOS QR code" width="110"/>
 
 ### Android App
 URL: <http://avnet.me/iotc-android-bridge>
 
-<img src="images/st_aiotcraft/12_qr_android.png" alt="Android QR code" width="200"/>
+<img src="images/st_aiotcraft/12_qr_android.png" alt="Android QR code" width="110"/>
 
 > **iOS only — "Untrusted Enterprise Developer"**
 > Because the beta is distributed outside the App Store, iOS 26 will block it on first launch with the message **"Untrusted Enterprise Developer."** To trust it:
