@@ -34,7 +34,7 @@ Complete the registration form:
 <img src="images/st_aiotcraft/iotconnect_registration_new.png" alt="Subscription form" width="1200"/>
 
 > **IMPORTANT**
-> The email you submit here becomes the **account owner** with full admin permissions, and the company name you enter becomes your account's unique identifier (CPID). For the lab, use your real company name **plus something unique** (e.g., your initials) — the form will reject duplicate emails and company names across the instance.
+> The email you submit here becomes the **account owner** with full admin permissions, and the company name you enter becomes your account's unique identifier. For the lab, use your real company name **plus something unique** (e.g., your initials).  Note, this form will reject email addresses and company names that have been previously registered.
 
 ## 2. Receive Account Information Emails
 
@@ -80,9 +80,6 @@ This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained mo
 4. A Cognito sign-in dialog opens. Choose **avnet-iotc-stage**.
 
    <img src="images/st_aiotcraft/10_cognito_stage.png" alt="Choose avnet-iotc-stage" width="500"/>
-
-> **NOTE — Known issue**
-> Occasionally an AIoT Craft training job will fail. The /IOTCONNECT and ST teams are actively addressing this. If it happens, retry the same flow with a fresh dataset.
 
 ## 5. Download the /IOTCONNECT Bridge App (Beta)
 
@@ -133,7 +130,7 @@ With the box powered on, the Bridge App scans for BLE devices automatically.
 * If the list stays empty after a few seconds, tap the green menu button in the lower-right corner and choose **Scan Device**.
 * Tap your device to pair.
 
-Tapping the device will automatically:
+Selecting your device will automatically:
 1. Create a device template in /IOTCONNECT (if one does not already exist for this firmware).
 2. Register a new device in /IOTCONNECT keyed to your box's identifier.
 3. Show the **/IOTCONNECT Details** sheet confirming the connection.
