@@ -45,10 +45,6 @@ After submitting registration, expect two emails from /IOTCONNECT:
 | <img src="images/st_aiotcraft/03_welcome_email.png" alt="Welcome email" width="260"/> | <img src="images/st_aiotcraft/05_temp_password_email.png" alt="Temporary password email" width="260"/> |
 | **Welcome to /IOTCONNECT** — plan info and the green **VIEW /IOTCONNECT** button that takes you to the login page. | **Temporary password** — single-use, you'll be forced to reset it on first login. |
 
-If you requested the *Smart Asset Solution* at signup, you will also see a third email pointing at that solution.
-
-<img src="images/st_aiotcraft/04_asset_monitoring_email.png" alt="Asset Monitoring Solution email" width="260"/>
-
 > **NOTE**
 > Check your SPAM folder if the emails don't arrive within a couple of minutes.
 
