@@ -133,85 +133,81 @@ With the box powered on, the Bridge App scans for BLE devices automatically.
 
 <img src="images/st_aiotcraft/14_device_list.png" alt="Device list" width="240"/>
 
-* Locate the device whose name ends with the **7-character identifier printed on your box** (the screenshot shows a generic `IOTC4ml` example — yours will differ).
+* In the **Searched bluetooth device list**, your box appears under its **unique 7-character identifier** — the same one programmed into your kit and printed on your box (the screenshot shows `IOTC4ml`; yours will be different). The Bluetooth MAC address is shown directly beneath the name.
 * If the list stays empty after a few seconds, tap the green menu button in the lower-right corner and choose **Scan Device**.
 * Tap your device to pair.
 
 Tapping the device will automatically:
 1. Create a device template in /IOTCONNECT (if one does not already exist for this firmware).
 2. Register a new device in /IOTCONNECT keyed to your box's identifier.
-3. Show the **/IOTCONNECT Details** sheet confirming the connection.
 
-   <img src="images/st_aiotcraft/15_iotc_details.png" alt="/IOTCONNECT Details" width="240"/>
+Once paired, the app lands on the **AI Model List** with your device shown as **Connected** at the top.
+
+<img src="images/st_aiotcraft/ai_model_connected.png" alt="Device paired — AI Model List showing Connected" width="240"/>
 
 ## 8. Verify the Device in /IOTCONNECT
 
 Switch back to the browser and confirm the device showed up.
 
-* From the left menu open **Devices → Device**.
+* From the left menu open **Devices → Device** — click the **Devices** icon in the far-left nav bar (**①**), then **Device** in the flyout (**②**).
 
-  <img src="images/st_aiotcraft/16_devices_menu.jpeg" alt="Devices menu" width="500"/>
+  <img src="images/st_aiotcraft/16_devices_menu_annotated.png" alt="Open Devices then Device" width="500"/>
 
-* Sort by **Last Connection** (click the column header twice for descending) to bring your newly paired device to the top — its Provisioning Status should be **CONNECTED**.
+* Your device is the only row in the table. The **Provisioning Status (①)** reads **CONNECTED** while the Bridge App is actively bridging, and flips to **DISCONNECTED** once the app disconnects (e.g. it's backgrounded or you closed it) — the screenshot below shows the disconnected state. Click the device's **Unique ID (②)** to open its Device Info page.
 
-  <img src="images/st_aiotcraft/17_devices_table.jpeg" alt="Devices list" width="700"/>
-
-* Click the **Unique ID** of your device to open the Device Info page.
-
-  <img src="images/st_aiotcraft/18_device_info.jpeg" alt="Device Info" width="700"/>
+  <img src="images/st_aiotcraft/17_devices_table_annotated.png" alt="Devices table — Provisioning Status and Unique ID" width="700"/>
 
 ## 9. Verify the Template
 
-The Bridge App also auto-creates the **AvnetSTaws** template if it isn't already there. From **Templates** you can confirm the template exists, has File Upload enabled (so the Bridge App can ship logging sessions to /IOTCONNECT), and exposes the SensorTile attribute set.
+The Bridge App also auto-creates the **AvnetSTaws** template if it isn't already there. Templates are easy to miss — from the **Device Info** page you opened in Step 8, click **Templates** in the toolbar along the bottom of the page (boxed in red below).
 
-<img src="images/st_aiotcraft/21_templates_list.png" alt="Templates list" width="700"/>
+<img src="images/st_aiotcraft/18_device_info_annotated.png" alt="Open Templates from the bottom toolbar of the Device Info page" width="700"/>
 
-* Click into **AvnetSTaws** to see its **Properties** (note **Enable File Support** is on)…
+From **Templates** you can confirm the **AvnetSTaws** template exists, has File Upload enabled (so the Bridge App can ship logging sessions to /IOTCONNECT), and exposes the SensorTile attribute set. To open it, click the **Edit (pencil) icon** in the **Actions** column on the **AvnetSTaws** row.
+
+<img src="images/st_aiotcraft/21_templates_list_annotated.png" alt="Templates list — click the Edit icon on the AvnetSTaws row" width="700"/>
+
+* This opens its **Properties** (note **Enable File Support** is on)…
 
   <img src="images/st_aiotcraft/19_template_properties.png" alt="Template properties" width="700"/>
 
-* …and its **Attributes** (47 sensor attributes — accel, gyro, RMS speed, MLC features, etc.).
+* …and its **Attributes** (49 sensor attributes — accel, gyro, RMS speed, MLC features, etc.).
 
   <img src="images/st_aiotcraft/20_template_attributes.png" alt="Template attributes" width="700"/>
 
 ## 10. Push the Smart Asset Tracking Model
 
-/IOTCONNECT ships with four ready-to-run starter modules under **Modules → Module**. These are the same model format AIoT Craft produces, so once you've walked the loop with one of them you've already seen the deployment story end-to-end. **For this walkthrough, push the Smart Asset Tracking module** — it's the one Step 11 and the dashboard in Step 12 are wired up for.
+/IOTCONNECT ships with four ready-to-run starter models in the **Model Library**. These are the same format AIoT Craft produces, so once you've walked the loop with one of them you've already seen the deployment story end-to-end. **For this walkthrough, push the Smart Asset Tracking model** — it's the one Step 11 and the dashboard in Step 12 are wired up for.
 
-| Starter module | What it detects |
+| Starter model | What it detects |
 |---|---|
 | **Gesture Recognition** | Hand & wrist motion patterns |
 | **Head Gesture Recognition** | Nod, shake, tilt — wearables |
 | **Human Activity Recognition** | Walking, running, stationary, fall |
 | **Smart Asset Tracking** ← use this one | Stationary upright / not upright, motion, shaken |
 
-<img src="images/st_aiotcraft/22_module_library.png" alt="AI Module Library" width="700"/>
+To deploy **Smart Asset Tracking** to your box, open **AI Models → Push Model** from the left sidebar (**①** the AI Models icon, then **②** Push Model).
 
-> **NOTE**
-> The **Module Library** tab lets you create or upload custom modules. The **Module** tab is the per-account, deployable list — the entries here can be pushed to devices.
->
-> <img src="images/st_aiotcraft/23_create_module.png" alt="Create Module" width="700"/>
+<img src="images/st_aiotcraft/push_model_nav_annotated.png" alt="Open AI Models then Push Model from the sidebar" width="700"/>
 
-To deploy **Smart Asset Tracking** to your box:
+Fill in the **Push Model** form (numbered overlays in the screenshot below):
 
-1. Open **Modules → Push Modules**.
-2. Fill in the **Push Module** form (numbered overlays in the screenshot below):
+<img src="images/st_aiotcraft/push_model_form_annotated.png" alt="Push Model form with the five selections highlighted" width="700"/>
 
-   <img src="images/st_aiotcraft/24_push_module_annotated.png" alt="Push Module form with selections highlighted" width="700"/>
+1. **Model** — pick **Smart Asset Tracking**.
+2. **Version** — leave it at the latest (e.g. `1.0.0`).
+3. **Device Template** — pick **AvnetSTaws**.
+4. **Select Device** — switch to **Selected devices** (not *All devices of selected entity*), then pick your device from the **Select Device** dropdown.
+5. Click the **Push Model** button.
 
-   1. **Module** — pick **Smart Asset Tracking**. *(The example screenshot above shows a different option pre-selected — make sure you switch it.)*
-   2. **Device Template** — pick **AvnetSTaws**.
-   3. **Selected devices** — toggle this radio (not *All devices of selected entity*) and pick your device from the **Select Device** dropdown.
-   4. Click the **Push Module** button.
+The Bridge App receives the OTA over BLE and writes the model to the SensorTile.box PRO's Machine Learning Core.
 
-The Bridge App receives the OTA over BLE and writes the module to the SensorTile.box PRO's Machine Learning Core.
-
-> **TIP — Try the other modules later**
-> Once you've finished this walkthrough with **Smart Asset Tracking**, come back to this step and push one of the other starter modules (*Gesture Recognition*, *Head Gesture Recognition*, *Human Activity Recognition*) to see a different set of classifications stream into the same Bridge App and dashboard. Each module targets the same `AvnetSTaws` template, so no rewiring needed — just **Push Module** again and tap the new card in the AI Model List.
+> **TIP — Try the other models later**
+> Once you've finished this walkthrough with **Smart Asset Tracking**, come back to this step and push one of the other starter models (*Gesture Recognition*, *Head Gesture Recognition*, *Human Activity Recognition*) to see a different set of classifications stream into the same Bridge App and dashboard. Each model targets the same `AvnetSTaws` template, so no rewiring needed — just **Push Model** again and tap the new card in the AI Model List.
 
 ## 11. View Live Inference on the Phone
 
-After pairing, the Bridge App lands on the **AI Model List** screen with the modules available for your device. If your model has been pushed to the device, the model card will be filled dark green — in the screenshot below, **Smart Asset Tracking** is the active card. If yours isn't filled green, redeploy the model from Step 10.
+After pairing, the Bridge App lands on the **AI Model List** screen with the models available for your device. If your model has been pushed to the device, the model card will be filled dark green — in the screenshot below, **Smart Asset Tracking** is the active card. If yours isn't filled green, redeploy the model from Step 10.
 
 Tap **Show Inference Data** at the bottom (highlighted in red below). The app pushes the device into inference mode and starts streaming MLC results.
 
@@ -231,11 +227,18 @@ For *Smart Asset Tracking*, the four classes light up in real time as you pose t
 | <img src="images/st_aiotcraft/28_inf_stationary_upright.jpeg" alt="Stationary Upright" width="180"/> | <img src="images/st_aiotcraft/29_inf_stationary_not_upright.jpeg" alt="Stationary Not Upright" width="180"/> | <img src="images/st_aiotcraft/30_inf_motion.jpeg" alt="Motion" width="180"/> | <img src="images/st_aiotcraft/31_inf_shaken.jpeg" alt="Shaken" width="180"/> |
 | Stationary Upright | Stationary Not Upright | Motion | Shaken |
 
-Inference results — together with raw sensor telemetry — are streamed to /IOTCONNECT, ready for dashboards in the next step.
+The inference classifications stream to /IOTCONNECT, ready for the dashboard in the next step.
+
+> **Two modes — only one produces data at a time**
+> The SensorTile.box PRO runs in **one of two modes** at any moment, and **only the active mode produces data** — the other mode's attributes stay **null** in /IOTCONNECT:
+> - **Inference mode** (**Show Inference Data**, this step) → the MLC **classification** attributes update; the raw accelerometer / gyroscope attributes are null.
+> - **Data-logging mode** (**Select Sensor For Data Logging**) → the raw **sensor** attributes update; the inference attributes are null.
+>
+> So the dashboard you build next shows live **inference** results while you're in inference mode. To see raw accel / gyro values populate instead, you switch the box into data-logging mode — that's the capture flow in **Step 13**.
 
 ## 12. Create a Dashboard
 
-Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template.
+Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template. While you're in inference mode the dashboard shows live classifications; the raw sensor-data widgets stay empty until the box is in data-logging mode (see the note above).
 
 * Download the [ST AIoT Craft dashboard template](https://iotcimage.s3.us-east-1.amazonaws.com/dashboards/STMicro/aiotcraft/ST_AIoT_CraftDashboard.json) (right-click and **Save As…**).
 * In /IOTCONNECT, click **Create Dashboard** at the top right and choose **Import Dashboard**.
