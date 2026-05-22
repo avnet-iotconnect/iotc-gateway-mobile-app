@@ -69,7 +69,7 @@ After authentication you land on the **Company Account Dashboard**.
 
 ## 4. Connect /IOTCONNECT to ST AIoT Craft
 
-This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained models can flow back from AIoT Craft into your AI Module Library.
+This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained models can flow back from AIoT Craft into your AI Model Library.
 
 1. Open the side menu and navigate to **Settings → Configurations**.
 
@@ -81,9 +81,9 @@ This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained mo
 
    <img src="images/st_aiotcraft/09_create_association_annotated.png" alt="Click + Create Association" width="600"/>
 
-4. A Cognito sign-in dialog opens. Choose **avnet-iotc-stage**.
+4. A Cognito sign-in dialog opens. Choose **avnet-iotc-stage** (not *avnet-iotc-dev*).
 
-   <img src="images/st_aiotcraft/10_cognito_stage.png" alt="Choose avnet-iotc-stage" width="500"/>
+   <img src="images/st_aiotcraft/10_cognito_stage_annotated.png" alt="Choose avnet-iotc-stage" width="500"/>
 
 > **NOTE — Known issue**
 > Occasionally an AIoT Craft training job will fail. The /IOTCONNECT and ST teams are actively addressing this. If it happens, retry the same flow with a fresh dataset.
@@ -101,6 +101,10 @@ URL: <http://avnet.me/iotc-ios-bridge>
 URL: <http://avnet.me/iotc-android-bridge>
 
 <img src="images/st_aiotcraft/12_qr_android.png" alt="Android QR code" width="200"/>
+
+After scanning the QR code, the **Updraft** distribution page opens in your browser. Tap the orange **Update** button (it reads **Install** on a first-time install) to download the app, then follow the platform-specific prompts below.
+
+<img src="images/st_aiotcraft/updraft_install_annotated.png" alt="Updraft — tap Update to install the Bridge App" width="240"/>
 
 > **iOS only — "Untrusted Enterprise Developer"**
 > Because the beta is distributed outside the App Store, iOS 26 will block it on first launch with the message **"Untrusted Enterprise Developer."** To trust it:
@@ -346,7 +350,7 @@ To find the upload in /IOTCONNECT, open your device's Device Info page and click
 
 ## 16. The MLC Retraining Loop
 
-Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you set up in **Step 4** forwards the binary HSD data to ST AIoT Craft, which runs AutoML / AFS to produce a `.ucf` MLC model. AIoT Craft pushes that model **back** into your account's AI Module Library, and a single **Push Module** click delivers it to the device:
+Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you set up in **Step 4** forwards the binary HSD data to ST AIoT Craft, which runs AutoML / AFS to produce a `.ucf` MLC model. AIoT Craft pushes that model **back** into your account's AI Model Library, and a single **Push Model** click delivers it to the device:
 
 ```
 [Device]            [BLE]      [Bridge App]   [/IOTCONNECT]   [Connector]   [ST AIoT Craft]
@@ -365,10 +369,10 @@ Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you 
    │                  │             │              │              │              │ AutoML / AFS
    │                  │             │              │              │              │ trains MLC
    │                  │             │              │              │ ◄────────────┤ .ucf model
-   │                  │             │              │ Module ◄─────┤              │
+   │                  │             │              │ Model ◄──────┤              │
    │                  │             │              │ registered   │              │
    │                  │             │              │ in library   │              │
-   │ load_model PnPL ◄┤ ◄───────────┤ Push module  │              │              │
+   │ load_model PnPL ◄┤ ◄───────────┤ Push model   │              │              │
    │ command          │             │ (OTA)        │              │              │
    │                  │             │              │              │              │
    │ MLC reprogrammed,│             │              │              │              │
@@ -377,21 +381,21 @@ Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you 
 
 To verify a freshly trained model:
 
-1. /IOTCONNECT → **Modules → Push Modules** → select your new module → **Push**.
-2. In the Bridge App, return to **AI Model List** (if connected the new module appears) and tap **Show Inference Data** to switch the box back into inference mode.
+1. /IOTCONNECT → **AI Models → Push Model** → select your new model → **Push**.
+2. In the Bridge App, return to **AI Model List** (if connected the new model appears) and tap **Show Inference Data** to switch the box back into inference mode.
 3. Watch the dashboard — your model is now running on real hardware.
 
 > **Capture → Upload → Train → Deploy → Inference → (capture more) → Retrain**
 
 ## 17. Find Your Trained Model in /IOTCONNECT
 
-When AIoT Craft finishes training (typically ~30 seconds after the upload is accepted), a new entry appears in your AI Model library — distinct from the read-only **Module Library** used in **Step 10**, this is the **My Model** list of modules trained on your own data.
+When AIoT Craft finishes training (typically ~30 seconds after the upload is accepted), a new entry appears in your AI Model library — distinct from the read-only **Model Library** used in **Step 10**, this is the **My Model** list of models trained on your own data.
 
 1. From the left menu open **AI Models → AI Model**.
 
    <img src="images/st_aiotcraft/47_my_model_menu.png" alt="AI Models → AI Model" width="700"/>
 
-2. Your trained module shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push.
+2. Your trained model shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push.
 
    <img src="images/st_aiotcraft/49_my_model.png" alt="My Model list" width="700"/>
 
@@ -402,7 +406,7 @@ When AIoT Craft finishes training (typically ~30 seconds after the upload is acc
 > **NOTE**
 > If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Step 4** is still active and that the upload completed (Step 14 ended in **Upload Success**). The single-label-fails / under-5-second rules from **Step 13** also surface here as a *job failed* status.
 
-From this point, deploying the model is the same one-click **Push Module** flow you used in **Step 10** — except the module is now the one trained on your own data.
+From this point, deploying the model is the same one-click **Push Model** flow you used in **Step 10** — except the model is now the one trained on your own data.
 
 ## 18. The 5 Stages — End-to-End
 
@@ -411,7 +415,7 @@ Putting the whole loop on one page:
 | Stage | Time | What you did | Section |
 |---|---|---|---|
 | **1. Connect** | ~10 min | Account · device register · BLE pair | Steps 1–8 |
-| **2. Deploy a model** | ~10 min | OTA push a starter module · live inference on device | Steps 9–11 |
+| **2. Deploy a model** | ~10 min | OTA push a starter model · live inference on device | Steps 9–11 |
 | **3. Capture data** | ~15 min | Switch into logging mode · record labeled sessions · push samples via dongle | Steps 12–15 |
 | **4. Train & redeploy** | ~15 min | AIoT Craft trains a model · find it under My Model · OTA back · see your model run | Steps 16–17 |
 

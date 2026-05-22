@@ -14,7 +14,7 @@ You should have completed **[Lab 1 — Deploy a Starter MLC Model](./st_aiotcraf
 - /IOTCONNECT POC account with the **STAIOT** association created (Lab 1 Step 4)
 - /IOTCONNECT Bridge App installed and logged in (Lab 1 Steps 5–6)
 - SensorTile.box PRO paired and registered in /IOTCONNECT (Lab 1 Steps 7–9)
-- A starter module pushed to the device and live inference confirmed end-to-end on the phone and on the dashboard (Lab 1 Steps 10–13)
+- A starter model pushed to the device and live inference confirmed end-to-end on the phone and on the dashboard (Lab 1 Steps 10–13)
 - The dashboard you imported in Lab 1 Step 12 — you'll come back to it once your custom model is running
 
 You will also need a **USB-C or Lightning microSD card reader** that plugs into your phone — uploading captured sessions to /IOTCONNECT requires popping the microSD out of the box and reading it from the phone (Step 2 below).
@@ -109,7 +109,7 @@ To find the upload in /IOTCONNECT, open your device's Device Info page and click
 
 ## 4. The MLC Retraining Loop
 
-Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you set up in **Lab 1 Step 4** forwards the binary HSD data to ST AIoT Craft, which runs AutoML / AFS to produce a `.ucf` MLC model. AIoT Craft pushes that model **back** into your account's AI Module Library, and a single **Push Module** click delivers it to the device:
+Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you set up in **Lab 1 Step 4** forwards the binary HSD data to ST AIoT Craft, which runs AutoML / AFS to produce a `.ucf` MLC model. AIoT Craft pushes that model **back** into your account's AI Model Library, and a single **Push Model** click delivers it to the device:
 
 ```
 [Device]            [BLE]      [Bridge App]   [/IOTCONNECT]   [Connector]   [ST AIoT Craft]
@@ -128,10 +128,10 @@ Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you 
    │                  │             │              │              │              │ AutoML / AFS
    │                  │             │              │              │              │ trains MLC
    │                  │             │              │              │ ◄────────────┤ .ucf model
-   │                  │             │              │ Module ◄─────┤              │
+   │                  │             │              │ Model ◄──────┤              │
    │                  │             │              │ registered   │              │
    │                  │             │              │ in library   │              │
-   │ load_model PnPL ◄┤ ◄───────────┤ Push module  │              │              │
+   │ load_model PnPL ◄┤ ◄───────────┤ Push model   │              │              │
    │ command          │             │ (OTA)        │              │              │
    │                  │             │              │              │              │
    │ MLC reprogrammed,│             │              │              │              │
@@ -140,21 +140,21 @@ Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you 
 
 To verify a freshly trained model:
 
-1. /IOTCONNECT → **Modules → Push Modules** → select your new module → **Push**.
-2. In the Bridge App, return to **AI Model List** (the new module appears) and tap **Show Inference Data** to switch the box back into inference mode.
+1. /IOTCONNECT → **AI Models → Push Model** → select your new model → **Push**.
+2. In the Bridge App, return to **AI Model List** (the new model appears) and tap **Show Inference Data** to switch the box back into inference mode.
 3. Open the dashboard you built in **Lab 1 Step 12** — your model is now running on real hardware, and the classifications and raw telemetry flow into the same widgets you exercised at the end of Lab 1.
 
 > **Capture → Upload → Train → Deploy → Inference → (capture more) → Retrain**
 
 ## 5. Find Your Trained Model in /IOTCONNECT
 
-When AIoT Craft finishes training (typically ~30 seconds after the upload is accepted), a new entry appears in your AI Model library — distinct from the read-only **Module Library** used in **Lab 1 Step 10**, this is the **My Model** list of modules trained on your own data.
+When AIoT Craft finishes training (typically ~30 seconds after the upload is accepted), a new entry appears in your AI Model library — distinct from the read-only **Model Library** used in **Lab 1 Step 10**, this is the **My Model** list of models trained on your own data.
 
 1. From the left menu open **AI Models → AI Model**.
 
    <img src="images/st_aiotcraft/47_my_model_menu.png" alt="AI Models → AI Model" width="700"/>
 
-2. Your trained module shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push.
+2. Your trained model shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push.
 
    <img src="images/st_aiotcraft/49_my_model.png" alt="My Model list" width="700"/>
 
@@ -165,7 +165,7 @@ When AIoT Craft finishes training (typically ~30 seconds after the upload is acc
 > **NOTE**
 > If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Lab 1 Step 4** is still active and that the upload completed (Step 2 above ended in **Upload Success**). The single-label-fails / under-5-second rules from **Step 1** also surface here as a *job failed* status.
 
-From this point, deploying the model is the same one-click **Push Module** flow you used in **Lab 1 Step 10** — except the module is now the one trained on your own data.
+From this point, deploying the model is the same one-click **Push Model** flow you used in **Lab 1 Step 10** — except the model is now the one trained on your own data.
 
 ## 6. The 5 Stages — End-to-End
 
@@ -174,7 +174,7 @@ Putting both labs on one page:
 | Stage | Time | What you did | Where |
 |---|---|---|---|
 | **1. Connect** | ~10 min | Account · STAIOT association · BLE pair · template/device verified | Lab 1, Steps 1–9 |
-| **2. Deploy a model** | ~10 min | OTA push a starter module · live inference on device | Lab 1, Steps 10–11 |
+| **2. Deploy a model** | ~10 min | OTA push a starter model · live inference on device | Lab 1, Steps 10–11 |
 | **3. Visualize & verify** | ~10 min | Import dashboard · confirm classifications + raw telemetry end-to-end | Lab 1, Steps 12–13 |
 | **4. Capture data** | ~15 min | Switch into logging mode · record labeled sessions · push samples via dongle | Lab 2, Steps 1–3 |
 | **5. Train & redeploy** | ~15 min | AIoT Craft trains a model · find it under My Model · OTA back · see your model run | Lab 2, Steps 4–5 |
