@@ -211,11 +211,11 @@ The Bridge App receives the OTA over BLE and writes the model to the SensorTile.
 
 ## 11. View Live Inference on the Phone
 
-After pairing, the Bridge App lands on the **AI Model List** screen with the models available for your device. If your model has been pushed to the device, the model card will be filled dark green — in the screenshot below, **Smart Asset Tracking** is the active card. If yours isn't filled green, redeploy the model from Step 10.
+After pairing, the Bridge App lands on the **AI Model List** screen, which lists the models available for your device, each with a radio button. Tap **Smart Asset Tracking** to select it — its radio fills green and the row is highlighted (as in the screenshot below). If it isn't listed, redeploy the model from Step 10.
 
-Tap **Show Inference Data** at the bottom (highlighted in red below). The app pushes the device into inference mode and starts streaming MLC results.
+Then tap **Run Inference** at the bottom (highlighted in red below). The app pushes the device into inference mode and starts streaming MLC results.
 
-<img src="images/st_aiotcraft/25_ai_model_list_annotated.png" alt="AI Model List — tap Show Inference Data" width="180"/>
+<img src="images/st_aiotcraft/25_ai_model_list_annotated.png" alt="AI Model List — tap Run Inference" width="180"/>
 
 The app then downloads the model bundle (if not already cached) and applies the configuration to the box:
 
@@ -235,8 +235,8 @@ The inference classifications stream to /IOTCONNECT, ready for the dashboard in 
 
 > **Two modes — only one produces data at a time**
 > The SensorTile.box PRO runs in **one of two modes** at any moment, and **only the active mode produces data** — the other mode's attributes stay **null** in /IOTCONNECT:
-> - **Inference mode** (**Show Inference Data**, this step) → the MLC **classification** attributes update; the raw accelerometer / gyroscope attributes are null.
-> - **Data-logging mode** (**Select Sensor For Data Logging**) → the raw **sensor** attributes update; the inference attributes are null.
+> - **Inference mode** (**Run Inference**, this step) → the MLC **classification** attributes update; the raw accelerometer / gyroscope attributes are null.
+> - **Data-logging mode** (**Data Logging**) → the raw **sensor** attributes update; the inference attributes are null.
 >
 > So the dashboard you build next shows live **inference** results while you're in inference mode. To see raw accel / gyro values populate instead, you switch the box into data-logging mode — that's the capture flow in **Step 13**.
 
@@ -314,13 +314,13 @@ The dashboard's **Alerts** and **Notifications** widgets stay empty until a **Ru
 
    <img src="images/st_aiotcraft/rules_notification_annotated.png" alt="Choose UI Alert notification and Save" width="700"/>
 
-With the box in inference mode (**Show Inference Data**), **shake it**. When `inference_state` hits `shaken`, the rule fires and the alert appears in the **Notifications** widget on your dashboard (and under the bell icon in the top bar).
+With the box in inference mode (**Run Inference**), **shake it**. When `inference_state` hits `shaken`, the rule fires and the alert appears in the **Notifications** widget on your dashboard (and under the bell icon in the top bar).
 
 ## 13. Capture Labeled Sensor Data for Training
 
 This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps the device out of inference and streams raw sensor samples into a session that gets zipped and uploaded to /IOTCONNECT.
 
-* From the Bridge App's **AI Model List**, tap **Select Sensor For Data Logging**.
+* From the Bridge App's **AI Model List**, tap **Data Logging**.
 * Choose the sensor(s) you want to record (e.g. **Accelerometer**, **Gyroscope**) and tap **Start**.
 
   <img src="images/st_aiotcraft/39_select_sensor.png" alt="Select Sensor" width="240"/>
@@ -419,7 +419,7 @@ Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you 
 To verify a freshly trained model:
 
 1. /IOTCONNECT → **AI Models → Push Model** → select your new model → **Push**.
-2. In the Bridge App, return to **AI Model List** (if connected the new model appears) and tap **Show Inference Data** to switch the box back into inference mode.
+2. In the Bridge App, return to **AI Model List** (if connected the new model appears) and tap **Run Inference** to switch the box back into inference mode.
 3. Watch the dashboard — your model is now running on real hardware.
 
 > **Capture → Upload → Train → Deploy → Inference → (capture more) → Retrain**

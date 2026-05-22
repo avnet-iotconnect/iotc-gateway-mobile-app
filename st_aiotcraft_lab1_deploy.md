@@ -204,11 +204,11 @@ The Bridge App receives the OTA over BLE and writes the model to the SensorTile.
 
 ## 11. View Live Inference on the Phone
 
-After pairing, the Bridge App lands on the **AI Model List** screen with the models available for your device. If your model has been pushed to the device, the model card will be filled dark green — in the screenshot below, **Smart Asset Tracking** is the active card. If yours isn't filled green, redeploy the model from Step 10.
+After pairing, the Bridge App lands on the **AI Model List** screen, which lists the models available for your device, each with a radio button. Tap **Smart Asset Tracking** to select it — its radio fills green and the row is highlighted (as in the screenshot below). If it isn't listed, redeploy the model from Step 10.
 
-Tap **Show Inference Data** at the bottom (highlighted in red below). The app pushes the device into inference mode and starts streaming MLC results.
+Then tap **Run Inference** at the bottom (highlighted in red below). The app pushes the device into inference mode and starts streaming MLC results.
 
-<img src="images/st_aiotcraft/25_ai_model_list_annotated.png" alt="AI Model List — tap Show Inference Data" width="180"/>
+<img src="images/st_aiotcraft/25_ai_model_list_annotated.png" alt="AI Model List — tap Run Inference" width="180"/>
 
 The app then downloads the model bundle (if not already cached) and applies the configuration to the box:
 
@@ -228,8 +228,8 @@ The inference classifications stream to /IOTCONNECT, ready for the dashboard you
 
 > **Two modes — only one produces data at a time**
 > The SensorTile.box PRO runs in **one of two modes** at any moment, and **only the active mode produces data** — the other mode's attributes stay **null** in /IOTCONNECT:
-> - **Inference mode** (**Show Inference Data**, this step) → the MLC **classification** attributes update; the raw accelerometer / gyroscope attributes are null.
-> - **Data-logging mode** (**Select Sensor For Data Logging**) → the raw **sensor** attributes update; the inference attributes are null.
+> - **Inference mode** (**Run Inference**, this step) → the MLC **classification** attributes update; the raw accelerometer / gyroscope attributes are null.
+> - **Data-logging mode** (**Data Logging**) → the raw **sensor** attributes update; the inference attributes are null.
 >
 > So the dashboard you build next shows live **inference** results while you're in inference mode. To see raw accel / gyro values populate instead, you switch the box into data-logging mode — that's the capture flow you'll walk through in **[Lab 2](./st_aiotcraft_lab2_train.md)**.
 
@@ -288,7 +288,7 @@ Keep the dashboard visible while you put the box through each class the *Smart A
 | Set the box flat | Tip it on its side | Move it around | Shake it briefly |
 | → **Stationary Upright** | → **Stationary Not Upright** | → **Motion** | → **Shaken** |
 
-The widget should change classes within a second or two of each pose. If a class never lights up, re-check the device is still in **Show Inference Data** mode in the Bridge App and that the Bridge App still shows **CONNECTED** in the **/IOTCONNECT Details** sheet.
+The widget should change classes within a second or two of each pose. If a class never lights up, re-check the device is still in **Run Inference** mode in the Bridge App and that the AI Model List still shows **Connected to /IOTCONNECT** at the top.
 
 **Confirm the data reached the cloud**
 
@@ -300,7 +300,7 @@ If Live Data is empty but the Bridge App's inference screen is still showing cla
 
 > **CHECKPOINT**
 > Before moving on, confirm three things are true at the same time:
-> 1. The Bridge App is in **Show Inference Data** mode and class labels are changing as you pose the box.
+> 1. The Bridge App is in **Run Inference** mode and class labels are changing as you pose the box.
 > 2. The dashboard's **Smart Asset Monitoring** widget is tracking those class changes within a second or two.
 > 3. **Device Info → Live Data** shows fresh JSON payloads with the MLC **class** fields populated (the raw sensor fields being null is expected in this mode).
 >
@@ -336,7 +336,7 @@ The dashboard's **Alerts** and **Notifications** widgets stay empty until a **Ru
 
    <img src="images/st_aiotcraft/rules_notification_annotated.png" alt="Choose UI Alert notification and Save" width="700"/>
 
-Now switch the box back to inference mode (**Show Inference Data**) and **shake it**. When `inference_state` hits `shaken`, the rule fires and the alert appears in the **Notifications** widget on your dashboard (and under the bell icon in the top bar).
+Now switch the box back to inference mode (**Run Inference**) and **shake it**. When `inference_state` hits `shaken`, the rule fires and the alert appears in the **Notifications** widget on your dashboard (and under the bell icon in the top bar).
 
 ## Lab 1 Recap
 

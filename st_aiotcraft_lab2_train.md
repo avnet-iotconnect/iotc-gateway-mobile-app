@@ -25,7 +25,7 @@ This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps th
 
 **Pick the sensor**
 
-From the Bridge App's **AI Model List**, tap **Select Sensor For Data Logging**. On the Select Sensor screen:
+From the Bridge App's **AI Model List**, tap **Data Logging**. On the Select Sensor screen:
 
 1. Tap **① Accelerometer**. The Start button activates as soon as a sensor is selected.
 2. Tap **② Start**.
@@ -141,7 +141,7 @@ Once one or more labeled sessions are sitting in /IOTCONNECT, the connector you 
 To verify a freshly trained model:
 
 1. /IOTCONNECT → **AI Models → Push Model** → select your new model → **Push**.
-2. In the Bridge App, return to **AI Model List** (the new model appears) and tap **Show Inference Data** to switch the box back into inference mode.
+2. In the Bridge App, return to **AI Model List** (the new model appears) and tap **Run Inference** to switch the box back into inference mode.
 3. Open the dashboard you built in **Lab 1 Step 12** — your model is now running on real hardware, and the classifications and raw telemetry flow into the same widgets you exercised at the end of Lab 1.
 
 > **Capture → Upload → Train → Deploy → Inference → (capture more) → Retrain**
