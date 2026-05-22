@@ -270,6 +270,11 @@ The finished view shows live inference (`Smart Asset Monitoring` widget), teleme
 > **TIP**
 > The dashboard supports five management actions from the top bar: **Refresh Data**, **Edit Mode**, **Delete**, **Share Link** (no login required), and **Export to JSON** (handy when onboarding another device).
 
+> **TIP — Add a quick-reference panel**
+> There's empty space to the right of the dashboard widgets — a good spot for a short instructions card so anyone opening the dashboard knows how to read the two telemetry modes. In **Edit Mode**, add an **Image** widget and drop in the panel below (or your own):
+>
+> <img src="images/st_aiotcraft/dashboard_instructions.png" alt="Dashboard quick-reference instructions" width="320"/>
+
 ## 13. Exercise the Live Inference
 
 With the device in inference mode (Step 11) and the dashboard open (Step 12), close the loop end-to-end: pose the box and watch the classifications flow into the dashboard.
@@ -300,6 +305,38 @@ If Live Data is empty but the Bridge App's inference screen is still showing cla
 > 3. **Device Info → Live Data** shows fresh JSON payloads with the MLC **class** fields populated (the raw sensor fields being null is expected in this mode).
 >
 > If all three are true, the device → BLE → Bridge App → /IOTCONNECT → dashboard chain is healthy and you are ready for Lab 2.
+
+## 14. (Optional) Create a Rule & Alert
+
+The dashboard's **Alerts** and **Notifications** widgets stay empty until a **Rule** fires. A Rule watches an attribute (like `inference_state`) and raises an alert when a condition is met — for example, notify you whenever the box reports **shaken**. This step is optional, but it shows how an inference result can drive automation.
+
+1. **Open Rules.** From the device area, click **Rules** in the toolbar along the bottom of the page.
+
+   <img src="images/st_aiotcraft/rules_navigate_annotated.png" alt="Click Rules in the bottom toolbar" width="700"/>
+
+2. **Start a new rule.** The Rules page is empty to begin with — click **Create Rule** at the top right.
+
+   <img src="images/st_aiotcraft/rules_list_annotated.png" alt="Click Create Rule" width="700"/>
+
+3. **Define the rule** (numbered overlays below):
+   1. **Rule name** — e.g. `Product damaged`.
+   2. **Template** — `AvnetSTaws`.
+   3. **Severity levels** — e.g. `Critical`.
+   4. **Rule type** — choose **Smart Rule**.
+   5. **Conditions** — enter a condition on an attribute, e.g. `inference_state = "shaken"`. Use the **Select Attributes** list on the right to insert `inference_state`, then click **Verify**.
+
+   <img src="images/st_aiotcraft/rules_create_form_annotated.png" alt="Create Rule form with key fields highlighted" width="700"/>
+
+   Under **Rule Applies On**, choose **Selected Devices** and pick your device.
+
+4. **Choose how you're notified, then save** (numbered overlays below):
+   1. Under **Notification Type**, open the **UI Alert** tab and toggle **Enable** on.
+   2. Under **Audience → Users**, select yourself so the alert reaches you.
+   3. Click **Save**.
+
+   <img src="images/st_aiotcraft/rules_notification_annotated.png" alt="Choose UI Alert notification and Save" width="700"/>
+
+Now switch the box back to inference mode (**Show Inference Data**) and **shake it**. When `inference_state` hits `shaken`, the rule fires and the alert appears in the **Notifications** widget on your dashboard (and under the bell icon in the top bar).
 
 ## Lab 1 Recap
 
