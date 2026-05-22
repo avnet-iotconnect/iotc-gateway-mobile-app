@@ -263,15 +263,15 @@ Dynamic Dashboards visualize live telemetry, inference history, and any other at
 
   <img src="images/st_aiotcraft/35_dashboard_dropdown.png" alt="Dashboard dropdown" width="500"/>
 
-The finished view shows live inference (`Smart Asset Monitoring` widget), telemetry, device log, and notifications — all bound to the device you just paired.
+The finished view groups the widgets into **Inference Mode Telemetry** (Smart Asset Monitoring, Inference History) and **Data Logging Telemetry** (Device Log, All Telemetry), alongside Alerts and Notifications — all bound to the device you just paired.
 
 <img src="images/st_aiotcraft/36_dashboard_view.png" alt="ST AIoT Craft dashboard" width="700"/>
 
 > **TIP**
 > The dashboard supports five management actions from the top bar: **Refresh Data**, **Edit Mode**, **Delete**, **Share Link** (no login required), and **Export to JSON** (handy when onboarding another device).
 
-> **TIP — Add a quick-reference panel**
-> There's empty space to the right of the dashboard widgets — a good spot for a short instructions card so anyone opening the dashboard knows how to read the two telemetry modes. In **Edit Mode**, add an **Image** widget and drop in the panel below (or your own):
+> **NOTE — Built-in quick-reference panel**
+> The imported dashboard already includes a quick-reference panel on the right (shown below) explaining the two telemetry modes — it's part of the template, so there's nothing to add yourself.
 >
 > <img src="images/st_aiotcraft/dashboard_instructions.png" alt="Dashboard quick-reference instructions" width="320"/>
 
