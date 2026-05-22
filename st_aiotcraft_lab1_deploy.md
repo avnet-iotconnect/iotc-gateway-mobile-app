@@ -304,9 +304,29 @@ If Live Data is empty but the Bridge App's inference screen is still showing cla
 > 2. The dashboard's **Smart Asset Monitoring** widget is tracking those class changes within a second or two.
 > 3. **Device Info → Live Data** shows fresh JSON payloads with the MLC **class** fields populated (the raw sensor fields being null is expected in this mode).
 >
-> If all three are true, the device → BLE → Bridge App → /IOTCONNECT → dashboard chain is healthy and you are ready for Lab 2.
+> If all three are true, the inference half of the device → BLE → Bridge App → /IOTCONNECT → dashboard chain is healthy.
 
-## 14. (Optional) Create a Rule & Alert
+## 14. View Live Sensor Data (Data Logging Mode)
+
+Now flip the box from inference to **data-logging mode** and watch the **Data Logging Telemetry** half of your dashboard come alive — the **Device Log** chart fills with live `accel_x / y / z` traces and **All Telemetry** shows real (non-null) accel values. The inference widgets stop updating, because — per the two-modes note in Step 11 — only one mode produces data at a time.
+
+1. **Switch to data-logging mode.** In the Bridge App, return to the **AI Model List** (back arrow), keep **Smart Asset Tracking** selected, and tap **Data Logging** at the bottom.
+
+   <img src="images/st_aiotcraft/ai_model_list_datalogging_annotated.png" alt="AI Model List — tap Data Logging" width="180"/>
+
+2. **Pick the sensor.** On the Select Sensor screen, tap **Accelerometer**, then **Start**.
+
+   <img src="images/st_aiotcraft/39_select_sensor_annotated.png" alt="Select Sensor — Accelerometer then Start" width="180"/>
+
+3. **Watch the cloud dashboard.** Switch to your browser. Move the box around — the **Device Log** widget starts plotting the live accel traces, **All Telemetry** shows real `accel_x_mGs / accel_y_mGs / accel_z_mGs` values updating each second, and `inference_state` reads **null**.
+
+   <img src="images/st_aiotcraft/dashboard_logging_mode.png" alt="Dashboard in data-logging mode — accel populates, inference_state is null" width="700"/>
+
+4. **Stop when you're done.** In the Bridge App, tap **Stop** to end the session and return to the AI Model List.
+
+You've now driven the dashboard from both modes. The full labeled-capture flow (recording tagged sensor segments so AIoT Craft can train on them) is what **[Lab 2](./st_aiotcraft_lab2_train.md)** is all about.
+
+## 15. (Optional) Create a Rule & Alert
 
 The dashboard's **Alerts** and **Notifications** widgets stay empty until a **Rule** fires. A Rule watches an attribute (like `inference_state`) and raises an alert when a condition is met — for example, notify you whenever the box reports **shaken**. This step is optional, but it shows how an inference result can drive automation.
 
@@ -344,7 +364,7 @@ Now switch the box back to inference mode (**Run Inference**) and **shake it**. 
 |---|---|---|---|
 | **1. Connect** | ~10 min | Account · STAIOT association · BLE pair · template/device verified | Steps 1–9 |
 | **2. Deploy a model** | ~10 min | OTA push a starter model · live inference on device | Steps 10–11 |
-| **3. Visualize & verify** | ~10 min | Import dashboard · pose the box · confirm live classifications end-to-end | Steps 12–13 |
+| **3. Visualize & verify** | ~15 min | Import dashboard · exercise both modes (inference + data logging) · confirm cloud telemetry end-to-end | Steps 12–14 |
 
 Leave the device paired, the Bridge App open on **AI Model List**, your browser logged into /IOTCONNECT, and your dashboard up — **[Lab 2](./st_aiotcraft_lab2_train.md)** starts here.
 
