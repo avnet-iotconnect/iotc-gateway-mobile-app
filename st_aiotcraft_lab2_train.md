@@ -23,9 +23,15 @@ You will also need a **USB-C or Lightning microSD card reader** that plugs into 
 
 This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps the device out of inference and streams raw sensor samples into a session that gets zipped and uploaded to /IOTCONNECT.
 
+**Switch the box into data-logging mode**
+
+If you're coming from Lab 1 the box is still in inference mode, so first get back to the **AI Model List** screen in the Bridge App (tap the back arrow if you're on the inference view). With **Smart Asset Tracking** still selected, tap **Data Logging** at the bottom (highlighted below).
+
+<img src="images/st_aiotcraft/ai_model_list_datalogging_annotated.png" alt="AI Model List — tap Data Logging" width="240"/>
+
 **Pick the sensor**
 
-From the Bridge App's **AI Model List**, tap **Data Logging**. On the Select Sensor screen:
+On the Select Sensor screen:
 
 1. Tap **① Accelerometer**. The Start button activates as soon as a sensor is selected.
 2. Tap **② Start**.
