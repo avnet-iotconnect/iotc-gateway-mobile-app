@@ -12,7 +12,7 @@ This guide walks through the end-to-end Edge AI lifecycle using the Avnet **/IOT
 In addition to the ST SensorTile.box PRO, you will need:
 
 - A **/IOTCONNECT POC** account — you will create this in Step 1
-- An Android or iOS device (acts as the BLE-to-WAN bridge)
+- An Android or iOS device (acts as the BLE-to-WAN bridge), **updated to the latest OS** — iOS **26.5** (any iPhone 11 or newer) or the latest Android version your device offers. Please update before the workshop; the preview Bridge App is tuned for current OS versions.
 - A SensorTile.box PRO running **FP-SNS-DATALOG2_Datalog2 v3.1.0** firmware (this is the version AIoT Craft expects; the kits handed out for the lab ship pre-flashed)
 - The 7-character identifier printed on the back of your SensorTile.box PRO — you will use it to pick the right device out of the BLE list
 - Desire to learn!
@@ -234,9 +234,6 @@ The app then downloads the model bundle (if not already cached) and applies the 
 |---|---|
 | <img src="images/st_aiotcraft/26_downloading_model.png" alt="Downloading model" width="180"/> | <img src="images/st_aiotcraft/27_applying_model.png" alt="Applying model configuration" width="180"/> |
 | Downloading | Applying Config |
-
-> **KNOWN ISSUE — crash while downloading the model bundle**
-> On some older iPhones (reported on **iPhone 12 / iOS 18.x**) the Bridge App can crash during the **Downloading** step. It has been working reliably on newer hardware/OS (e.g. **iPhone 14 / iOS 26**). If the app crashes here, reopen it and tap **Run Inference** again; if it keeps crashing, use a newer phone or an Android device for the lab.
 
 For *Smart Asset Tracking*, the four classes light up in real time as you pose the box:
 
