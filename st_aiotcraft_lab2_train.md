@@ -5,7 +5,7 @@ This is the second of two labs. In **[Lab 1](./st_aiotcraft_lab1_deploy.md)** yo
 <img src="images/sensortilebox_pro.png" alt="SensorTile.box PRO" width="200"/>
 
 > **NOTE**
-> This guide tracks the **AWS POC** instance of /IOTCONNECT (the environment used for the ST AIoT Craft preview). Production release is planned for June.
+> This guide tracks the **AWS POC** instance of /IOTCONNECT (the environment used for the ST AIoT Craft preview). Production release is planned for mid-summer.
 
 ## Prerequisites
 

@@ -5,7 +5,7 @@ This guide walks through the end-to-end Edge AI lifecycle using the Avnet **/IOT
 <img src="images/sensortilebox_pro.png" alt="SensorTile.box PRO" width="200"/>
 
 > **NOTE**
-> This guide tracks the **AWS POC** instance of /IOTCONNECT (the environment used for the ST AIoT Craft preview). Production release is planned for June; release notes are tracked at <https://docs.iotconnect.io/iotconnect/platform/product-updates/>. Where the [main mobile app guide](./mobile_app_guide.md) covers the production AWS environment, **use the URLs in this guide** for the AIoT Craft flow.
+> This guide tracks the **AWS POC** instance of /IOTCONNECT (the environment used for the ST AIoT Craft preview). Production release is planned for mid-summer; release notes are tracked at <https://docs.iotconnect.io/iotconnect/platform/product-updates/>. Where the [main mobile app guide](./mobile_app_guide.md) covers the production AWS environment, **use the URLs in this guide** for the AIoT Craft flow.
 
 ## Prerequisites
 
@@ -33,8 +33,19 @@ Complete the registration form:
 
 <img src="images/st_aiotcraft/iotconnect_registration_new.png" alt="Subscription form" width="1200"/>
 
-> **IMPORTANT**
-> The email you submit here becomes the **account owner** with full admin permissions, and the company name you enter becomes your account's unique identifier (CPID). For the lab, use your real company name **plus something unique** (e.g., your initials) — the form will reject duplicate emails and company names across the instance.
+> **IMPORTANT — your company name must be globally unique**
+> Two fields on this form must be unique across the **entire shared /IOTCONNECT instance**, and **registration fails if either is already taken**:
+> - **Email** → becomes the **account owner** (full admin permissions).
+> - **Company name** → becomes your account's permanent unique identifier (CPID).
+>
+> Because everyone in the room registers against the same instance, a plain name like `Avnet` is already taken. **Append something unique to yourself** — your initials or a number works well:
+>
+> | Don't | Do |
+> |---|---|
+> | `Avnet` | `Avnet-MJL` |
+> | `STMicro` | `STMicro-lab28` |
+>
+> If the form rejects your entry, change the **company name** (and/or use a different email alias) and resubmit.
 
 ## 2. Receive Account Information Emails
 
@@ -90,7 +101,7 @@ This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained mo
 
 ## 5. Download the /IOTCONNECT Bridge App (Beta)
 
-Use the QR codes below to install the Bridge App. (This is the beta build distributed via Updraft; the app-store release lands in June.)
+Use the QR codes below to install the Bridge App. (This is the beta build distributed via Updraft; the app-store release lands in mid-summer.)
 
 ### iOS App
 URL: <http://avnet.me/iotc-ios-bridge>
@@ -224,12 +235,18 @@ The app then downloads the model bundle (if not already cached) and applies the 
 | <img src="images/st_aiotcraft/26_downloading_model.png" alt="Downloading model" width="180"/> | <img src="images/st_aiotcraft/27_applying_model.png" alt="Applying model configuration" width="180"/> |
 | Downloading | Applying Config |
 
+> **KNOWN ISSUE — crash while downloading the model bundle**
+> On some older iPhones (reported on **iPhone 12 / iOS 18.x**) the Bridge App can crash during the **Downloading** step. It has been working reliably on newer hardware/OS (e.g. **iPhone 14 / iOS 26**). If the app crashes here, reopen it and tap **Run Inference** again; if it keeps crashing, use a newer phone or an Android device for the lab.
+
 For *Smart Asset Tracking*, the four classes light up in real time as you pose the box:
 
 | | | | |
 |---|---|---|---|
 | <img src="images/st_aiotcraft/28_inf_stationary_upright.jpeg" alt="Stationary Upright" width="180"/> | <img src="images/st_aiotcraft/29_inf_stationary_not_upright.jpeg" alt="Stationary Not Upright" width="180"/> | <img src="images/st_aiotcraft/30_inf_motion.jpeg" alt="Motion" width="180"/> | <img src="images/st_aiotcraft/31_inf_shaken.jpeg" alt="Shaken" width="180"/> |
 | Stationary Upright | Stationary Not Upright | Motion | Shaken |
+
+> **NOTE — iOS and Android differ on this screen**
+> The inference screenshots above are from the **iOS** app. The **Android** app shows the same four classifications with a different layout, so your screen may not match pixel-for-pixel — the class labels (*Stationary Upright*, *Stationary Not Upright*, *Motion*, *Shaken*) and the behavior are identical.
 
 The inference classifications stream to /IOTCONNECT, ready for the dashboard in the next step.
 

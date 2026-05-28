@@ -40,7 +40,7 @@ ST SensorTile.box PRO — [Mobile App Guide](mobile_app_guide.md)
 
 A newer capability that ties the Bridge App together with **ST AIoT Craft** to drive the full Edge AI lifecycle on the SensorTile.box PRO: subscribe to /IOTCONNECT, push a starter MLC model OTA, watch live inference, then capture and label your own sensor data so AIoT Craft can train a new model — closing the **capture → train → deploy → inference → retrain** loop without ever picking up a USB cable.
 
-This path runs against the **AWS POC** instance of /IOTCONNECT (the environment used for the AIoT Craft preview; production release is planned for June) and uses a **beta Bridge App build** distributed via Updraft, not the app-store version. The QR codes and URLs in these guides differ from Path 1 — use the ones in the guide.
+This path runs against the **AWS POC** instance of /IOTCONNECT (the environment used for the AIoT Craft preview; production release is planned for mid-summer) and uses a **beta Bridge App build** distributed via Updraft, not the app-store version. The QR codes and URLs in these guides differ from Path 1 — use the ones in the guide.
 
 **Use this path if you want to:** explore Edge AI on the SensorTile.box PRO, evaluate ST AIoT Craft alongside /IOTCONNECT, or run the lab-style training-loop demo.
 
