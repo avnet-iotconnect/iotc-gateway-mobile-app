@@ -332,7 +332,7 @@ If Live Data is empty but the Bridge App's inference screen is still showing cla
 
 ## 14. View Live Sensor Data (Data Logging Mode)
 
-Now flip the box from inference to **data-logging mode** and watch the **Data Logging Telemetry** half of your dashboard come alive — the **Device Log** chart fills with live `accel_x / y / z` traces and **All Telemetry** shows real (non-null) accel values. The inference widgets stop updating, because — per the two-modes note in Step 11 — only one mode produces data at a time.
+In this step we'll instruct the SensorTile.box PRO to switch to **data-logging mode** so we can see the raw sensor data arrive in the cloud dashboard. The **Data Logging Telemetry** widgets will start populating and the inference widgets will stop — only one mode produces data at a time (see the two-modes note in Step 11).
 
 1. **Switch to data-logging mode.** In the Bridge App, return to the **AI Model List** (back arrow), keep **Smart Asset Tracking** selected, and tap **Data Logging** at the bottom.
 
