@@ -135,9 +135,17 @@ When AIoT Craft finishes training (typically ~30 seconds after the upload is acc
 > **NOTE**
 > If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Lab 1 Step 4** is still active and that the upload completed (Step 2 above ended in **Upload Success**). The single-label-fails / under-5-second rules from **Step 1** also surface here as a *job failed* status.
 
+**Reassemble the box and re-pair**
+
+The microSD is still in your phone from **Step 2** and the box is powered off — put the box back together and reconnect before you OTA the new model:
+
+1. **Eject** the microSD dongle from your phone (use your OS's safe-eject flow), then move the microSD back into the SensorTile.box PRO (same slot, opposite the gold capacitive touch pads) and close the enclosure.
+2. **Power the box on.**
+3. **Re-pair** in the Bridge App — open the app and tap your box in the **Searched bluetooth device list** (same 7-character identifier as in [Lab 1 Step 7](./st_aiotcraft_lab1_deploy.md#7-pair-the-sensortilebox-pro)). The app lands on the **AI Model List** with **Connected** at the top.
+
 **Deploy your trained model**
 
-Once the model shows **Completed**, the rest is the same one-click **Push Model** flow you used in **Lab 1 Step 10** — except the model is now the one trained on your own data:
+Once the model shows **Completed** and the box is paired again, the rest is the same one-click **Push Model** flow you used in **Lab 1 Step 10** — except the model is now the one trained on your own data:
 
 1. /IOTCONNECT → **AI Models → Push Model** → select your new model → **Push**.
 2. In the Bridge App, return to **AI Model List** (the new model appears) and tap **Run Inference** to switch the box back into inference mode.
