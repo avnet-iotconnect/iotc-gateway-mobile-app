@@ -298,6 +298,42 @@ The finished view groups the widgets into **Inference Mode Telemetry** (Smart As
 >
 > <img src="images/st_aiotcraft/dashboard_instructions.png" alt="Dashboard quick-reference instructions" width="320"/>
 
+**Widgets in this dashboard**
+
+The imported template mixes several widget types — each is a configurable building block you can re-style, reposition, or replicate:
+
+- **Image** — static or classification-driven images (the AIoT Craft title banner).
+- **Label** — colored section headers (`INFERENCE MODE TELEMETRY`, `DATA LOGGING TELEMETRY`).
+- **HyperLink** — button-style external links (SensorTile.box PRO, ST AIoT Craft, CAD Resources, Tools & Software, ST MEMS Community, /IOTCONNECT).
+- **Telemetry** — live key/value table for the device's attributes (All Telemetry).
+- **LiveLineChart** — time-series chart of one or more numeric attributes (Device Log — `accel_x / y / z`).
+- **Transformation** — display tied to a calculation or classification (Smart Asset Monitoring — image varies with `inference_state`).
+- **pie** — pie chart aggregating recent values (Inference History).
+- **Notifications** — recent rule-triggered alerts for the device (the Notifications panel — populates after you create a Rule in the optional step below).
+- **lastrefreshed** — timestamp of the dashboard's last data pull (Last Refreshed).
+
+**Editing the Dashboard**
+
+To customize a widget — change its title, swap colors, or add a new one — switch into **Edit Mode**.
+
+1. From the live dashboard, click the **pencil (Edit Mode)** icon at the top-right (highlighted below).
+
+   <img src="images/st_aiotcraft/dashboard_edit_enter_annotated.png" alt="Click the pencil icon to enter edit mode" width="700"/>
+
+2. Edit Mode adds **Save** / **Cancel** at the top-right and opens the **All widgets** palette at the bottom — drag any widget from the palette onto the canvas to add a new one (highlighted below).
+
+   <img src="images/st_aiotcraft/dashboard_edit_palette_annotated.png" alt="Edit mode with the widget palette" width="700"/>
+
+3. Click the **⋮ (three-dot)** menu on any widget and choose **Settings** to open the **Widget Settings** panel. For simple widgets like **Label** you get **Background**, **Title Name**, and **Font Color / Style / Size** — adjust what you need and click **Apply** (highlighted below).
+
+   <img src="images/st_aiotcraft/dashboard_widget_settings_annotated.png" alt="Widget Settings panel for a Label widget" width="700"/>
+
+4. Data widgets (**Telemetry**, **LiveLineChart**, **Transformation**) also show a **WIDGETS CONTENT** panel on the right — pick the device and tick the sensor attributes the widget should display (highlighted below).
+
+   <img src="images/st_aiotcraft/dashboard_widget_content_annotated.png" alt="Widget Settings with the attribute selection panel" width="700"/>
+
+When you're done, click **Save** at the top-right to persist your changes (or **Cancel** to discard them).
+
 ## (Optional) Create a Rule & Alert
 
 The dashboard's **Alerts** and **Notifications** widgets stay empty until a **Rule** fires. A Rule watches an attribute (like `inference_state`) and raises an alert when a condition is met — for example, notify you whenever the box reports **shaken**. This step is optional, but it shows how an inference result can drive automation.
