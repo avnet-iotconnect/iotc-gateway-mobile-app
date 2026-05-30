@@ -464,11 +464,21 @@ The microSD is still in your phone from **Step 14** and the box is powered off �
 
 **Deploy your trained model**
 
-Once the model shows **Completed** and the box is paired again, the rest is the same one-click **Push Model** flow you used in **Step 10** — except the model is now the one trained on your own data:
+With the box re-paired, push your custom model over the same **Push Model** form you used in **Step 10** — with one important change in the **Version** field:
 
-1. /IOTCONNECT → **AI Models → Push Model** → select your new model → **Push**.
-2. In the Bridge App, return to **AI Model List** (the new model appears) and tap **Run Inference** to switch the box back into inference mode.
-3. Watch the dashboard you built in **Step 12** — your model is now running on real hardware.
+1. /IOTCONNECT → **AI Models → Push Model**. Fill in the form:
+   - **Model** — pick **Smart Asset Tracking** (same name as the starter; the **Version** is what distinguishes your custom one).
+   - **Version** — **open the dropdown and select your trained version** (it appears with a parenthesized count, e.g. `1.0.0_0.0.0.26 (2)`, distinct from the starter `1.0.0` at the top of the list). The dropdown defaults to the starter — **this is the step that's easy to miss.**
+   - **Device Template** — `AvnetSTaws`.
+   - **Select Device** — switch to **Selected devices** and pick your device.
+2. Click **Push Model**. The Bridge App receives the OTA over BLE within a few seconds.
+
+**Run inference on your custom model**
+
+1. In the Bridge App, return to the **AI Model List** — **Smart Asset Tracking** is still selected, now reflecting your new version.
+2. Tap **Run Inference** at the bottom. The app pushes the device into inference mode, downloads the new model bundle, and the live classification screen opens.
+3. Pose the box (set it flat, tip on its side, move it, shake it — same gestures from **[Step 11](#11-view-live-inference-on-the-phone)**) and watch the four classes light up. These are now coming from the model **you** trained, not the starter.
+4. Open the dashboard you built in **Step 12** — the **Smart Asset Monitoring** widget and the **Inference History** pie reflect your custom model's classifications end-to-end.
 
 ## 17. Recap — The MLC Retraining Loop
 
