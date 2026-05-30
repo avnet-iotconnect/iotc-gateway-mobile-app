@@ -175,11 +175,11 @@ From **Templates** you can confirm the **AvnetSTaws** template exists, has File 
 
 <img src="images/st_aiotcraft/21_templates_list_annotated.png" alt="Templates list — click the Edit icon on the AvnetSTaws row" width="700"/>
 
-* This opens its **Properties** (note **Enable File Support** is on)…
+* This opens its **Properties** — note **Enable File Support** is on (highlighted below). With this toggled on, the device can securely upload data files to /IOTCONNECT — that's what lets you ship the labeled sensor sessions you'll capture in **[Lab 2](./st_aiotcraft_lab2_train.md)** up to the cloud for AIoT Craft to train on.
 
-  <img src="images/st_aiotcraft/19_template_properties.png" alt="Template properties" width="700"/>
+  <img src="images/st_aiotcraft/19_template_properties_annotated.png" alt="Template properties — Enable File Support highlighted" width="700"/>
 
-* …and its **Attributes** (49 sensor attributes — accel, gyro, RMS speed, MLC features, etc.).
+* …and its **Attributes** (49 sensor attributes — accel, gyro, RMS speed, MLC features, etc.). Many of these aren't used in this lab; they're the full set of sensor attributes defined by the [BlueST-SDK](https://www.st.com/en/embedded-software/bluest-sdk.html). To exercise the full attribute set on the same SensorTile.box PRO, run the [mobile app guide](./mobile_app_guide.md), which walks through flashing a BlueST-SDK firmware build that exposes them.
 
   <img src="images/st_aiotcraft/20_template_attributes.png" alt="Template attributes" width="700"/>
 
@@ -252,13 +252,11 @@ The inference classifications stream to /IOTCONNECT, ready for the dashboard you
 Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template. The inference results now flowing in from Step 11 are already in /IOTCONNECT — this step gives them a UI. (The raw sensor-data widgets stay empty until the box is in data-logging mode — see the note above.)
 
 * Download the [ST AIoT Craft dashboard template](https://iotcimage.s3.us-east-1.amazonaws.com/dashboards/STMicro/aiotcraft/ST_AIoT_CraftDashboard.json) (right-click and **Save As…**).
-* In /IOTCONNECT, click **Create Dashboard** at the top right and choose **Import Dashboard**.
+* In /IOTCONNECT, click **+ Create Dashboard** at the top of the page (**①** below). In the dialog that opens, select the **Import Dashboard** radio button (**②**), then **Browse** to the saved `.json` file.
 
-  <img src="images/st_aiotcraft/32_dashboard_top.png" alt="Create Dashboard" width="500"/>
+  <img src="images/st_aiotcraft/32_dashboard_top_annotated.png" alt="+ Create Dashboard (1) and Import Dashboard radio (2)" width="700"/>
 
-* In the dialog, browse to the saved `.json` file, then fill in:
-
-  <img src="images/st_aiotcraft/33_import_dashboard.png" alt="Import Dashboard" width="500"/>
+* Once the file uploads, additional fields appear. Fill them in:
 
   1. **Template** = `AvnetSTaws`
   2. **Device** = your unique device
