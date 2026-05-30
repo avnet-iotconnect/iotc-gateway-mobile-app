@@ -25,7 +25,10 @@ This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps th
 
 **Switch the box into data-logging mode**
 
-If you're coming from Lab 1 the box is still in inference mode, so first get back to the **AI Model List** screen in the Bridge App (tap the back arrow if you're on the inference view). With **Smart Asset Tracking** still selected, tap **Data Logging** at the bottom (highlighted below).
+In the Bridge App, get to the **AI Model List** screen, make sure **Smart Asset Tracking** is selected, then tap **Data Logging** at the bottom (highlighted below). Two ways to get there depending on where you're starting from:
+
+* **Coming straight from Lab 1.** The box is still in inference mode. Tap the back arrow on the inference view to return to the **AI Model List** — **Smart Asset Tracking** is still selected and the **Data Logging** button is active.
+* **Starting Lab 2 fresh (re-opened the app, came back later).** The **AI Model List** may load with **Run Inference** and **Data Logging** greyed out — the app waits for an active model deployment before either button lights up. Re-push **Smart Asset Tracking** from /IOTCONNECT (see [Lab 1 Step 10](./st_aiotcraft_lab1_deploy.md#10-push-the-smart-asset-tracking-model)). Once the Bridge App receives the OTA over BLE (a few seconds), the buttons activate.
 
 <img src="images/st_aiotcraft/ai_model_list_datalogging_annotated.png" alt="AI Model List — tap Data Logging" width="240"/>
 
