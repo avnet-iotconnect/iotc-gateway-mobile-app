@@ -271,13 +271,15 @@ Dynamic Dashboards visualize live telemetry, inference history, and any other at
 
   <img src="images/st_aiotcraft/37_dashboard_edit_annotated.png" alt="Dashboard edit mode — Save button highlighted" width="700"/>
 
-   * Find your dashboard later under **Dashboards** in the top menu.
-
-   <img src="images/st_aiotcraft/35_dashboard_dropdown.png" alt="Dashboard dropdown" width="500"/>
+* Find your dashboard later under **Dashboards** in the top middle of the page.
 
 The finished view groups the widgets into **Inference Mode Telemetry** (Smart Asset Monitoring, Inference History) and **Data Logging Telemetry** (Device Log, All Telemetry), alongside Alerts and Notifications — all bound to the device you just paired.
 
-<img src="images/st_aiotcraft/36_dashboard_view.png" alt="ST AIoT Craft dashboard" width="700"/>
+<img src="images/st_aiotcraft/36_dashboard_view_annotated.png" alt="ST AIoT Craft dashboard — telemetry sections highlighted" width="700"/>
+
+> **NOTE — only one section produces data at a time**
+> **①** **Inference Mode Telemetry** populates only when **Run Inference** is selected in the Bridge App.
+> **②** **Data Logging Telemetry** populates only when **Data Logging** is selected.
 
 > **TIP**
 > The dashboard supports five management actions from the top bar: **Refresh Data**, **Edit Mode**, **Delete**, **Share Link** (no login required), and **Export to JSON** (handy when onboarding another device).
