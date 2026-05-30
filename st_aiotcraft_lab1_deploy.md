@@ -267,13 +267,13 @@ Dynamic Dashboards visualize live telemetry, inference history, and any other at
 
   <img src="images/st_aiotcraft/34_create_dashboard_form.png" alt="Dashboard creation form" width="500"/>
 
-* The dashboard opens in **Edit Mode** with the imported widgets and a widget palette. Drop in additional widgets if you like, or click the blue **Save** in the top-right to exit edit mode.
+* The dashboard opens in **Edit Mode** with the imported widgets and a widget palette. Drop in additional widgets if you like, or click **Save** in the top-right (highlighted below) to exit edit mode.
 
-  <img src="images/st_aiotcraft/37_dashboard_edit.png" alt="Dashboard edit mode" width="700"/>
+  <img src="images/st_aiotcraft/37_dashboard_edit_annotated.png" alt="Dashboard edit mode — Save button highlighted" width="700"/>
 
-* Find your dashboard later under **Dashboards** in the top menu.
+   * Find your dashboard later under **Dashboards** in the top menu.
 
-  <img src="images/st_aiotcraft/35_dashboard_dropdown.png" alt="Dashboard dropdown" width="500"/>
+   <img src="images/st_aiotcraft/35_dashboard_dropdown.png" alt="Dashboard dropdown" width="500"/>
 
 The finished view groups the widgets into **Inference Mode Telemetry** (Smart Asset Monitoring, Inference History) and **Data Logging Telemetry** (Device Log, All Telemetry), alongside Alerts and Notifications — all bound to the device you just paired.
 
