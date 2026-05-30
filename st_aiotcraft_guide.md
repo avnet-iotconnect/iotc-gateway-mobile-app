@@ -291,7 +291,7 @@ The finished view groups the widgets into **Inference Mode Telemetry** (Smart As
 > **TIP**
 > The dashboard supports five management actions from the top bar: **Refresh Data**, **Edit Mode**, **Delete**, **Share Link** (no login required), and **Export to JSON** (handy when onboarding another device). You can also confirm raw data flow by clicking **Live Data** on the device's Device Info page.
 >
-> <img src="images/st_aiotcraft/38_live_data.png" alt="Live Data view" width="700"/>
+> <img src="images/st_aiotcraft/38_live_data_annotated.png" alt="Live Data view with the sidebar selection highlighted" width="700"/>
 
 > **NOTE — Built-in quick-reference panel**
 > The imported dashboard already includes a quick-reference panel on the right (shown below) explaining the two telemetry modes — it's part of the template, so there's nothing to add yourself.

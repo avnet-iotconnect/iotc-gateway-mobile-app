@@ -306,9 +306,19 @@ The widget should change classes within a second or two of each pose. If a class
 
 **Confirm the data reached the cloud**
 
-Open the device's **Device Info** page (Step 8) and click the **Live Data** tab. You'll see JSON payloads arriving from the Bridge App with the MLC **class** fields populated. Remember from the note in Step 11: the raw accelerometer / gyroscope fields are **null** here — that's expected in inference mode, since the box only produces sensor data in data-logging mode.
+Drill into the device's live telemetry to see the inference classifications arriving from the Bridge App:
 
-  <img src="images/st_aiotcraft/38_live_data.png" alt="Live Data view" width="700"/>
+1. From the side menu, open **Devices → Device** (highlighted below).
+
+   <img src="images/st_aiotcraft/device_info_nav_annotated.png" alt="Open Devices then Device from the side menu" width="320"/>
+
+2. Click the device's **Unique ID** to open the Device Info page.
+
+   <img src="images/st_aiotcraft/device_info_unique_id_annotated.png" alt="Click the Unique ID to open Device Info" width="700"/>
+
+3. On the Device Info page, click **Live Data** in the left sidebar (highlighted below). You'll see JSON payloads arriving from the Bridge App with the MLC **class** fields populated. Remember from the note in Step 11: the raw accelerometer / gyroscope fields are **null** here — that's expected in inference mode, since the box only produces sensor data in data-logging mode.
+
+   <img src="images/st_aiotcraft/38_live_data_annotated.png" alt="Live Data view with the sidebar selection highlighted" width="700"/>
 
 If Live Data is empty but the Bridge App's inference screen is still showing classes, give it a few seconds — the cloud side updates a beat behind the BLE link.
 
