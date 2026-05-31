@@ -120,15 +120,15 @@ To find the upload in /IOTCONNECT, open your device's Device Info page and click
 
 When AIoT Craft finishes training (typically ~30 seconds after the upload is accepted), a new entry appears in your AI Model library — distinct from the read-only **Model Library** used in **Lab 1 Step 10**, this is the **My Model** list of models trained on your own data.
 
-1. From the left menu open **AI Models → AI Model**.
+1. From the left menu, click the **AI Models** icon and then **AI Model** (highlighted below).
 
-   <img src="images/st_aiotcraft/47_my_model_menu.png" alt="AI Models → AI Model" width="700"/>
+   <img src="images/st_aiotcraft/47_my_model_menu_annotated.png" alt="AI Models → AI Model" width="700"/>
 
-2. Your trained model shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push.
+2. Your trained model shows up in the **My Model** tab as soon as training completes — typically within ~30 seconds. Status reads **Completed** when it's ready to push. Click the **Latest Version** (highlighted below) to open the training-run details.
 
-   <img src="images/st_aiotcraft/49_my_model.png" alt="My Model list" width="700"/>
+   <img src="images/st_aiotcraft/49_my_model_annotated.png" alt="My Model list — click the Latest Version link" width="700"/>
 
-3. Click the version number to see every training run AIoT Craft has produced for this model — useful when you've captured multiple datasets and want to compare or roll back.
+3. The **Version List** dialog opens, listing every training run AIoT Craft has produced for this model — useful when you've captured multiple datasets and want to compare or roll back. Each row shows the file name, version, creation date, and a **Completed** status when ready.
 
    <img src="images/st_aiotcraft/48_version_list.png" alt="Version List" width="700"/>
 
