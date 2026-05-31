@@ -65,7 +65,7 @@
                 "background": "#ffcb05",
                 "fontColor": "#03234b",
                 "fontFamily": "Proxima Nova",
-                "fontSize": "25",
+                "fontSize": "30",
                 "title": "SensorTile.box PRO",
                 "titleAlign": "center",
                 "contents": {
@@ -1481,7 +1481,7 @@
                 "background": "#41c363",
                 "fontColor": "#000000",
                 "fontFamily": "Proxima Nova",
-                "fontSize": "25",
+                "fontSize": "32",
                 "title": "/IOTCONNECT",
                 "titleAlign": "center",
                 "contents": {
@@ -1507,8 +1507,8 @@
             "widgetGuid": "A8CB394D-15B1-42C9-94FC-AD7BDC599E2A",
             "widgetProperties": {
                 "i": "Image",
-                "background": "#FFFFFF",
-                "fontColor": "#343434",
+                "background": "#eeeeee",
+                "fontColor": "#eeeeee",
                 "fontFamily": "Proxima Nova",
                 "fontSize": "10",
                 "title": "",
@@ -2216,7 +2216,7 @@
                     "lastrefreshed": {
                         "timezone": "UTC",
                         "dateTimeColor": "#000000",
-                        "lastRefreshedDateTime": 1780160588,
+                        "lastRefreshedDateTime": 1780164256,
                         "device": {
                             "deviceGuid": "F3E33983-960F-4B9B-8F13-038D069FF45D",
                             "deviceUniqueId": "IOTC4ml-F6E97823A895"
