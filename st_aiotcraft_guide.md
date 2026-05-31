@@ -324,9 +324,9 @@ To customize a widget — change its title, swap colors, or add a new one — sw
 
    <img src="images/st_aiotcraft/dashboard_edit_palette_annotated.png" alt="Edit mode with the widget palette" width="700"/>
 
-3. Click the **⋮ (three-dot)** menu on any widget and choose **Settings** to open the **Widget Settings** panel. For simple widgets like **Label** you get **Background**, **Title Name**, and **Font Color / Style / Size** — adjust what you need and click **Apply** (highlighted below).
+3. Click the **⋮ (three-dot)** menu in the widget's top-right corner (**①** below) and choose **Edit** (**②**) to open the **Widget Settings** panel. For simple widgets like **Label** that panel exposes **Background**, **Title Name**, and **Font Color / Style / Size** — adjust what you need and click **Apply** to save your changes.
 
-   <img src="images/st_aiotcraft/dashboard_widget_settings_annotated.png" alt="Widget Settings panel for a Label widget" width="700"/>
+   <img src="images/st_aiotcraft/dashboard_widget_edit_menu_annotated.png" alt="Widget menu — click the three-dot icon (1) and choose Edit (2)" width="700"/>
 
 4. Data widgets (**Telemetry**, **LiveLineChart**, **Transformation**) also show a **WIDGETS CONTENT** panel on the right — pick the device and tick the sensor attributes the widget should display (highlighted below).
 
