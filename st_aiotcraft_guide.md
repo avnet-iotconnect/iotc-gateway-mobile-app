@@ -258,7 +258,7 @@ The inference classifications stream to /IOTCONNECT, ready for the dashboard in 
 
 Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template. While you're in inference mode the dashboard shows live classifications; the raw sensor-data widgets stay empty until the box is in data-logging mode (see the note above).
 
-* Download the [ST AIoT Craft dashboard template](https://iotcimage.s3.us-east-1.amazonaws.com/dashboards/STMicro/aiotcraft/ST_AIoT_CraftDashboard.json) (right-click and **Save As…**).
+* Download the [ST AIoT Craft dashboard template](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/st-aiot-craft/dashboards/SensorTileBoxPRO_dashboard_export.json) (right-click and **Save As…**).
 * In /IOTCONNECT, click **+ Create Dashboard** at the top of the page (**①** below). In the dialog that opens, select the **Import Dashboard** radio button (**②**), then **Browse** to the saved `.json` file.
 
   <img src="images/st_aiotcraft/32_dashboard_top_annotated.png" alt="+ Create Dashboard (1) and Import Dashboard radio (2)" width="700"/>
