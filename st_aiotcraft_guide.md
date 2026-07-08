@@ -13,7 +13,7 @@ In addition to the ST SensorTile.box PRO, you will need:
 
 - A **/IOTCONNECT POC** account — you will create this in Step 1
 - An Android or iOS device (acts as the BLE-to-WAN bridge), **updated to the latest OS** — iOS **26.5** (any iPhone 11 or newer) or the latest Android version your device offers. Please update before the workshop; the preview Bridge App is tuned for current OS versions.
-- A SensorTile.box PRO running **FP-SNS-DATALOG2_Datalog2 v3.1.0** firmware (this is the version AIoT Craft expects; the kits handed out for the lab ship pre-flashed)
+- A SensorTile.box PRO running [**FP-SNS-DATALOG2_Datalog2 v3.1.0** firmware](https://github.com/avnet-iotconnect/iotc-gateway-mobile-app/blob/st-aiot-craft/binaries/DATALOG2_Release.bin) (right-click and **Save As…**).
 - The 7-character identifier printed on the back of your SensorTile.box PRO — you will use it to pick the right device out of the BLE list
 - Desire to learn!
 
