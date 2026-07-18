@@ -219,6 +219,7 @@ Webhooks for inbound events, OAuth 2.0 across the API, and CI/CD-friendly OTA tr
 ## See Also
 
 * [Lab 1 — Deploy a Starter MLC Model](./st_aiotcraft_lab1_deploy.md) — the connect + deploy + dashboard half of this loop
+* [Engineering Note — Hardware Revisions, DATALOG2 Firmware & BlueST SDK Compatibility](./st_aiotcraft_engineering_note.md) — why the labs standardize on v3.1.0, failure signatures, and AWS/Azure environment notes
 * [Main Mobile App Guide](./mobile_app_guide.md) — the production AWS flow with `BLESensorsPnPL.bin` / `STSW-MKBOXPRO_1_1_1.bin` firmwares
 * [SensorTile.box PRO Getting Started Guide](https://www.st.com/resource/en/user_manual/um3133-getting-started-with-sensortilebox-pro-multisensors-and-wireless-connectivity-development-kit-for-any-intelligent-iot-node-stmicroelectronics.pdf) — DFU mode, hardware reference
 * [/IOTCONNECT Product Updates](https://docs.iotconnect.io/iotconnect/platform/product-updates/) — AIoT Craft GA timeline
