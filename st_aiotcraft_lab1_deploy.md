@@ -1,4 +1,4 @@
-# Lab 1 — Deploy a Starter MLC Model <br> /IOTCONNECT Bridge App + ST SensorTile.box PRO + ST AIoT Craft
+f# Lab 1 — Deploy a Starter MLC Model <br> /IOTCONNECT Bridge App + ST SensorTile.box PRO + ST AIoT Craft
 
 This is the first of two labs. **Lab 1 takes you from zero to a pre-built AI model running on the SensorTile.box PRO**, with live inference streaming to the Bridge App on your phone and a /IOTCONNECT dashboard visualizing the inference results. **[Lab 2](./st_aiotcraft_lab2_train.md)** picks up from there: capture your own labeled sensor data, train a custom MLC model with ST AIoT Craft, and OTA it back to the device.
 
@@ -251,7 +251,7 @@ The inference classifications stream to /IOTCONNECT, ready for the dashboard you
 
 Dynamic Dashboards visualize live telemetry, inference history, and any other attribute attached to your device template. The inference results now flowing in from Step 11 are already in /IOTCONNECT — this step gives them a UI. (The raw sensor-data widgets stay empty until the box is in data-logging mode — see the note above.)
 
-* Download the [ST AIoT Craft dashboard template]((https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/st-aiot-craft/dashboards/SensorTileBoxPRO_dashboard_export.json)). 
+* Download the [ST AIoT Craft dashboard template](https://raw.githubusercontent.com/avnet-iotconnect/iotc-gateway-mobile-app/refs/heads/st-aiot-craft/dashboards/SensorTileBoxPRO_dashboard_export.json). 
   > 💡 **Windows Users:** Right-click and choose **Save link as...**. In the pop-up window, change the *Save as type* dropdown from **Text Document (*.txt)** to **All Files (*.*)** so it correctly saves as a `.json` file.
 
 * In /IOTCONNECT, click **+ Create Dashboard** at the top of the page (**①** below). In the dialog that opens, select the **Import Dashboard** radio button (**②**), then **Browse** to the saved `.json` file.
