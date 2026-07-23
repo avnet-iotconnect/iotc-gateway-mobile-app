@@ -1,4 +1,4 @@
-f# Lab 1 — Deploy a Starter MLC Model <br> /IOTCONNECT Bridge App + ST SensorTile.box PRO + ST AIoT Craft
+# Lab 1 — Deploy a Starter MLC Model <br> /IOTCONNECT Bridge App + ST SensorTile.box PRO + ST AIoT Craft
 
 This is the first of two labs. **Lab 1 takes you from zero to a pre-built AI model running on the SensorTile.box PRO**, with live inference streaming to the Bridge App on your phone and a /IOTCONNECT dashboard visualizing the inference results. **[Lab 2](./st_aiotcraft_lab2_train.md)** picks up from there: capture your own labeled sensor data, train a custom MLC model with ST AIoT Craft, and OTA it back to the device.
 
