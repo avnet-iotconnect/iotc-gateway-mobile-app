@@ -97,7 +97,7 @@ This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained mo
    <img src="images/st_aiotcraft/10_cognito_stage_annotated.png" alt="Choose avnet-iotc-stage" width="500"/>
 
 > **NOTE — Known issue**
-> Occasionally an AIoT Craft training job will fail. The /IOTCONNECT and ST teams are actively addressing this. If it happens, retry the same flow with a fresh dataset.
+> Occasionally an AIoT Craft training job will fail. The most common cause is a labeling session with untagged gaps between labels — the capture rules in **Step 13** are written to avoid this. The /IOTCONNECT and ST teams are actively addressing it; if a job fails anyway, retry the flow with a freshly captured session.
 
 ## 5. Download the /IOTCONNECT Bridge App (Beta)
 
@@ -375,19 +375,20 @@ This is the half of the loop that feeds **ST AIoT Craft**. Logging mode swaps th
 
   <img src="images/st_aiotcraft/39_select_sensor.png" alt="Select Sensor" width="240"/>
 
-* On the next screen, pick the **labels** you want to associate with this session. The app shows a live chart of the sensor stream so you can confirm signal before recording.
+* On the next screen the class tags sit above a live chart of the sensor stream, and logging is already active. Work through the tags **as an unbroken chain**, ~20 seconds each: get into the first pose, tap its tag, and to change class **press the next tag first, then release the previous one**. Reposition the box during a **Motion** segment (that handling is genuine motion data), and inside **Shaken** sweep from a gentle rattle to a hard shake. Release the last tag, then press **Stop**.
 
   <img src="images/st_aiotcraft/40_select_tags.png" alt="Select tags" width="240"/>
 
-* Press **Start** and perform each motion/activity for the duration you want it labeled. When done, press **Stop**.
-
   <img src="images/st_aiotcraft/41_logging_active.png" alt="Active logging" width="240"/>
 
-> **Labeling — 4 Simple Rules**
-> 1. **Pick at least 2 labels.** Single-label training fails with "job failed" — this is the #1 cause.
-> 2. **At least 5 seconds per label.** Less than 5s → no association → upload may parse but training will reject it.
-> 3. **Multiple labels can overlap.** If you press *Shaken* and then press *Motion* without releasing *Shaken*, both get entries in `acquisition_info.json`. The first label is **not** auto-released — overlap is intentional.
-> 4. **Re-pressing a label that already logged is ignored.** If you select *Shaken*, log it, deselect, then re-select *Shaken*, the second selection adds nothing — the cloud already has *Shaken* data for this session.
+> **Labeling — the rules that matter**
+> 1. **No gaps between labels.** From your first tag press to your last release, some tag must always be active — hand off tags press-before-release. Untagged time *between* labels makes AIoT Craft reject the session (*job failed / "No valid datalogs"*); untagged time before the first tag or after the last release is fine.
+> 2. **At least 2 labels, ~20 seconds each, roughly equal time per class.** Unbalanced classes bias the model toward the over-represented ones.
+> 3. **Don't leave multiple tags stacked.** The one-second handoff overlap is fine, but long stretches recorded under several tags at once label the same data as *every* class and ruin the model.
+> 4. **Variety within a segment beats a longer segment.** Vary the motion style; sweep shake intensity and direction. For a second orientation of a stationary class, bridge through a *Motion* segment (reposition while Motion is tagged) and re-press the class.
+> 5. **Verify before you upload.** The session's `acquisition_info.json` must show your tags — an empty `"tags": []` cannot train.
+>
+> The no-gap rule is a workaround for the current AIoT Craft preview, which rejects untagged data between labels (ST's Dataset API documents unlabeled chunks as a normal case); it may relax once the pipeline is updated. See [Lab 2](./st_aiotcraft_lab2_train.md) for the full step-by-step capture walkthrough.
 
 Stopping the session leaves the labeled data on the SensorTile.box PRO's microSD card — it does **not** auto-upload. **Step 14** walks through pushing it to /IOTCONNECT so AIoT Craft can train on it.
 
@@ -407,7 +408,7 @@ To kick off training, the session files have to move from the device's microSD c
 
    <img src="images/st_aiotcraft/42_sd_sessions.png" alt="SD card folder list" width="240"/>
 
-4. **Select / push the files.** Open the most recent session folder, tick all three files (`acquisition_info.json`, `device_config.json`, and `lsm6dsv16x_acc.dat` / `_gyro.dat`), and push.
+4. **Select / push the files.** Open the session you just recorded — the folder name is its date and start time, and it is **not always the most recent folder** (an aborted or untagged run can sit above it). Confirm `acquisition_info.json` has your tags (rule 5 in Step 13), then tick all three files (`acquisition_info.json`, `device_config.json`, and `lsm6dsv16x_acc.dat` / `_gyro.dat`) and push.
 
    <img src="images/st_aiotcraft/45_select_files.png" alt="Select files" width="240"/>
 
@@ -452,7 +453,7 @@ When AIoT Craft finishes training (typically ~30 seconds after the upload is acc
    <img src="images/st_aiotcraft/48_version_list.png" alt="Version List" width="700"/>
 
 > **NOTE**
-> If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Step 4** is still active and that the upload completed (Step 14 ended in **Upload Success**). The single-label-fails / under-5-second rules from **Step 13** also surface here as a *job failed* status.
+> If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Step 4** is still active and that the upload completed (Step 14 ended in **Upload Success**). A *job failed* or *No valid datalogs* status here almost always means the session broke a labeling rule from **Step 13** — most often an untagged gap between labels, or a single-label session.
 
 **Reassemble the box and re-pair**
 

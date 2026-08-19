@@ -41,25 +41,40 @@ On the Select Sensor screen:
 
 <img src="images/st_aiotcraft/39_select_sensor_annotated.png" alt="Select Sensor — tap Accelerometer then Start" width="240"/>
 
-**Record one labeled segment per class — ~10 seconds each**
+**Record one labeled segment per class — chained tags, ~20 seconds each**
 
-The next screen shows all four classes as tags at the top — *Stationary Upright*, *Stationary Not Upright*, *Motion*, *Shaken* — over a live chart of the accelerometer stream. Logging is already active when you land here. Work through all four tags **in sequence**, ~10 seconds per tag, then stop:
+The next screen shows all four classes as tags at the top — *Stationary Upright*, *Stationary Not Upright*, *Motion*, *Shaken* — over a live chart of the accelerometer stream. Logging is already active when you land here.
+
+> **THE GOLDEN RULE — no gaps between labels**
+> From the moment you press your first tag until you release your last one, **some tag must always be active**. To move between classes, **press the next tag first, then release the previous one** — the brief one-second overlap during the handoff is harmless, but even a moment of untagged time *between* labels makes AIoT Craft reject the whole session (**job failed / "No valid datalogs"**). Untagged time *before* the first tag and *after* the last release is fine.
+
+Have the sequence in your head before you start — once the first tag is pressed there are no pauses. Work through all four tags **in sequence**, ~20 seconds per tag:
 
 <img src="images/st_aiotcraft/40_select_tags_annotated.png" alt="Tags screen — work through ①…④ then ⑤ Stop" width="240"/>
 
-1. Tap **① Stationary Upright** and stand the box upright on a flat surface. Hold ~10 seconds.
-2. Tap **② Stationary Not Upright** and lay the box on its side (or upside down). Hold ~10 seconds.
-3. Tap **③ Motion** and move the box around — slide it, rotate it, walk with it. ~10 seconds.
-4. Tap **④ Shaken** and shake the box briskly. ~10 seconds.
-5. After all four tags are done (each shows a green checkmark and the chart fills with data, as below), tap **⑤ Stop** to end the session.
+1. Stand the box upright on a flat surface, let it settle, then tap **① Stationary Upright**. Hold ~20 seconds.
+2. Tap **② Stationary Not Upright**, release **①**, then lay the box on its side (or upside down). Hold ~20 seconds.
+3. Tap **③ Motion**, release **②**, then move the box around — slide it, rotate it, carry it. Vary the movement. ~20 seconds.
+4. Tap **④ Shaken**, release **③**, then shake the box — **start with a gentle rattle and build up to a hard shake** across ~20–25 seconds. The sweep teaches the model to recognize gentle shaking too, not just your most vigorous one.
+5. Release **④ Shaken** while still shaking, then tap **⑤ Stop** to end the session (each tag shows a green checkmark and the chart fills with data, as below).
 
 <img src="images/st_aiotcraft/41_logging_active.png" alt="All four tags captured — ready to Stop" width="240"/>
 
-> **Labeling — 4 Simple Rules**
-> 1. **Pick at least 2 labels.** Single-label training fails with "job failed" — this is the #1 cause. (Doing all four as above is well above the minimum.)
-> 2. **At least 5 seconds per label.** Less than 5s → no association → upload may parse but training will reject it. (~10s per tag leaves a safe margin.)
-> 3. **Multiple labels can overlap.** If you press *Shaken* and then press *Motion* without releasing *Shaken*, both get entries in `acquisition_info.json`. The first label is **not** auto-released — overlap is intentional.
-> 4. **Re-pressing a label that already logged is ignored.** If you select *Shaken*, log it, deselect, then re-select *Shaken*, the second selection adds nothing — the cloud already has *Shaken* data for this session.
+> **Labeling — the rules that matter**
+> 1. **No gaps between labels.** Hand off tags press-before-release (the golden rule above). This is the #1 cause of *job failed / No valid datalogs*.
+> 2. **At least 2 labels, ~20 seconds each, roughly equal time per class.** Unbalanced classes bias the model toward the over-represented ones.
+> 3. **Don't leave multiple tags stacked.** The one-second handoff overlap is fine, but recording long stretches under several tags at once labels the same data as *every* class and produces a model that can't learn the rarer ones.
+> 4. **Variety within a segment beats a longer segment.** Sweep the shake intensity, vary the motion style, use a different resting orientation each session. You can also re-press a label later in the chain to add a second segment of the same class.
+> 5. **Verify before you upload.** Open the session folder and check `acquisition_info.json` — if it shows an empty `"tags": []`, you tagged nothing (or you're looking at the wrong folder), and the session cannot train.
+
+> **NOTE — why the no-gap rule exists**
+> The current AIoT Craft preview rejects any session with untagged data **between** labels, even though ST's Dataset API documents unlabeled chunks as a normal case. Treat the no-gap technique as a workaround for the preview environment — it may relax once the pipeline is updated.
+
+> **TIP — capturing variety without breaking the chain**
+> - **Motion and Shaken vary freely inside one tag.** Every second of handling or shaking genuinely is that class, so change style, direction, and intensity mid-segment — shake along different axes, slide then carry then rotate.
+> - **For a second orientation of a stationary class, bridge through Motion.** While the current stationary tag is active, press **Motion** and release the stationary tag, reposition the box (that handling *is* real motion data), settle it in the new orientation, then press the stationary tag again and release **Motion**. The chain stays gapless, the transition is labeled correctly, and the class gains a second clean segment:
+>   *upright → motion → not-upright (on its side) → motion → not-upright (upside down) → motion → shaken*
+> - When adding segments this way, keep the **total** time per class roughly balanced.
 
 Stopping the session leaves the labeled data on the SensorTile.box PRO's microSD card — it does **not** auto-upload. **Step 2** walks through pushing it to /IOTCONNECT so AIoT Craft can train on it.
 
@@ -88,7 +103,7 @@ To kick off training, the session files have to move from the device's microSD c
 
    <img src="images/st_aiotcraft/42_sd_sessions.png" alt="SD card folder list" width="240"/>
 
-4. **Select / push the files.** Open the most recent session folder, tick all three files (`acquisition_info.json`, `device_config.json`, and `lsm6dsv16x_acc.dat` / `_gyro.dat`), and push.
+4. **Select / push the files.** Open the session you just recorded — the folder name is its date and start time, and it is **not always the most recent folder** (an aborted or untagged run can sit above it). Confirm `acquisition_info.json` has your tags (rule 5 in Step 1), then tick all three files (`acquisition_info.json`, `device_config.json`, and `lsm6dsv16x_acc.dat` / `_gyro.dat`) and push.
 
    <img src="images/st_aiotcraft/45_select_files.png" alt="Select files" width="240"/>
 
@@ -133,7 +148,7 @@ When AIoT Craft finishes training (typically ~30 seconds after the upload is acc
    <img src="images/st_aiotcraft/48_version_list.png" alt="Version List" width="700"/>
 
 > **NOTE**
-> If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Lab 1 Step 4** is still active and that the upload completed (Step 2 above ended in **Upload Success**). The single-label-fails / under-5-second rules from **Step 1** also surface here as a *job failed* status.
+> If the model doesn't appear within a couple of minutes, check that the STAIOT association from **Lab 1 Step 4** is still active and that the upload completed (Step 2 above ended in **Upload Success**). A *job failed* or *No valid datalogs* status here almost always means the session broke a labeling rule from **Step 1** — most often an untagged gap between labels, or a single-label session.
 
 **Reassemble the box and re-pair**
 
