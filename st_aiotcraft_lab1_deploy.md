@@ -92,9 +92,9 @@ This step links your /IOTCONNECT tenant to the ST AIoT Craft cloud so trained mo
 
    <img src="images/st_aiotcraft/10_cognito_stage_annotatedr2.png" alt="Choose avnet-iotc-stage" width="400"/>
 
-## 5. Download the /IOTCONNECT Bridge App (Beta)
+## 5. Download the /IOTCONNECT Bridge App
 
-Use the QR codes below to install the Bridge App. (This is the beta build distributed via Updraft; the app-store release lands in mid-summer.)
+Use the QR codes below to install the Bridge App. 
 
 ### iOS App
 URL: <http://avnet.me/iotc-ios-bridge>
@@ -105,25 +105,6 @@ URL: <http://avnet.me/iotc-ios-bridge>
 URL: <http://avnet.me/iotc-android-bridge>
 
 <img src="images/st_aiotcraft/12_qr_android.png" alt="Android QR code" width="110"/>
-
-After scanning the QR code, the **Updraft** distribution page opens in your browser. Tap the orange **Update** button (it reads **Install** on a first-time install) to download the app, then follow the platform-specific prompts below.
-
-<img src="images/st_aiotcraft/updraft_install_annotated.png" alt="Updraft — tap Update to install the Bridge App" width="240"/>
-
-> **iOS only — "Untrusted Enterprise Developer"**
-> Because the beta is distributed outside the App Store, iOS 26 will block it on first launch with the message **"Untrusted Enterprise Developer."** To trust it:
-> 1. Open **Settings → General → VPN & Device Management** (may appear as **Profiles & Device Management**).
-> 2. Under **Enterprise App**, tap the developer **Softweb Solutions Inc.** and tap **Trust**, then confirm.
-> 3. iOS may ask you to **Allow & Restart** — let it. After reboot, complete any **"Ready to Install Profile"** prompt and tap **Done**.
-> 4. Launch the Bridge App from your Home Screen.
-
-> **Android only — "Install unknown apps" / Play Protect**
-> Because the beta is distributed via Updraft (not the Play Store), Android will prompt you a couple of times before letting it install. Open the Updraft URL in **Chrome** on your phone and:
-> 1. Tap **Install** on the Updraft page. Chrome will say **"For your security, your phone isn't allowed to install unknown apps from this source."** Tap **Settings**.
-> 2. Toggle **Allow from this source** on for Chrome (or the browser you used). Back out — the install prompt resumes automatically.
-> 3. Tap **Install** on the package installer screen.
-> 4. If **Play Protect** warns *"Block harmful app?"* or *"App not approved by Play Protect,"* tap **More details → Install anyway**. The app is unsigned for the Play Store, not malicious.
-> 5. When install completes, tap **Open** to launch the Bridge App from the installer, or find the icon in your app drawer.
 
 ## 6. Log in to the Bridge App
 
